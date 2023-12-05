@@ -6,7 +6,7 @@ import { changeLanguage } from "i18next";
 import { useTranslation } from "react-i18next";
 function App() {
   const [count, setCount] = useState(0);
-  const [t, i18] = useTranslation();
+  const [t] = useTranslation();
   return (
     <>
       <div>
