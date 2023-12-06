@@ -1,0 +1,40 @@
+@import './_colors';
+
+h1, h2, h3, h4, h5, h6, strong, label {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+p, span, input, ul, li, a, b {
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+@media screen and (min-width: 1501px) {
+    // h4 {
+    //     font-size: 1.5rem !important;
+    // }
+
+    // p {
+    //     font-size: 1.25rem !important;
+    // }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

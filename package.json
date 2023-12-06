@@ -11,11 +11,15 @@
   },
   "dependencies": {
     "@react-spring/web": "^9.7.3",
+    "bootstrap": "^5.3.2",
     "i18next": "^23.7.7",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
     "react-i18next": "^13.5.0",
-    "react-scroll-parallax": "^3.4.5"
+    "react-router-dom": "^6.20.1",
+    "react-scroll-parallax": "^3.4.5",
+    "vite-plugin-sass": "^0.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.37",
@@ -26,6 +30,7 @@
     "eslint": "^8.53.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
+    "sass": "^1.69.5",
     "typescript": "^5.2.2",
     "vite": "^5.0.0"
   }

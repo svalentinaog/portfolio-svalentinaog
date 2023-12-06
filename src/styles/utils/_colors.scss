@@ -1,0 +1,440 @@
+// Colores de Bootstrap
+
+$primary: #0d1b48; // Color principal
+$secondary: #c33c54; // Color secundario
+$info: #424767; // Color de información
+$success: #3b8754; // Color de éxito
+$warning: #fec134; // Color de advertencia
+$danger: #dc4146; // Color de peligro
+$light: #edf0f7; // Color claro
+$dark: #04040e; // Color oscuro
+
+// ---------------- Definición de colores en diferentes temas 🌝🌚 ---------------- //
+
+// ---- GLOBAL
+$bg-theme-light: #edf0f7; // Color de fondo modo light en toda la aplicación
+$bg-theme-dark: #0b0f19; // Color de fondo modo dark en toda la aplicación
+$text-primary-light: #0d1b48; // Color de texto principal modo light en toda la aplicación
+$text-secondary-light: #424767; // Color de texto secundario modo light en toda la aplicación
+$text-primary-dark: #edf0f7; // Color de texto principal modo dark en todas la aplicación
+$text-secondary-dark: #a9aaae; // Color de texto secundario en modo dark en toda la aplicación
+
+// ---- NAVBAR
+$bg-navbar-light: #0d1b48; // Color de fondo, de la barra de Navegacion en modo Light
+$bg-navbar-dark: #04040e; // Color de fondo, de la barra de Navegacion en modo dark
+
+// MENÚ DESPLEGABLE
+$bg-menu-nav-light: #edf0f7;
+$bg-menu-nav-dark: #04040e;
+
+// ITEMS DEL MENÚ DESPLEGABLE
+$bg-item-menu-nav-light: #e6e7ed;
+$bg-item-menu-nav-dark: #151822;
+
+// ---- SWITCH (MODO DIURNO/MODO NOCTURNO)
+$bg-switch-light: #116dfa; // Color de Switch si el modo light esta activo
+$bg-switch-dark: #090913; // Color de Switch si el modo dark esta activo
+
+$shadow-switch-light: rgba(
+  13,
+  110,
+  253,
+  0.25
+); // Sombra del Switch si el modo light esta activo
+$shadow-switch-dark: rgba(
+  9,
+  9,
+  13,
+  0.25
+); // Sombra del Switch si el modo dark esta activo
+
+$border-switch-light: #116dfa; // Borde del Switch si el modo light esta activo
+$border-switch-dark: #090913; // Borde del Switch si el modo dark esta activo
+
+// ---- BOTÓN IR ARRIBA (SCROLL TOP)
+$bg-button-scroll-top-light: #c33d54; // Botón "Ir Arriba" en modo light
+$bg-button-scroll-top-light-hover: #000080; // Botón "Ir Arriba" en modo light (hover)
+$bg-button-scroll-top-dark: #c33d54; // Botón "Ir Arriba" en modo dark
+$bg-button-scroll-top-dark-hover: #090913; // Botón "Ir Arriba" en modo dark (hover)
+
+// ---- FOOTER
+$bg-footer-light: #0d1b48; // Footer, pie de página en modo light
+$bg-footer-dark: #04040e; // Footer, pie de página en modo dark
+$text-p-footer: #a9aaae; // Color de los Textos P del footer
+$text-link-footer: #edf0f7; // Color de los Enlaces del footer
+
+// ---- NOTIFICATION (BARRA DE NOTIFICACIÓN)
+$bg-toast-light: #edf0f7;
+$bg-toast-dark: #151822;
+
+// FONDOS TRASLUCIDOS
+$bg-translucent-light: #0d1b48;
+$bg-translucent-dark: #0b0f19;
+
+// ---- SECCIÓN - SERVICIOS
+$bg-service-light: rgba(255, 255, 255, 0.202);
+$bg-service-dark: rgba(49, 49, 49, 0.202);
+$color-icon-scroll-down: #edf0f7;
+$color-icon-service-light: #0d1b48;
+$color-icon-service-dark: #b4b7c9;
+$bg-icon-service-light: #e6e7ed;
+$bg-icon-service-dark: #151822;
+
+// ---- SECCIÓN - TOP CIUDADES
+$bg-name-city-light: rgba(66, 71, 103, 0.5);
+$bg-name-city-dark: rgba(0, 0, 0, 0.5);
+$text-name-city-light: #edf0f7;
+$text-name-city-dark: #e6e7ed;
+
+// ---- SECCIÓN - EVENTOS EN TENDENCIA
+$bg-button-all-events-light: #0d1b48;
+$bg-button-all-events-dark: #c33c54;
+$bg-button-all-events-light-hover: #04040e;
+$bg-button-all-events-dark-hover: #a53141;
+
+// EVENT-CARD (TARJETA DE EVENTO)
+$bg-event-card-light: #edf0f7;
+$bg-event-card-dark: #0b0f19;
+$bg-event-card-light-hover: #e6e7ed;
+$bg-event-card-dark-hover: #151822;
+$border-event-card-light: rgba(0, 0, 0, 0.08);
+$border-event-card-dark: rgba(255, 255, 255, 0.05);
+$color-icons-event-card-light: #424767;
+$color-icons-event-card-dark: #b4b7c9;
+$color-stars-event-light: #dddddd;
+$color-stars-event-dark: #1d202b;
+$color-stars-event-hover-light: #c9c8c8;
+$color-stars-event-hover-dark: #262934;
+$bg-event-points-light: #0d1b48;
+$bg-event-points-dark: #c33c54;
+$color-stars-event-filled: #efb810;
+
+// ---- SECCIÓN - ¿TIENES DUDAS?
+$bg-doubts-light: #e6e7ed;
+$bg-doubts-dark: #151822;
+$bg-button-doubts-light: transparent;
+$bg-button-doubts-dark: transparent;
+$bg-button-doubts-light-hover: #0d1b48;
+$bg-button-doubts-dark-hover: #c33c54;
+$border-button-doubts-light: #0d1b48;
+$border-button-doubts-dark: #edf0f7;
+$border-button-doubts-light-hover: #0d1b48;
+$border-button-doubts-dark-hover: #c33c54;
+$text-button-doubts-light: #0d1b48;
+$text-button-doubts-dark: #edf0f7;
+$text-button-doubts-light-hover: #edf0f7;
+$text-button-doubts-dark-hover: #edf0f7;
+
+// ---- SECCIÓN - QUIERES UNIRTE AL EQUIPO?
+
+$bg-button-join-team: #c33c54;
+$bg-button-join-team-hover: #a53141;
+
+// ---- SECCIÓN - INFORMACIÓN DE CONTACTO
+$color-icon-contact-light: #ffffff;
+$color-icon-contact-dark: #ffffff;
+
+$bg-icon-contact-light: rgba(230, 231, 237, 0.05); // #e6e7ed
+$bg-icon-contact-dark: rgba(230, 231, 237, 0.05); // #151822
+
+// ---- FORMULARIOS
+$bg-form-light: #ffffff;
+$bg-form-dark: #151822;
+$bg-btn-continue-with-google-light: #deebf5;
+$bg-btn-continue-with-google-dark: #0000004b;
+$bg-form-submit-light: #0d1b48;
+$bg-form-submit-light-hover: #04040e;
+$bg-form-submit-dark: #c33c54;
+$bg-form-submit-dark-hover: #a53141;
+$border-form-submit-light: #0d1b48;
+$border-form-submit-light-hover: #04040e;
+$border-form-submit-dark: #c33c54;
+$border-form-submit-dark-hover: #a53141;
+$text-form-label-light: #424767; // quizas no sean necesarios
+$text-form-label-dark: #edf0f7; //
+$text-form-input-light: #424767; //
+$text-form-input-dark: #ffffff; //
+$text-placeholder-form-input-light: #424767c9;
+$text-placeholder-form-input-dark: #9d9ea1;
+$text-form-link-light: #c33c54;
+$text-form-link-dark: #4285f4;
+$text-form-link-light-hover: #d53032;
+$text-form-link-dark-hover: #2466d4;
+$text-form-back-light: #0d1b48;
+$text-form-back-dark: #edf0f7;
+$form-input-icon-color-light: #4e5079;
+$form-input-icon-color-dark: #b4b7c9;
+$icon-google-light: #4285f4;
+$icon-google-dark: #4285f4;
+$icon-google-light-hover: #edf0f7;
+$icon-google-dark-hover: #edf0f7;
+$border-form-input-light: rgba(0, 0, 0, 0.123);
+$border-form-input-dark: rgba(255, 255, 255, 0.05);
+$border-form-input-light-focus: #b7c3d2;
+$border-form-input-dark-focus: rgba(255, 255, 255, 0.13);
+
+// SIDEBAR
+$bg-sidebar-light: #0d1b48;
+$bg-sidebar-dark: #04040e;
+$text-item-sidebar-light: #a9aaae;
+$text-item-sidebar-dark: #a9aaae;
+$icon-item-color-light: #b4b7c9;
+$icon-item-color-dark: #b4b7c9;
+
+// ---- SECCIÓN - Términos
+$bg-terms-light: #f5f9fe;
+$bg-terms-dark: #0b0f19;
+$bg-terms-card-light: white;
+$bg-terms-card-dark: #10141e;
+$bg-headers-sidebar-light: #e6e7ed;
+$bg-headers-sidebar-dark: #090913;
+$color-icon-github-light: #010409;
+$color-icon-github-dark: #ffffff;
+$color-icon-linkedin-light: #0a66c2;
+$color-icon-linkedin-dark: #ffffff;
+$color-icon-social-light: #edf0f7;
+$color-icon-social-dark: #c33d54;
+$color-general-icon-light: #0d1b48;
+$color-general-icon-dark: #c33d54;
+
+// SEARCH BAR DE EVENTS
+
+$bg-button-search-light: #b7c3d2;
+$bg-button-search-dark: $border-form-input-dark;
+$bg-button-search-light-hover: #8b9baf;
+$bg-button-search-dark-hover: #1e232d;
+
+// SWITCH DASHBOARD
+$bg-switch-dashboard-light: rgba(0, 0, 0, 0.195);
+$bg-switch-dashboard-dark: rgba(255, 255, 255, 0.095);
+
+// Tema claro 🌝
+:root,
+[data-bs-theme='light'] {
+  --primary: #{$primary};
+  --secondary: #{$secondary};
+
+  --bg-switch: #{$bg-switch-light};
+  --border-switch: #{$border-switch-light};
+  --shadow-switch: #{$shadow-switch-light};
+
+  --text-primary: #{$text-primary-light};
+  --text-secondary: #{$text-secondary-light};
+
+  --bg-theme: #{$bg-theme-light};
+
+  --bg-navbar: #{$bg-navbar-light};
+  --bg-menu-nav: #{$bg-menu-nav-light};
+  --bg-item-menu-nav: #{$bg-item-menu-nav-light};
+
+  --bg-button-scroll-top: #{$bg-button-scroll-top-light};
+  --bg-button-scroll-top-hover: #{$bg-button-scroll-top-light-hover};
+
+  --bg-footer: #{$bg-footer-light};
+  --text-p-footer: #{$text-p-footer};
+  --text-link-footer: #{$text-link-footer};
+
+  --bg-toast: #{$bg-toast-light};
+
+  --bg-translucent: #{$bg-translucent-light};
+
+  --color-icon-service: #{$color-icon-service-light};
+
+  --bg-service: #{$bg-service-light};
+
+  --bg-icon-service: #{$bg-icon-service-light};
+
+  --color-icon-scroll-down: #{$color-icon-scroll-down};
+
+  --color-icon-github: #{$color-icon-github-light};
+  --color-icon-linkedin: #{$color-icon-linkedin-light};
+
+  --bg-name-city: #{$bg-name-city-light};
+  --text-name-city: #{$text-name-city-light};
+
+  --bg-event-card: #{$bg-event-card-light};
+  --bg-event-card-hover: #{$bg-event-card-light-hover};
+  --border-event-card: #{$border-event-card-light};
+  --color-stars-event: #{$color-stars-event-light};
+  --color-stars-event-hover: #{$color-stars-event-hover-light};
+  --color-stars-event-filled: #{$color-stars-event-filled};
+  --bg-event-points: #{$bg-event-points-light};
+  --color-icons-event-card: #{$color-icons-event-card-light};
+
+  --bg-button-all-events: #{$bg-button-all-events-light};
+  --bg-button-all-events-hover: #{$bg-button-all-events-light-hover};
+
+  --bg-doubts: #{$bg-doubts-light};
+  --bg-button-doubts: #{$bg-button-doubts-light};
+  --bg-button-doubts-hover: #{$bg-button-doubts-light-hover};
+  --border-button-doubts: #{$border-button-doubts-light};
+  --border-button-doubts-hover: #{$border-button-doubts-light-hover};
+  --text-button-doubts: #{$text-button-doubts-light};
+  --text-button-doubts-hover: #{$text-button-doubts-light-hover};
+
+  --color-icon-contact: #{$color-icon-contact-light};
+  --bg-icon-contact: #{$bg-icon-contact-light};
+
+  --bg-form: #{$bg-form-light};
+
+  --text-form-input: #{$text-form-input-light};
+  --text-placeholder-form-input: #{$text-placeholder-form-input-light};
+  --text-form-label: #{$text-form-label-light};
+
+  --text-form-link: #{$text-form-link-light};
+  --text-form-link-hover: #{$text-form-link-light-hover};
+
+  --text-form-back: #{$text-form-back-light};
+
+  --form-input-icon-color: #{$form-input-icon-color-light};
+
+  --border-form-input: #{$border-form-input-light};
+  --border-form-input-focus: #{$border-form-input-light-focus};
+
+  --bg-form-submit: #{$bg-form-submit-light};
+  --border-form-submit: #{$border-form-submit-light};
+  --bg-form-submit-hover: #{$bg-form-submit-light-hover};
+  --border-form-submit-hover: #{$border-form-submit-light-hover};
+
+  --icon-google: #{$icon-google-light};
+  --icon-google-hover: #{$icon-google-light-hover};
+
+  --bg-btn-continue-with-google: #{$bg-btn-continue-with-google-light};
+
+  --bg-sidebar: #{$bg-sidebar-light};
+  --text-item-sidebar: #{$text-item-sidebar-light};
+  --icon-item-color: #{$icon-item-color-light};
+
+  --bg-terms: #{$bg-terms-light};
+  --bg-terms-card: #{$bg-terms-card-light};
+
+  --bg-headers-sidebar: #{$bg-headers-sidebar-light};
+
+  --bg-button-join-team: #{$bg-button-join-team};
+  --bg-button-join-team-hover: #{$bg-button-join-team-hover};
+
+  --color-icon-social: #{$color-icon-social-light};
+
+  --color-general-icon: #{$color-general-icon-light};
+
+  --bg-button-search: #{$bg-button-search-light};
+  --bg-button-search-hover: #{$bg-button-search-light-hover};
+
+  --bg-switch-dashboard: #{$bg-switch-dashboard-light};
+}
+
+// Tema oscuro 🌚
+[data-bs-theme='dark'] {
+  --primary: #{$primary};
+  --secondary: #{$secondary};
+
+  --bg-switch: #{$bg-switch-dark};
+
+  --border-switch: #{$border-switch-dark};
+  --shadow-switch: #{$shadow-switch-dark};
+
+  --text-primary: #{$text-primary-dark};
+  --text-secondary: #{$text-secondary-dark};
+
+  --bg-theme: #{$bg-theme-dark};
+
+  --bg-navbar: #{$bg-navbar-dark};
+  --bg-menu-nav: #{$bg-menu-nav-dark};
+  --bg-item-menu-nav: #{$bg-item-menu-nav-dark};
+
+  --bg-button-scroll-top: #{$bg-button-scroll-top-dark};
+  --bg-button-scroll-top-hover: #{$bg-button-scroll-top-dark-hover};
+
+  --bg-footer: #{$bg-footer-dark};
+  --text-p-footer: #{$text-p-footer};
+  --text-link-footer: #{$text-link-footer};
+
+  --bg-toast: #{$bg-toast-dark};
+
+  --bg-translucent: #{$bg-translucent-dark};
+
+  --color-icon-service: #{$color-icon-service-dark};
+
+  --bg-service: #{$bg-service-dark};
+
+  --bg-icon-service: #{$bg-icon-service-dark};
+
+  --color-icon-scroll-down: #{$color-icon-scroll-down};
+
+  --color-icon-github: #{$color-icon-contact-dark};
+  --color-icon-linkedin: #{$color-icon-linkedin-dark};
+
+  --bg-name-city: #{$bg-name-city-dark};
+  --text-name-city: #{$text-name-city-dark};
+
+  --bg-event-card: #{$bg-event-card-dark};
+  --bg-event-card-hover: #{$bg-event-card-dark-hover};
+  --border-event-card: #{$border-event-card-dark};
+  --color-stars-event: #{$color-stars-event-dark};
+  --color-stars-event-hover: #{$color-stars-event-hover-dark};
+  --color-stars-event-filled: #{$color-stars-event-filled};
+  --bg-event-points: #{$bg-event-points-dark};
+  --color-icons-event-card: #{$color-icons-event-card-dark};
+
+  --bg-button-all-events: #{$bg-button-all-events-dark};
+  --bg-button-all-events-hover: #{$bg-button-all-events-dark-hover};
+
+  --bg-doubts: #{$bg-doubts-dark};
+  --bg-button-doubts: #{$bg-button-doubts-dark};
+  --bg-button-doubts-hover: #{$bg-button-doubts-dark-hover};
+  --border-button-doubts: #{$border-button-doubts-dark};
+  --border-button-doubts-hover: #{$border-button-doubts-dark-hover};
+  --text-button-doubts: #{$text-button-doubts-dark};
+  --text-button-doubts-hover: #{$text-button-doubts-dark-hover};
+
+  --color-icon-contact: #{$color-icon-contact-dark};
+  --bg-icon-contact: #{$bg-icon-contact-dark};
+
+  --bg-form: #{$bg-form-dark};
+
+  --text-form-input: #{$text-form-input-dark};
+  --text-placeholder-form-input: #{$text-placeholder-form-input-dark};
+
+  --text-form-label: #{$text-form-label-dark};
+
+  --form-input-icon-color: #{$form-input-icon-color-dark};
+
+  --border-form-input: #{$border-form-input-dark};
+  --border-form-input-focus: #{$border-form-input-dark-focus};
+
+  --text-form-link: #{$text-form-link-dark};
+  --text-form-link-hover: #{$text-form-link-dark-hover};
+
+  --text-form-back: #{$text-form-back-dark};
+
+  --bg-form-submit: #{$bg-form-submit-dark};
+  --border-form-submit: #{$border-form-submit-dark};
+  --bg-form-submit-hover: #{$bg-form-submit-dark-hover};
+  --border-form-submit-hover: #{$border-form-submit-dark-hover};
+
+  --icon-google: #{$icon-google-dark};
+  --icon-google-hover: #{$icon-google-dark-hover};
+
+  --bg-btn-continue-with-google: #{$bg-btn-continue-with-google-dark};
+
+  --bg-sidebar: #{$bg-sidebar-dark};
+  --text-item-sidebar: #{$text-item-sidebar-dark};
+  --icon-item-color: #{$icon-item-color-dark};
+
+  --bg-terms: #{$bg-terms-dark};
+  --bg-terms-card: #{$bg-terms-card-dark};
+
+  --bg-headers-sidebar: #{$bg-headers-sidebar-dark};
+
+  --bg-button-join-team: #{$bg-button-join-team};
+  --bg-button-join-team-hover: #{$bg-button-join-team-hover};
+
+  --color-icon-social: #{$color-icon-social-dark};
+
+  --color-general-icon: #{$color-general-icon-dark};
+
+  --bg-button-search: #{$bg-button-search-dark};
+  --bg-button-search-hover: #{$bg-button-search-dark-hover};
+
+  --bg-switch-dashboard: #{$bg-switch-dashboard-dark};
+}
