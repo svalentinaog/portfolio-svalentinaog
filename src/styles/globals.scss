@@ -1,20 +1,9 @@
-// Bootstrap BASE
-// @import '~bootstrap/scss/bootstrap';
-
-// Estilos custom
 @import './utils/_colors';
 @import './utils/_texts';
-
-// Components
 @import './components/_baselayout';
 @import './components/_navbar';
 @import './components/_footer';
-
-// Views
 @import './pages/_home';
-
-// Global
-@import './pages/_all-pages';
 
 html,
 body {
