@@ -19,10 +19,19 @@
 }
 
 .bg-navbar-one.scrolling {
-  padding: 1rem 5rem;
+  border-bottom: 0;
+  padding: 0.5rem 5rem;
   background-color: var(--bg-navbar) !important;
   box-shadow: 0 0.275rem 1.25rem rgba(11, 15, 25, 0.05),
     0 0.25rem 0.5625rem rgba(11, 15, 25, 0.03) !important;
+
+    .icon-headerPortfolio {
+      width: 4rem;
+      height: auto;
+      padding: 0px;
+      margin: 0 auto;
+    }
+    
 }
 
 .navbar-main {
@@ -55,7 +64,7 @@
 }
 
 .icon-headerPortfolio {
-  width: 2.5rem;
+  width: 5rem;
   height: auto;
   padding: 0px;
   margin: 0 auto;
@@ -107,6 +116,26 @@
   justify-content: center;
 }
 
+.theme-switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 0.70rem;
+
+  img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    padding: 0.25rem; 
+    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+  }
+
+  &:hover img {
+    background-color: #cccccc88; 
+  }
+}
+
 .form-switch,
 #custom-switch {
   padding: 0;
@@ -121,16 +150,10 @@
 
 .form-switch .form-check-input:checked {
   background-position: right center;
-  --bs-form-switch-bg: url("/images/moon.png") !important;
-}
-
-.form-switch .form-check-input:focus {
-  --bs-form-switch-bg: url("/images/moon.png") !important;
 }
 
 .form-switch .form-check-input {
   background-position: left center;
-  --bs-form-switch-bg: url("/images/sun.png") !important;
   width: 3em;
   height: 1.5rem;
   margin-left: 0.5rem;
@@ -151,6 +174,17 @@
   border-color: var(--border-switch) !important;
   box-shadow: 0 0 0 0.25rem var(--shadow-switch);
   outline: 0;
+}
+
+
+// items de la barra de navegación
+.navbar-expand-sm .offcanvas .offcanvas-body {
+  align-items: center;
+  justify-content: flex-end;
+
+  a {
+    color: white;
+  }
 }
 
 @media screen and (max-width: 767px) {

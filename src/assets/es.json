@@ -1,5 +1,15 @@
 {
   "translation": {
-    "Welcome to React": "Bienvenido a React y react-i18next"
+    "Welcome to React": "Bienvenido a React y react-i18next",
+
+    "nav-item1": "Sobre mí",
+    "nav-item2": "Habilidades",
+    "nav-item3": "Proyectos",
+    "nav-item4": "Contáctame",
+
+    "entrada1": "Hola. Soy Valentina",
+    "entrada2": "Desarrolladora Web Full Stack",
+    "entrada3": "Te doy la bienvenida a mi espacio digital 👋"
   }
 }
+

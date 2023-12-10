@@ -1,12 +1,14 @@
 import React from 'react'
 import BaseLayout from '../components/BaseLayout/BaseLayout'
+import Entry from '../components/Entry'
 
-function Home() {
+export default function Home() {
   return (
     <BaseLayout>
-      <div>Home</div>
+        <Entry />
+      <div className='landing-page'>
+      </div>
     </BaseLayout>
   )
 }
 
-export default Home

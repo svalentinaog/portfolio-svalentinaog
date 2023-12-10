@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
-import { Nav, Navbar, Offcanvas } from 'react-bootstrap';
+import { Nav, Navbar, Offcanvas, Form } from 'react-bootstrap';
 import Switch from './Switch';
+
+import { changeLanguage } from "i18next";
+import { useTranslation } from "react-i18next";
+
 
 export default function NavBar() {
     const [scrolling, setScrolling] = useState<boolean>(false);
@@ -18,44 +22,12 @@ export default function NavBar() {
         };
     }, []);
 
-    // return (
-    //     <Navbar
-    //         expand="lg"
-    //         className={`${scrolling ? 'scrolling ' : ''} bg-navbar-one`}
-    //     >
-    //         <Container fluid>
-    //             <Navbar.Brand className="goHome">
-    //                 <a href="/" className="go-home-content">
-    //                     {/* <img
-    //                         src="/images/logo/meduss.png"
-    //                         alt="isotipo"
-    //                         className="icon-headerPortfolio"
-    //                     /> */}
-    //                     <p className="text-headerPortfolio">
-    //                         Valentina Ortiz
-    //                     </p>
-    //                 </a>
-    //             </Navbar.Brand>
-    //             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    //             <div className='container-fluid'>
-    //                 <Navbar.Collapse id="basic-navbar-nav">
-    //                     <Nav className="me-auto">
-    //                         <Nav.Link className="goContact">
-    //                             <a href="/contact-us">Sobre mí</a>
-    //                         </Nav.Link>
-    //                         <Nav.Link className="goContact">
-    //                             <a href="/contact-us">Proyectos</a>
-    //                         </Nav.Link>
-    //                         <Nav.Link className="goContact">
-    //                             <a href="/contact-us">Contacto</a>
-    //                         </Nav.Link>
-    //                     </Nav>
-    //                     <Switch />
-    //                 </Navbar.Collapse>
-    //             </div>
-    //         </Container>
-    //     </Navbar>
-    // );
+    const [lg] = useTranslation();
+
+    const handleChangeLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
+        const selectedLanguage = e.target.value;
+        changeLanguage(selectedLanguage);
+    };
 
     return (
         <>
@@ -66,22 +38,22 @@ export default function NavBar() {
                     className={`${scrolling ? 'scrolling ' : ''} bg-navbar-one`}
                 >
                     <Container fluid>
-                        <div>
-                            <Navbar.Brand href="/" className="goHome">
-                                <div className="go-home-content">
-                                    {/* <img
-                                        src="/logo/medusa.png"
+
+                        <Navbar.Brand href="/" className="goHome">
+                            <div className="go-home-content">
+                                <img
+                                        src="/images/mdza.png"
                                         alt="isotipo"
                                         className="icon-headerPortfolio"
-                                    /> */}
-                                    <p className="text-headerPortfolio">
-                                        Valentina Ortiz!
-                                    </p>
-                                </div>
-                            </Navbar.Brand>
+                                    />
+                                {/* <p className="text-headerPortfolio">
+                                   VO
+                                </p> */}
+                            </div>
+                        </Navbar.Brand>
 
-                            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-                        </div>
+                        <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+
                         <Navbar.Offcanvas
                             id={`offcanvasNavbar-expand-${expand}`}
                             aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
@@ -97,7 +69,7 @@ export default function NavBar() {
                                             className="icon-headerPortfolio"
                                         /> */}
                                         <p className="text-headerPortfolio">
-                                            Valentina Ortiz
+                                           VO
                                         </p>
                                     </div>
                                 </Offcanvas.Title>
@@ -106,15 +78,24 @@ export default function NavBar() {
                             <Offcanvas.Body className="navbar-allitems">
                                 <Nav className="itemsNav">
                                     <Nav.Link className="goContact">
-                                        <a href="/contact-us">Sobre mí</a>
+                                        <a href="/contact-us">{lg("nav-item1")}</a>
                                     </Nav.Link>
                                     <Nav.Link className="goContact">
-                                        <a href="/contact-us">Proyectos</a>
+                                        <a href="/contact-us">{lg("nav-item2")}</a>
                                     </Nav.Link>
                                     <Nav.Link className="goContact">
-                                        <a href="/contact-us">Contacto</a>
+                                        <a href="/contact-us">{lg("nav-item3")}</a>
+                                    </Nav.Link>
+                                    <Nav.Link className="goContact">
+                                        <a href="/contact-us">{lg("nav-item4")}</a>
                                     </Nav.Link>
                                 </Nav>
+                                <div>
+                                    <Form.Select aria-label="Default select example" onChange={handleChangeLanguage} defaultValue="es">
+                                        <option value="es">ES</option>
+                                        <option value="en">EN</option>
+                                    </Form.Select>
+                                </div>
                                 <Switch />
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>

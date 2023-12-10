@@ -1,5 +1,5 @@
 // Colores de Bootstrap
-$primary: #0d1b48;
+$primary: #6237A0;
 $secondary: #c33c54;
 $info: #424767;
 $success: #3b8754;
@@ -14,13 +14,13 @@ $dark: #04040e;
 
 $bg-theme-light: #edf0f7;
 $bg-theme-dark: #0b0f19;
-$text-primary-light: #0d1b48;
+$text-primary-light: #6237A0;
 $text-primary-dark: #edf0f7;
 $text-secondary-light: #424767;
 $text-secondary-dark: #a9aaae;
 
 // Barra de Navegación (NavBar)
-$bg-navbar-light: #0d1b48;
+$bg-navbar-light: #6237A0;
 $bg-navbar-dark: #04040e;
 
 // ---- 🌝 Switch 🌚
@@ -49,11 +49,12 @@ $bg-button-scroll-top-dark: #c33d54;
 $bg-button-scroll-top-dark-hover: #090913; 
 
 // ---- Pie de página
-$bg-footer-light: #0d1b48; 
+$bg-footer-light: #6237A0; 
 $bg-footer-dark: #04040e; 
 
 // Filtro para fondo traslucido
-$bg-translucent-light: #0d1b48;
+$bg-translucent-light: linear-gradient(to bottom, #000, #6237A0);
+
 $bg-translucent-dark: #0b0f19;
 
 // Tema claro 🌝
