@@ -12,15 +12,17 @@ $dark: #04040e;
 
 // ---- Colores a nivel global
 
-$bg-theme-light: #edf0f7;
+$bg-theme-light: linear-gradient(to bottom, #2645AA, #5657CC);
 $bg-theme-dark: #0b0f19;
+
 $text-primary-light: #6237A0;
 $text-primary-dark: #edf0f7;
-$text-secondary-light: #424767;
+
 $text-secondary-dark: #a9aaae;
+$text-secondary-light: #424767;
 
 // Barra de Navegación (NavBar)
-$bg-navbar-light: #6237A0;
+$bg-navbar-light: #2645AA;
 $bg-navbar-dark: #04040e;
 
 // ---- 🌝 Switch 🌚
@@ -53,7 +55,7 @@ $bg-footer-light: #6237A0;
 $bg-footer-dark: #04040e; 
 
 // Filtro para fondo traslucido
-$bg-translucent-light: linear-gradient(to bottom, #000, #6237A0);
+$bg-translucent-light: linear-gradient(to bottom, #000, #fff);
 
 $bg-translucent-dark: #0b0f19;
 

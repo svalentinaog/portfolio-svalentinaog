@@ -15,9 +15,6 @@
   padding-top: 3.5rem;
   padding-left: 7rem;
   padding-right: 7rem;
-
-
-  position: relative;
   width: 100%;
   height: 100vh;
   margin-right: auto;
@@ -26,26 +23,32 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
- // padding: 5rem;
   gap: 2rem;
 }
 
-.container-entry-home::before {
-  content: '';
-  background: var(--bg-translucent);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0.6;
-  position: absolute;
-  z-index: 0;
-}
+// position: relative
+// background-size: cover;
+// background-position: center;
+// background-repeat: no-repeat;
+// background-image: url('/images/aquarium.jpg');
+// background-attachment: fixed;
 
-.container-entry-home>* {
-  position: relative;
-  z-index: 1;
-}
+// .container-entry-home::before {
+//   content: '';
+//   background: var(--bg-translucent);
+//   width: 100%;
+//   height: 100%;
+//   top: 0;
+//   left: 0;
+//   opacity: 0.8;
+//   position: absolute;
+//   z-index: 0;
+// }
+
+// .container-entry-home>* {
+//   position: relative;
+//   z-index: 1;
+// }
 
 .text-content-entry-home {
   width: 100%;
@@ -59,11 +62,17 @@
 
   h1 {
     font-size: 3rem;
+    color: $text-primary-dark;
     margin: 0;
+  }
+
+  h2 {
+    color: $text-primary-dark;
   }
 
   div>p {
     font-size: 1.15rem;
+    color: $text-secondary-dark;
   }
 }
 
