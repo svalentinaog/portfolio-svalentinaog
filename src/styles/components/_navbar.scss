@@ -121,20 +121,25 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  padding-left: 0.70rem;
+  margin-left: 0.5rem;
 
   img {
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
-    padding: 0.25rem; 
-    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+    padding: 0.50rem;
+    // transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+
+    transition: fill 0.7s, background-color 0.7s, box-shadow 0.7s;
+
   }
 
   &:hover img {
-    background-color: #cccccc88; 
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
   }
 }
+
 
 .form-switch,
 #custom-switch {
@@ -175,6 +180,30 @@
   box-shadow: 0 0 0 0.25rem var(--shadow-switch);
   outline: 0;
 }
+
+// selector
+
+.form-select {
+  // font-weight: 500;
+  color: var(--color-select);
+  background-color: var(--bg-select);
+  border: 1px solid var(--border-select);
+  cursor: pointer;
+
+  // border: none;
+
+  background-image: url('/images/down.png');
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1rem;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+}
+
+// ----
 
 
 // items de la barra de navegación

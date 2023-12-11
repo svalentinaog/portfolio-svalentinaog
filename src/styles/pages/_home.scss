@@ -95,47 +95,96 @@
   align-items: center;
   gap: 1rem;
 
-  .icon-github {
-    fill: white;
-    opacity: 0.9;
-    padding: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    border: 1px solid #fff;
+  .icons {
+    padding: 0.75rem;
+    border-radius: 0.65rem;
+    margin-bottom: 0.5rem;
     cursor: pointer;
 
     svg {
       width: 1.5rem;
       height: 1.5rem;
     }
+  }
 
-    &:hover {
-      background-color: black;
-    }
+  .icon-linkedin,
+  .icon-github {
+    transition: fill 0.7s, background-color 0.7s, box-shadow 0.7s;
   }
 
   .icon-linkedin {
-    fill: white;
-    opacity: 0.9;
-    padding: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    cursor: pointer;
+    background-color: var(--bg-icon-social);
 
     svg {
-      width: 1.5rem;
-      height: 1.5rem;
+      fill: var(--color-icon-social);
+      margin: 0;
+      padding: 0;
+    }
+
+    &:hover {
+      background-color: #107db8;
+      box-shadow: 0 0 10px rgba(16, 125, 184, 0.7);
+
+      svg {
+        fill: white;
+      }
     }
   }
 
-  .icon-github:hover,
-  .icon-linkedin:hover {
-    opacity: 1;
-    cursor: pointer;
+  .icon-github {
+    background-color: var(--bg-icon-social);
+
+    svg {
+      fill: var(--color-icon-social);
+      margin: 0;
+      padding: 0;
+    }
+
+    &:hover {
+      background-color: #5C6BC0;
+      box-shadow: 0 0 10px rgba(92, 107, 192, 0.7);
+
+      svg {
+        fill: white;
+      }
+    }
   }
+
+  // // .icon-github {
+  // //   fill: white;
+  // //   opacity: 0.9;
+  // //   padding: 0.5rem;
+  // //   display: flex;
+  // //   justify-content: center;
+  // //   align-items: center;
+  // //   border-radius: 50%;
+  // //   border: 1px solid #fff;
+  // //   cursor: pointer;
+
+  // //   svg {
+  // //     width: 1.5rem;
+  // //     height: 1.5rem;
+  // //   }
+
+  // //   &:hover {
+  // //     background-color: black;
+  // //   }
+  // // }
+
+  // // .icon-linkedin {
+  // //   fill: white;
+  // //   opacity: 0.9;
+  // //   padding: 0.5rem;
+  // //   display: flex;
+  // //   justify-content: center;
+  // //   align-items: center;
+  // //   border-radius: 50%;
+  // //   border: 1px solid #fff;
+  // //   cursor: pointer;
+
+  // //   svg {
+  // //     width: 1.5rem;
+  // //     height: 1.5rem;
+  // //   }
+  // // }
 }
