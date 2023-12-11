@@ -189,7 +189,6 @@
   background-color: var(--bg-select);
   border: 1px solid var(--border-select);
   cursor: pointer;
-
   // border: none;
 
   background-image: url('/images/down.png');
@@ -207,10 +206,14 @@
 
 
 // items de la barra de navegación
+.itemsNav {
+  margin-right: 0.5rem;
+}
+
 .navbar-expand-sm .offcanvas .offcanvas-body {
   align-items: center;
   justify-content: flex-end;
-
+  
   a {
     color: white;
   }
