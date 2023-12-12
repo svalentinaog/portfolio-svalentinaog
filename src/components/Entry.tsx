@@ -36,6 +36,12 @@ export default function Entry() {
             </div>
           </a>
 
+          <span>•</span>
+
+          <div className="curriculum">
+              <p className='my-cv'>{lg("curriculum")}</p>
+          </div>
+
         </div>
       </div>
 
