@@ -86,29 +86,11 @@
     }
   }
 
-  .icon-linkedin,
   .icon-github,
+  .icon-linkedin,
+  .icon-email,
   .my-cv {
     transition: fill 0.7s, background-color 0.7s, box-shadow 0.7s;
-  }
-
-  .icon-linkedin {
-    background-color: var(--bg-icon-social);
-
-    svg {
-      fill: var(--color-icon-social);
-      margin: 0;
-      padding: 0;
-    }
-
-    &:hover {
-      background-color: #107db8;
-      box-shadow: 0 0 10px rgba(16, 125, 184, 0.7);
-
-      svg {
-        fill: white;
-      }
-    }
   }
 
   .icon-github {
@@ -130,6 +112,44 @@
     }
   }
 
+  .icon-linkedin {
+    background-color: var(--bg-icon-social);
+
+    svg {
+      fill: var(--color-icon-social);
+      margin: 0;
+      padding: 0;
+    }
+
+    &:hover {
+      background-color: #107db8;
+      box-shadow: 0 0 10px rgba(16, 125, 184, 0.7);
+
+      svg {
+        fill: white;
+      }
+    }
+  }
+
+  .icon-email {
+    background-color: var(--bg-icon-social);
+
+    svg {
+      fill: var(--color-icon-social);
+      margin: 0;
+      padding: 0;
+    }
+
+    &:hover {
+      background-color: #CC392D;
+      box-shadow: 0 0 10px rgba(204, 57, 45, 0.7);
+
+      svg {
+        fill: white;
+      }
+    }
+  }
+
   //
 
   span {
@@ -137,6 +157,20 @@
   }
 
   //
+
+  @keyframes downloadAnimation {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(5px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
 
   .curriculum {
     p {
@@ -147,14 +181,40 @@
     }
 
     .my-cv {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
       background-color: var(--bg-icon-social);
       padding: 0.70rem;
       border-radius: 0.375rem;
       cursor: pointer;
+      transition: filter 0.3s ease;
 
-      // &:hover {
-      //  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      // }
+      &:hover {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        filter: brightness(1.2);
+      }
+    }
+
+    .download-icon {
+      margin-left: 0.5rem;
+
+      svg {
+        fill: var(--color-icon-social);
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 0;
+        padding: 0;
+
+        transition: fill 0.3s ease;
+      }
+    }
+
+    &.download-animation {
+      .download-icon svg {
+        animation: downloadAnimation 0.5s ease;
+      }
     }
   }
 }

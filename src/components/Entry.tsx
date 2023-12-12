@@ -1,8 +1,33 @@
 import React from 'react';
 import { useTranslation } from "react-i18next";
+import { saveAs } from 'file-saver';
 
 export default function Entry() {
   const [lg] = useTranslation();
+
+  const handleDownload = () => {
+    // Ruta al archivo PDF de tu currículum
+    const pdfUrl = 'curriculum/Curriculum Vitae - Valentina Ortiz.pdf';
+
+    // Nombre del archivo al descargar
+    const fileName = 'curriculum.pdf';
+
+    // Realiza la descarga utilizando file-saver
+    saveAs(pdfUrl, fileName);
+
+    // Agrega la clase de animación al hacer clic
+    const curriculumDiv = document.querySelector('.curriculum');
+
+    // Verifica si el elemento se encontró antes de agregar la clase
+    if (curriculumDiv) {
+      curriculumDiv.classList.add('download-animation');
+
+      // Quita la clase de animación después de un tiempo para permitir que se repita
+      setTimeout(() => {
+        curriculumDiv.classList.remove('download-animation');
+      }, 500);
+    }
+  };
 
   return (
     <div className="container-entry-home">
@@ -27,8 +52,8 @@ export default function Entry() {
 
           <a href="https://www.linkedin.com/in/svalentinaog">
             <div className="icon-linkedin icons">
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
                 <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
@@ -36,10 +61,23 @@ export default function Entry() {
             </div>
           </a>
 
+          <a href="mailto:svalentinaog10@gmail.com">
+            <div className="icon-email icons">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+              </svg>
+            </div>
+          </a>
+
           <span>•</span>
 
-          <div className="curriculum">
-              <p className='my-cv'>{lg("curriculum")}</p>
+          <div className="curriculum" onClick={handleDownload}>
+            <p className='my-cv'>
+              {lg("curriculum")}
+              <span className="download-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" /></svg>
+              </span>
+            </p>
           </div>
 
         </div>
