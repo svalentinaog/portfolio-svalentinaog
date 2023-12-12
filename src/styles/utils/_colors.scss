@@ -12,8 +12,9 @@ $dark: #04040e;
 
 // ---- Colores a nivel global
 
-$bg-theme-light: linear-gradient(to bottom, #2645AA, #5657CC);
-$bg-theme-dark: #0b0f19;
+// $bg-theme-light: linear-gradient(to right bottom, #2645AA, #5657CC); 
+$bg-theme-light: linear-gradient(to right bottom, #0E2667, #E26FE3); 
+$bg-theme-dark: #10141E;
 
 $text-primary-light: #6237A0;
 $text-primary-dark: #edf0f7;
@@ -22,8 +23,8 @@ $text-secondary-dark: #a9aaae;
 $text-secondary-light: #424767;
 
 // Barra de Navegación (NavBar)
-$bg-navbar-light: #2645AA;
-$bg-navbar-dark: #04040e;
+$bg-navbar-light: linear-gradient(to right, #383A7E, #9156B2);
+$bg-navbar-dark: #090D16;// #04040e;
 
 // ---- 🌝 Switch 🌚
 $bg-switch-light: #116dfa; 
@@ -45,20 +46,15 @@ $border-switch-light: #116dfa;
 $border-switch-dark: #090913; 
 
 // ---- Botón "Ir arriba"
-$bg-button-scroll-top-light: #c33d54; 
-$bg-button-scroll-top-light-hover: #000080;  
-$bg-button-scroll-top-dark: #c33d54;
-$bg-button-scroll-top-dark-hover: #090913; 
+$bg-button-scroll-top-light: #ffffff2d; 
+$bg-button-scroll-top-light-hover: #090D16;  
+
+$bg-button-scroll-top-dark: #151822;
+$bg-button-scroll-top-dark-hover: #3E4EB3; 
 
 // ---- Pie de página
 $bg-footer-light: #6237A0; 
 $bg-footer-dark: #04040e; 
-
-// Filtro para fondo traslucido
-$bg-translucent-light: linear-gradient(to bottom, #000, #fff);
-
-$bg-translucent-dark: #0b0f19;
-
 
 // Icons socials
 $bg-icon-social-light: #ffffff15;
@@ -67,12 +63,11 @@ $bg-icon-social-dark: #151822;
 $color-icon-social-light: #e6e7ed;
 $color-icon-social-dark: #e6e7ed;
 
-
 // Icons select
-$bg-select-light: #3E4EB3;
+$bg-select-light: #ffffff15;
 $bg-select-dark: #151822; 
 
-$border-select-light: #979797;
+$border-select-light: #a875ca;
 $border-select-dark: #495057;
 
 $color-select-light: #e6e7ed;
@@ -93,7 +88,6 @@ $color-select-dark: #e6e7ed;
   --bg-footer: #{$bg-footer-light};
   --bg-button-scroll-top: #{$bg-button-scroll-top-light};
   --bg-button-scroll-top-hover: #{$bg-button-scroll-top-light-hover};
-  --bg-translucent: #{$bg-translucent-light};
 
   --bg-icon-social: #{$bg-icon-social-light};
   --color-icon-social: #{$color-icon-social-light};
@@ -117,7 +111,6 @@ $color-select-dark: #e6e7ed;
   --bg-footer: #{$bg-footer-dark};
   --bg-button-scroll-top: #{$bg-button-scroll-top-dark};
   --bg-button-scroll-top-hover: #{$bg-button-scroll-top-dark-hover};
-  --bg-translucent: #{$bg-translucent-dark};
 
   --bg-icon-social: #{$bg-icon-social-dark};
   --color-icon-social: #{$color-icon-social-dark};

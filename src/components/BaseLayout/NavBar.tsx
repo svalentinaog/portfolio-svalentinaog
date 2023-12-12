@@ -39,16 +39,13 @@ export default function NavBar() {
                 >
                     <Container fluid>
 
-                        <Navbar.Brand href="/" className="goHome">
-                            <div className="go-home-content">
+                        <Navbar.Brand href="/">
+                            <div className="image-container">
                                 <img
-                                        src="/images/mdza.png"
-                                        alt="isotipo"
-                                        className="icon-headerPortfolio"
-                                    />
-                                {/* <p className="text-headerPortfolio">
-                                   VO
-                                </p> */}
+                                    src="/images/mdza.png"
+                                    alt="isotipo"
+                                    className="image"
+                                />
                             </div>
                         </Navbar.Brand>
 
@@ -62,42 +59,43 @@ export default function NavBar() {
 
                             <Offcanvas.Header closeButton>
                                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                                    <div className="go-home-content">
-                                        {/* <img
-                                            src="/logo/meduss.png"
+                                    <div className="image-container">
+                                        <img
+                                            src="/images/mdza.png"
                                             alt="isotipo"
-                                            className="icon-headerPortfolio"
-                                        /> */}
-                                        <p className="text-headerPortfolio">
-                                           VO
-                                        </p>
+                                            className="image"
+                                        />
                                     </div>
                                 </Offcanvas.Title>
                             </Offcanvas.Header>
 
                             <Offcanvas.Body className="navbar-allitems">
-                                <Nav className="itemsNav">
-                                    <Nav.Link className="goContact">
+                                <Nav className="items-navbar">
+                                    <Nav.Link className="nav-item">
                                         <a href="/contact-us">{lg("nav-item1")}</a>
                                     </Nav.Link>
-                                    <Nav.Link className="goContact">
+                                    <Nav.Link className="nav-item">
                                         <a href="/contact-us">{lg("nav-item2")}</a>
                                     </Nav.Link>
-                                    <Nav.Link className="goContact">
+                                    <Nav.Link className="nav-item">
                                         <a href="/contact-us">{lg("nav-item3")}</a>
                                     </Nav.Link>
-                                    <Nav.Link className="goContact">
+                                    <Nav.Link className="nav-item">
                                         <a href="/contact-us">{lg("nav-item4")}</a>
                                     </Nav.Link>
                                 </Nav>
-                                <div>
-                                    <Form.Select aria-label="Default select example" onChange={handleChangeLanguage} defaultValue="es">
-                                        <option value="es">ES</option>
-                                        <option value="en">EN</option>
-                                    </Form.Select>
+
+                                <div className='nav-options'>
+                                    <div>
+                                        <Form.Select aria-label="Default select example" onChange={handleChangeLanguage} defaultValue="es">
+                                            <option value="es">ES</option>
+                                            <option value="en">EN</option>
+                                        </Form.Select>
+                                    </div>
+                                    <Switch />
                                 </div>
-                                <Switch />
                             </Offcanvas.Body>
+
                         </Navbar.Offcanvas>
                     </Container>
                 </Navbar>
