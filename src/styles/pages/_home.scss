@@ -131,6 +131,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .landing-page {
+    padding: 0;
+  }
+  
   .container-entry-home {
     padding-top: 7rem;
     padding-left: 2rem;
