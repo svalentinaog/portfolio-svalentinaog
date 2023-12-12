@@ -107,7 +107,7 @@
         padding: 0;
       }
 
-      &:hover, &:focus{
+      &:hover {
         background-color: #5C6BC0;
         box-shadow: 0 0 10px rgba(92, 107, 192, 0.7);
 
@@ -126,7 +126,7 @@
         padding: 0;
       }
 
-      &:hover, &:focus {
+      &:hover {
         background-color: #107db8;
         box-shadow: 0 0 10px rgba(16, 125, 184, 0.7);
 
@@ -145,7 +145,7 @@
         padding: 0;
       }
 
-      &:hover, &:focus {
+      &:hover {
         background-color: #CC392D;
         box-shadow: 0 0 10px rgba(204, 57, 45, 0.7);
 
@@ -153,6 +153,26 @@
           fill: white;
         }
       }
+    }
+  }
+
+
+  .icon-github:active,
+  .icon-linkedin:active,
+  .icon-email:active {
+    background-color: #5C6BC0;
+    /* Cambia al color deseado */
+    box-shadow: 0 0 10px rgba(92, 107, 192, 0.7);
+
+    svg {
+      fill: white;
+    }
+  }
+
+  .curriculum:active {
+    .my-cv {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      filter: brightness(1.2);
     }
   }
 
