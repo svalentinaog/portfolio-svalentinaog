@@ -48,7 +48,7 @@
   justify-content: flex-start;
   overflow: hidden;
   max-width: 50%;
-  
+
   img {
     width: 100%;
     height: auto;
@@ -265,7 +265,7 @@
       .icons {
         padding: 0.60rem;
         border-radius: 0.275rem;
-  
+
         svg {
           width: 1.35rem;
           height: 1.35rem;
@@ -285,15 +285,15 @@
         font-size: 0.85rem;
         text-align: center;
       }
-  
+
       .my-cv {
         padding: 0.60rem;
         border-radius: 0.275rem;
 
         transition: fill 0s, background-color 0s, box-shadow 0s, filter 0s ease;
       }
-  
-      .download-icon {  
+
+      .download-icon {
         svg {
           width: 1.35rem;
           height: 1.35rem;
@@ -305,9 +305,6 @@
 
 @media screen and (min-width: 1501px) {
   .container-aboutme {
-    padding-top: 5rem;
-    padding-left: 8rem;
-    padding-right: 8rem;
     gap: 2.5rem;
 
     .text-content-aboutme {
