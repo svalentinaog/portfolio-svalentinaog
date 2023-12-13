@@ -6,23 +6,15 @@ export default function AboutMe() {
     const [lg] = useTranslation();
 
     const handleDownload = () => {
-        // Ruta al archivo PDF de tu currículum
         const pdfUrl = 'curriculum/Curriculum Vitae - Valentina Ortiz.pdf';
-
-        // Nombre del archivo al descargar
         const fileName = 'curriculum.pdf';
 
-        // Realiza la descarga utilizando file-saver
         saveAs(pdfUrl, fileName);
 
-        // Agrega la clase de animación al hacer clic
         const curriculumDiv = document.querySelector('.curriculum');
 
-        // Verifica si el elemento se encontró antes de agregar la clase
         if (curriculumDiv) {
             curriculumDiv.classList.add('download-animation');
-
-            // Quita la clase de animación después de un tiempo para permitir que se repita
             setTimeout(() => {
                 curriculumDiv.classList.remove('download-animation');
             }, 500);
