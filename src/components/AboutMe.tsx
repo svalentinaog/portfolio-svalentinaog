@@ -4,6 +4,7 @@ import { saveAs } from 'file-saver';
 
 export default function AboutMe() {
     const [lg] = useTranslation();
+    const curriculumContainer = React.useRef<HTMLDivElement | null>(null);
 
     const handleDownload = () => {
         const pdfUrl = 'curriculum/Curriculum Vitae - Valentina Ortiz.pdf';
@@ -11,14 +12,15 @@ export default function AboutMe() {
 
         saveAs(pdfUrl, fileName);
 
-        const curriculumDiv = document.querySelector('.curriculum');
-
-        if (curriculumDiv) {
-            curriculumDiv.classList.add('download-animation');
+        if (curriculumContainer.current) {
+            curriculumContainer.current.classList.add('download-animation');
             setTimeout(() => {
-                curriculumDiv.classList.remove('download-animation');
+                if (curriculumContainer.current) {
+                    curriculumContainer.current.classList.remove('download-animation');
+                }
             }, 500);
         }
+        
     };
 
     return (
@@ -70,7 +72,7 @@ export default function AboutMe() {
 
                     <span>•</span>
 
-                    <div className="curriculum" onClick={handleDownload}>
+                    <div ref={curriculumContainer} className="curriculum" onClick={handleDownload}>
                         <p className='my-cv'>
                             {lg("curriculum")}
                             <span className="download-icon">
