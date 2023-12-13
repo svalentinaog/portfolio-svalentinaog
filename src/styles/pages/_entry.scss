@@ -229,9 +229,10 @@
 
 @media screen and (max-width: 767px) {
   .container-entry-home {
-    padding-top: 4rem; //7
+    padding-top: 4rem; 
     padding-left: 2rem;
     padding-right: 2rem;
+
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -288,8 +289,6 @@
 @media screen and (min-width: 1501px) {
   .container-entry-home {
     padding-top: 5rem;
-    padding-left: 8rem;
-    padding-right: 8rem;
     gap: 2.5rem;
 
     .text-content-entry-home {
