@@ -214,9 +214,7 @@
 
 @media screen and (max-width: 767px) {
   .container-aboutme {
-    padding-top: 0;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 0;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;

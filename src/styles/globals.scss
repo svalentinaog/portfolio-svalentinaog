@@ -15,15 +15,19 @@ body {
 
 .landing-page {
   padding: 7rem;
+  gap: 7rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 7rem;
 }
 
 
 @media screen and (max-width: 767px) {
   .landing-page {
-    padding: 0;
+    padding-top: 0;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 5rem;
+    gap: 3rem;
   }
 }
