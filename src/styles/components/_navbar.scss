@@ -16,6 +16,12 @@
   transition: 0.3s ease;
   background-color: transparent !important;
   padding: 2rem;
+
+
+  .nav-item a {
+    text-decoration: none !important;
+    color: var(--text-primary) !important;
+  }
 }
 
 .bg-navbar-one.scrolling {
@@ -33,6 +39,15 @@
     margin: 0 auto;
   }
 
+
+  .nav-item a {
+    text-decoration: none !important;
+    color: white !important;
+  }
+
+  .form-select {
+    color: white !important;
+  }
 }
 
 .navbar-main {
@@ -47,7 +62,7 @@
 }
 
 .navbar .navbar-nav .nav-link {
-  color: white;
+  color: var(--text-primary);
   padding: 0.75rem;
   font-size: 1rem;
   font-weight: 400;
@@ -76,10 +91,6 @@
   margin-right: 0.5rem;
 }
 
-.nav-item a {
-  text-decoration: none !important;
-}
-
 //  ---- Switch dark-mode/light-mode ----  //
 .theme-switch {
   display: flex;
@@ -103,7 +114,7 @@
 
 // selector de idioma
 .form-select {
-  color: var(--color-select);
+  color: var(--text-primary);
   background-color: var(--bg-select);
   cursor: pointer;
   border: 1px solid var(--border-select);
@@ -127,9 +138,9 @@
   align-items: center;
   justify-content: flex-end;
 
-  a {
-    color: white;
-  }
+  // a {
+  //   color: var(--text-primary); 
+  // }
 }
 
 .offcanvas-header,
@@ -188,7 +199,6 @@
   .image-container .image {
     width: 4rem;
   }
-
 }
 
 /* Estilos para pantallas más grandes (1025px o más de ancho) */
@@ -217,7 +227,7 @@
   }
 
   .navbar .navbar-nav .nav-link {
-    color: white;
+    color: var(--text-primary);
     padding: 0.75rem;
     font-size: 1.35rem;
     font-weight: 400;
@@ -262,8 +272,6 @@
 
     option {
       cursor: pointer;
-      color: black;
     }
   }
-
 }

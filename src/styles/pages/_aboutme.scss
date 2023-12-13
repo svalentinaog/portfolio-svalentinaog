@@ -25,18 +25,18 @@
 
   h1 {
     font-size: 3.10rem;
-    color: $text-primary-dark;
+    //color: $text-primary-dark;
     margin: 0;
   }
 
   h2 {
     font-size: 1.85rem;
-    color: $text-primary-dark;
+    //color: $text-primary-dark;
   }
 
   div>p {
     font-size: 1.15rem;
-    color: $text-secondary-dark;
+    // color: $text-secondary-dark;
   }
 }
 
@@ -146,9 +146,9 @@
     }
   }
 
-  span {
-    color: white;
-  }
+  // span {
+  //   // color: white;
+  // }
 
   @keyframes downloadAnimation {
     0% {
@@ -167,7 +167,7 @@
   .curriculum {
     p {
       font-size: 1rem;
-      color: white;
+      // color: white;
       font-weight: 400;
       margin: 0;
     }

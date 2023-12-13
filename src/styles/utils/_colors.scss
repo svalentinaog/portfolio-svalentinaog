@@ -12,15 +12,17 @@ $dark: #04040e;
 
 // ---- Colores a nivel global
 
-// $bg-theme-light: linear-gradient(to right bottom, #2645AA, #5657CC); 
-$bg-theme-light: linear-gradient(to right bottom, #0E2667, #E26FE3); 
+// $bg-theme-light: #ffffff; 
+$bg-theme-light: linear-gradient(to right bottom, #0E2667, #E26FE3);
 $bg-theme-dark: #10141E;
 
-$text-primary-light: #6237A0;
+// $text-primary-light: #424767;
+$text-primary-light: #edf0f7;
 $text-primary-dark: #edf0f7;
 
-$text-secondary-dark: #a9aaae;
-$text-secondary-light: #424767;
+// $text-secondary-light: #424767;
+$text-secondary-light: #DEE2E6;
+$text-secondary-dark: #DEE2E6;
 
 // Barra de Navegación (NavBar)
 $bg-navbar-light: linear-gradient(to right, #383A7E, #9156B2);
@@ -57,9 +59,10 @@ $bg-footer-light: #6237A0;
 $bg-footer-dark: #04040e; 
 
 // Icons socials
-$bg-icon-social-light: #ffffff15;
+$bg-icon-social-light: #42476710;
 $bg-icon-social-dark: #151822;
 
+// $color-icon-social-light: #424767;
 $color-icon-social-light: #e6e7ed;
 $color-icon-social-dark: #e6e7ed;
 
