@@ -103,7 +103,6 @@
 
 // burbujita dentro de burbuja grande para que se vea mas realista.
 
-
 .bubbles div::after {
     content: "";
     width: 10px;
@@ -113,7 +112,7 @@
     background-color: hsl(240, 248, 255, 0.123);
     top: 60%;
     left: 50%;
-    transform: translate(-80%, -20%); 
+    transform: translate(-80%, -20%);
 }
 
 .bubbles div:nth-child(1)::after {
@@ -151,3 +150,14 @@
     height: 4px;
 }
 
+
+///
+/// 
+/// 
+
+@media only screen and (max-width: 764px) {
+    .bubbles div {
+        display: none;
+        /* Ocultar burbujas en dispositivos móviles */
+    }
+}
