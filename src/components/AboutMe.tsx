@@ -31,9 +31,8 @@ export default function AboutMe() {
 
     return (
         <div className="container-aboutme">
-
             <div className="photo-aboutme">
-                <img className='custom-photo' src="images/developer.png" alt="about" />
+                <img className='custom-photo' src="images/photo.jpg" alt="about" />
             </div>
 
             <div className="text-content-aboutme">
@@ -43,7 +42,6 @@ export default function AboutMe() {
                     <p>{lg("aboutme2")}</p>
                     <p>{lg("aboutme3")}</p>
                 </div>
-
 
                 <div className="my-info-container">
                     <div className='social-media-container'>
@@ -88,10 +86,8 @@ export default function AboutMe() {
                             </span>
                         </p>
                     </div>
-
                 </div>
             </div>
-
         </div>
     );
 }
