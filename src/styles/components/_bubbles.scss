@@ -5,14 +5,14 @@
 }
 
 .bubbles div {
-    // background: rgb(10, 10, 102);
     background-color: hsl (0deg, 0%, 100%, 7%);
     border-radius: 100%;
     position: absolute;
     bottom: 0;
-    animation: animarBurbujas 4s linear infinite, bubbleAnimate 4s linear infinite;
-    // box-shadow: inset -1px -1px 10px #f88dc6, inset 8px -6px 10px #6cb6f3, inset 4px 4px 10px #eefb79;
+    animation: animarBurbujas 7s linear infinite, bubbleAnimate 4s linear infinite;
     box-shadow: inset -1px -1px 5px #f88dc6, inset 4px -3px 5px #6cb6f3, inset 2px 2px 5px #eefb79;
+
+    // position: relative; 
 }
 
 .bubbles div:nth-child(1) {
@@ -102,11 +102,51 @@
 }
 
 // burbujita dentro de burbuja grande para que se vea mas realista.
-.bubbles::after {
+
+
+.bubbles div::after {
     content: "";
     width: 10px;
     height: 10px;
     position: absolute;
-    border-radius: 100% 20%;
+    border-radius: 100%;
     background-color: hsl(240, 248, 255, 0.123);
+    top: 60%;
+    left: 50%;
+    transform: translate(-80%, -20%); /* Centrar la burbuja pequeña */
+}
+
+.bubbles div:nth-child(1)::after {
+    width: 5px;
+    height: 5px;
+}
+
+.bubbles div:nth-child(2)::after {
+    width: 8px;
+    height: 8px;
+}
+
+.bubbles div:nth-child(3)::after {
+    width: 4px;
+    height: 4px;
+}
+
+.bubbles div:nth-child(4)::after {
+    width: 7px;
+    height: 7px;
+}
+
+.bubbles div:nth-child(5)::after {
+    width: 7px;
+    height: 7px;
+}
+
+.bubbles div:nth-child(6)::after {
+    width: 6px;
+    height: 6px;
+}
+
+.bubbles div:nth-child(7)::after {
+    width: 3px;
+    height: 3px;
 }
