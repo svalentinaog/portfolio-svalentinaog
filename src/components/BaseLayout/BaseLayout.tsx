@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import NavBar from './NavBar';
 import Footer from './Footer';
+import Bubbles from '../Bubbles';
 
 export default function BaseLayout({ children }: { children: React.ReactNode }) {
   const [showButton, setShowButton] = useState(false);
@@ -39,6 +40,9 @@ export default function BaseLayout({ children }: { children: React.ReactNode }) 
           <img src="images/angry.png" alt="scroll-to-top" />
         </button>
       )}
+
+      <Bubbles amount={7} />
+
       <Footer />
     </div>
   );

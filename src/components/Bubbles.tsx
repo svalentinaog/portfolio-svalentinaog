@@ -1,14 +1,18 @@
 import React from 'react';
 
-const Bubbles = () => {
-  const numBubbles = 10; // Número de burbujas 
+interface BubblesProps {
+  amount: number;
+}
+
+const Bubbles: React.FC<BubblesProps> = ({ amount }) => {
+  const bubbles = Array.from({ length: amount }, (_, index) => (
+    <div key={index}></div>
+  ));
 
   return (
-    <>
-      {Array.from({ length: numBubbles }).map((_, index) => (
-        <div key={index} className="bubble" style={{ left: `${Math.random() * 100}vw` }} />
-      ))}
-    </>
+    <div className="bubbles">
+      {bubbles}
+    </div>
   );
 };
 

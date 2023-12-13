@@ -1,15 +1,112 @@
-.bubble {
-    position: fixed;
-    border-radius: 50%;
-    animation: flotar 5s infinite;
-  }
-  
-  @keyframes flotar {
-    0%, 100% {
-      transform: translateY(0);
+@keyframes flotar {
+    to {
+        margin-top: 15vh;
     }
+}
+
+.bubbles div {
+    // background: rgb(10, 10, 102);
+    background-color: hsl (0deg, 0%, 100%, 7%);
+    border-radius: 100%;
+    position: absolute;
+    bottom: 0;
+    animation: animarBurbujas 4s linear infinite, bubbleAnimate 4s linear infinite;
+    // box-shadow: inset -1px -1px 10px #f88dc6, inset 8px -6px 10px #6cb6f3, inset 4px 4px 10px #eefb79;
+    box-shadow: inset -1px -1px 5px #f88dc6, inset 4px -3px 5px #6cb6f3, inset 2px 2px 5px #eefb79;
+}
+
+.bubbles div:nth-child(1) {
+    width: 50px;
+    height: 45px;
+    left: 40px;
+    animation-duration: 4s;
+}
+
+.bubbles div:nth-child(2) {
+    width: 60px;
+    height: 55px;
+    left: 25%;
+    animation-duration: 8s;
+}
+
+.bubbles div:nth-child(3) {
+    width: 30px;
+    height: 27px;
+    left: 40%;
+    animation-duration: 5s;
+}
+
+.bubbles div:nth-child(4) {
+    width: 65px;
+    height: 60px;
+    left: 50%;
+    animation-duration: 10s;
+}
+
+.bubbles div:nth-child(5) {
+    width: 55px;
+    height: 50px;
+    left: 65%;
+    animation-duration: 6.5s;
+}
+
+.bubbles div:nth-child(6) {
+    width: 50px;
+    height: 48px;
+    left: 85%;
+    animation-duration: 9s;
+}
+
+.bubbles div:nth-child(7) {
+    width: 35px;
+    height: 32px;
+    left: 90%;
+    animation-duration: 6s;
+}
+
+@keyframes animarBurbujas {
+    0% {
+        width: 0;
+        height: 0;
+    }
+
+    3% {
+        width: 30px;
+        height: 30px;
+    }
+
     50% {
-      transform: translateY(-20px);
+        margin-left: 20px;
+        opacity: 0.5;
     }
-  }
-  
+
+    100% {
+        transform: rotate(90deg);
+        bottom: 100vh;
+        background-color: hsl (0deg, 0%, 100%, 7%);
+    }
+}
+
+@keyframes bubbleAnimate {
+    0% {
+        box-shadow: inset -1px -1px 5px #f88dc6, inset 4px -3px 5px #6cb6f3, inset 2px 2px 5px #eefb79;
+    }
+
+    50% {
+        box-shadow: inset 2px 2px 5px #f88dc6, inset -2px 3.5px 5px #6cb6f3, inset 4px -1.5px 5px #eefb79;
+    }
+
+    100% {
+        box-shadow: inset -1px -1px 5px #f88dc6, inset 4px -3px 5px #6cb6f3, inset 2px 2px 5px #eefb79;
+    }
+}
+
+// burbujita dentro de burbuja grande para que se vea mas realista.
+.bubbles::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 100% 20%;
+    background-color: hsl(240, 248, 255, 0.123);
+}
