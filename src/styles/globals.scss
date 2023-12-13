@@ -20,3 +20,10 @@ body {
   justify-content: center;
   gap: 7rem;
 }
+
+
+@media screen and (max-width: 767px) {
+  .landing-page {
+    padding: 0;
+  }
+}
