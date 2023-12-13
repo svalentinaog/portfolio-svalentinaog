@@ -223,13 +223,12 @@
     align-items: center;
     justify-content: center;
     height: 95vh;
-    gap: 3rem; //5rem
+    gap: 2rem; //5rem
 
     .text-content-entry-home {
       width: 100%;
       max-width: 100%;
       text-align: center;
-      order: 2;
 
       h1 {
         font-size: 2rem;
@@ -251,7 +250,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      order: 1;
     }
 
     .my-info-container {
