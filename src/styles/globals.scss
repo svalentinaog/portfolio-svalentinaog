@@ -14,7 +14,10 @@ body {
 }
 
 .landing-page {
-  padding: 7rem;
+  padding-top: 7rem;
+  padding-right: 7rem;
+  padding-left: 7rem;
+  padding-bottom: 10rem;
   gap: 7rem;
   display: flex;
   flex-direction: column;
@@ -27,7 +30,7 @@ body {
     padding-top: 0;
     padding-right: 2rem;
     padding-left: 2rem;
-    padding-bottom: 5rem;
+    padding-bottom: 7rem;
     gap: 3rem;
   }
 }

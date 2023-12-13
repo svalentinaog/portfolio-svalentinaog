@@ -147,6 +147,17 @@
 }
 
 @media screen and (max-width: 767px) {
+  .bg-navbar-one {
+    padding: 1rem;
+  }
+
+  .bg-navbar-one.scrolling {
+    padding: 0.5rem 5rem;
+
+    .image {
+      width: 3.5rem;
+    }
+  }
 
   .offcanvas-header,
   .offcanvas-body {
@@ -164,11 +175,6 @@
       flex-direction: row;
       align-items: center;
     }
-  }
-
-  .bg-navbar-one,
-  .bg-navbar-one.scrolling {
-    padding: 1rem;
   }
 
   .navbar-main {
