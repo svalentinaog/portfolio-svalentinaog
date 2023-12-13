@@ -1,16 +1,5 @@
 @import '.././utils/colors';
 
-.landing-page {
-  padding-top: 3.5rem;
-  padding-bottom: 14rem;
-  padding-left: 7rem;
-  padding-right: 7rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 7rem;
-}
-
 .container-entry-home {
   padding-top: 3.5rem;
   padding-left: 7rem;
@@ -49,6 +38,7 @@
   div>p {
     font-size: 1.15rem;
     color: $text-secondary-dark;
+    margin: 0;
   }
 }
 
@@ -156,16 +146,11 @@
         }
       }
     }
-
   }
-
-  //
 
   span {
     color: white;
   }
-
-  //
 
   @keyframes downloadAnimation {
     0% {
@@ -228,8 +213,6 @@
     }
   }
 }
-
-
 
 @media screen and (max-width: 767px) {
   .landing-page {
