@@ -1,0 +1,15 @@
+.bubble {
+    position: fixed;
+    border-radius: 50%;
+    animation: flotar 5s infinite;
+  }
+  
+  @keyframes flotar {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  

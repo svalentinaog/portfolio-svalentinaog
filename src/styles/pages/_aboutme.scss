@@ -56,6 +56,8 @@
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
   }
+
+  animation: floatAnimation 3s ease infinite;
 }
 
 .my-info-container {
