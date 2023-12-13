@@ -92,6 +92,7 @@ export default function NavBar() {
                                             <option value="en">EN</option>
                                         </Form.Select>
                                     </div>
+                                    
                                     <Switch />
                                 </div>
                             </Offcanvas.Body>

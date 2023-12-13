@@ -36,10 +36,16 @@ function Switch() {
 
   return (
     <div className='theme-switch' onClick={toggleThemeAndImage}>
-      {isSun ? (
+      {/* {isSun ? (
         <img src="/images/sun.png" alt="Sun" />
       ) : (
         <img src="/images/moon.png" alt="Moon" />
+      )} */}
+
+      {isSun ? (
+        <img src="/images/moon.png" alt="Sun" />
+      ) : (
+        <img src="/images/sun.png" alt="Moon" />
       )}
     </div>
   );
