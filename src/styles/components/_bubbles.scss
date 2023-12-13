@@ -113,7 +113,7 @@
     background-color: hsl(240, 248, 255, 0.123);
     top: 60%;
     left: 50%;
-    transform: translate(-80%, -20%); /* Centrar la burbuja pequeña */
+    transform: translate(-80%, -20%); 
 }
 
 .bubbles div:nth-child(1)::after {
@@ -150,3 +150,4 @@
     width: 3px;
     height: 4px;
 }
+
