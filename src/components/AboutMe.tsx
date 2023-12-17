@@ -20,7 +20,6 @@ export default function AboutMe() {
                 }
             }, 500);
         }
-        
     };
 
     return (

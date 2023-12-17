@@ -17,10 +17,8 @@ function Switch() {
   });
 
   const toggleThemeAndImage = () => {
-    // Cambiar el estado del modo oscuro :D
-    setDarkMode((prevMode) => (prevMode === 0 ? 1 : 0));
-    // y cambiar la imagen 
-    setIsSun((prevIsSun) => !prevIsSun);
+    setDarkMode((prevMode) => (prevMode === 0 ? 1 : 0)); // Cambiar el estado del modo oscuro :D
+    setIsSun((prevIsSun) => !prevIsSun); // y cambiar la imagen 
   };
 
   useEffect(() => {

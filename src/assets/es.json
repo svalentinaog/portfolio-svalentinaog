@@ -2,10 +2,11 @@
   "translation": {
     "Welcome to React": "Bienvenido a React y react-i18next",
 
-    "nav-item1": "Sobre mí",
-    "nav-item2": "Habilidades",
-    "nav-item3": "Proyectos",
-    "nav-item4": "Contáctame",
+    "nav-item1": "Inicio",
+    "nav-item2": "Sobre mí",
+    "nav-item3": "Habilidades",
+    "nav-item4": "Proyectos",
+    "nav-item5": "Contáctame",
 
     "entrada1": "Hola! Soy Valentina",
     "entrada2": "Desarrolladora Web Full Stack",

@@ -72,16 +72,19 @@ export default function NavBar() {
                             <Offcanvas.Body className="navbar-allitems">
                                 <Nav className="items-navbar">
                                     <Nav.Link className="nav-item">
-                                        <a href="/contact-us">{lg("nav-item1")}</a>
+                                        <a href="">{lg("nav-item1")}</a>
                                     </Nav.Link>
                                     <Nav.Link className="nav-item">
-                                        <a href="/contact-us">{lg("nav-item2")}</a>
+                                        <a href="">{lg("nav-item2")}</a>
                                     </Nav.Link>
                                     <Nav.Link className="nav-item">
-                                        <a href="/contact-us">{lg("nav-item3")}</a>
+                                        <a href="">{lg("nav-item3")}</a>
                                     </Nav.Link>
                                     <Nav.Link className="nav-item">
-                                        <a href="/contact-us">{lg("nav-item4")}</a>
+                                        <a href="">{lg("nav-item4")}</a>
+                                    </Nav.Link>
+                                    <Nav.Link className="nav-item">
+                                        <a href="">{lg("nav-item5")}</a>
                                     </Nav.Link>
                                 </Nav>
 

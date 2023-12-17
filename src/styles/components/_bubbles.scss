@@ -5,13 +5,12 @@
 }
 
 .bubbles div {
-    background-color: hsl (0deg, 0%, 100%, 7%);
+    background-color: hsl(0deg, 0%, 100%, 0.07);
     border-radius: 100%;
     position: absolute;
     bottom: 0;
     animation: animarBurbujas 7s linear infinite, bubbleAnimate 4s linear infinite;
     box-shadow: inset -1px -1px 5px #f88dc6, inset 4px -3px 5px #6cb6f3, inset 2px 2px 5px #eefb79;
-
     // position: relative; 
 }
 
@@ -83,7 +82,7 @@
     100% {
         transform: rotate(90deg);
         bottom: 100vh;
-        background-color: hsl (0deg, 0%, 100%, 7%);
+        background-color: hsl(0deg, 0%, 100%, 0.07); // %7
     }
 }
 
@@ -109,7 +108,8 @@
     height: 10px;
     position: absolute;
     border-radius: 100%;
-    background-color: hsl(240, 248, 255, 0.123);
+    // background-color: hsl(240, 248, 255, 0.123);
+    background-color: hsl(240, 248 * 1%, 255 * 1%, 0.07);
     top: 60%;
     left: 50%;
     transform: translate(-80%, -20%);
@@ -150,14 +150,8 @@
     height: 4px;
 }
 
-
-///
-/// 
-/// 
-
 @media only screen and (max-width: 764px) {
     .bubbles div {
         display: none;
-        /* Ocultar burbujas en dispositivos móviles */
     }
 }
