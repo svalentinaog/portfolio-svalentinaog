@@ -5,7 +5,7 @@ export default function Entry() {
   const [lg] = useTranslation();
 
   return (
-    <div className="container-entry-home">
+    <div id="section1" className="container-entry-home">
       <div className="text-content-entry-home">
         <h1>{lg("entrada1")} </h1>
         <div>
