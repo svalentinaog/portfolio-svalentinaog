@@ -10,15 +10,15 @@ function Switch() {
 
   const [isSun, setIsSun] = useState(() => {
     if (typeof window !== 'undefined') {
-      const storedIsSun = localStorage.getItem('isSun');
-      return storedIsSun === 'true';
+      const storedMode = localStorage.getItem('darkMode');
+      return storedMode === 'dark' ? true : false;
     }
     return true;
   });
 
   const toggleThemeAndImage = () => {
-    setDarkMode((prevMode) => (prevMode === 0 ? 1 : 0)); // Cambiar el estado del modo oscuro :D
-    setIsSun((prevIsSun) => !prevIsSun); // y cambiar la imagen 
+    setDarkMode((prevMode) => (prevMode === 0 ? 1 : 0));
+    setIsSun((prevIsSun) => !prevIsSun);
   };
 
   useEffect(() => {
@@ -39,12 +39,6 @@ function Switch() {
       ) : (
         <img src="/images/moon.png" alt="Moon" />
       )}
-
-      {/* {isSun ? (
-        <img src="/images/moon.png" alt="Sun" />
-      ) : (
-        <img src="/images/sun.png" alt="Moon" />
-      )} */}
     </div>
   );
 }
