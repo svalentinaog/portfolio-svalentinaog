@@ -6,8 +6,11 @@
 
 @import "./components/_bubbles";
 
-@import './pages/_entry';
+@import './pages/_start';
 @import './pages/_aboutme';
+@import './pages/_skills';
+@import './pages/_projects';
+@import './pages/_contactme';
 
 html,
 body {
@@ -19,19 +22,22 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 7rem 7rem 10rem 7rem;
+  // padding: 7rem 7rem 10rem 7rem;
+  padding: 0 7rem 10rem 7rem;
   gap: 7rem;
 }
 
 @media screen and (max-width: 767px) {
   .landing-page {
-    padding: 0rem 2rem 7rem 2rem;
+    // padding: 0rem 2rem 7rem 2rem;
+    padding: 0 2rem 7rem 2rem;
     gap: 3rem;
   }
 }
 
 @media screen and (min-width: 1501px) {
   .landing-page {
-    padding: 9rem 9rem 12rem 9rem;
+    // padding: 9rem 9rem 12rem 9rem;
+    padding: 0 9rem 12rem 9rem;
   }
 }

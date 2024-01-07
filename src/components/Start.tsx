@@ -1,12 +1,12 @@
 import React from 'react';
 import { useTranslation } from "react-i18next";
 
-export default function Entry() {
+export default function Start() {
   const [lg] = useTranslation();
 
   return (
-    <div id="section1" className="container-entry-home">
-      <div className="text-content-entry-home">
+    <div id="section1" className="container-start-home">
+      <div className="text-content-start-home">
         <h1>{lg("entrada1")} </h1>
         <div>
           <h2>{lg("entrada2")} </h2>
@@ -14,7 +14,7 @@ export default function Entry() {
         </div>
       </div>
 
-      <div className="photo-entry-home">
+      <div className="photo-start-home">
         <img className='custom-photo' src="images/developer.png" alt="about" />
       </div>
     </div>

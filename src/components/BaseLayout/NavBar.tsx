@@ -29,6 +29,14 @@ export default function NavBar() {
         changeLanguage(selectedLanguage);
     };
 
+    // Funcion para desplazarse a la sección que queramos en nuestra landing
+    const scrollToSection = (sectionId: string) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+
     return (
         <>
             {['sm'].map((expand) => (
@@ -71,20 +79,20 @@ export default function NavBar() {
 
                             <Offcanvas.Body className="navbar-allitems">
                                 <Nav className="items-navbar">
-                                    <Nav.Link href="#section1" className="nav-item">
-                                     {lg("nav-item1")}
+                                    <Nav.Link href="#" onClick={() => scrollToSection('section1')} className="nav-item">
+                                        {lg('nav-item1')}
                                     </Nav.Link>
-                                    <Nav.Link href='#section2' className="nav-item">
-                                       {lg("nav-item2")}
+                                    <Nav.Link href="#" onClick={() => scrollToSection('section2')} className="nav-item">
+                                        {lg('nav-item2')}
                                     </Nav.Link>
-                                    <Nav.Link href='#section3' className="nav-item">
-                                       {lg("nav-item3")}
+                                    <Nav.Link href="#" onClick={() => scrollToSection('section3')} className="nav-item">
+                                        {lg('nav-item3')}
                                     </Nav.Link>
-                                    <Nav.Link href='#section4' className="nav-item">
-                                       {lg("nav-item4")}
+                                    <Nav.Link href="#" onClick={() => scrollToSection('section4')} className="nav-item">
+                                        {lg('nav-item4')}
                                     </Nav.Link>
-                                    <Nav.Link href='#section5' className="nav-item">
-                                       {lg("nav-item5")}
+                                    <Nav.Link href="#" onClick={() => scrollToSection('section5')} className="nav-item">
+                                        {lg('nav-item5')}
                                     </Nav.Link>
                                 </Nav>
 
