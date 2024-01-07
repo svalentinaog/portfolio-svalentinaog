@@ -1,9 +1,7 @@
 @import '.././utils/colors';
 
 .container-entry-home {
-  padding-top: 3.5rem;
-  padding-left: 7rem;
-  padding-right: 7rem;
+  padding: 3.5rem 7rem 0 7rem;
   width: 100%;
   height: 100vh;
   margin-right: auto;
@@ -161,10 +159,6 @@
     }
   }
 
-  // span {
-  //   // color: white;
-  // }
-
   @keyframes downloadAnimation {
     0% {
       transform: translateY(0);
@@ -229,10 +223,7 @@
 
 @media screen and (max-width: 767px) {
   .container-entry-home {
-    padding-top: 4rem; 
-    padding-left: 2rem;
-    padding-right: 2rem;
-
+    padding: 4rem 2rem 0 2rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -288,20 +279,20 @@
 
 @media screen and (min-width: 1501px) {
   .container-entry-home {
-    padding-top: 5rem;
+    padding: 5rem 9rem 0 9rem;
     gap: 2.5rem;
 
     .text-content-entry-home {
       h1 {
-        font-size: 4.15rem;
+        font-size: 4rem;
       }
 
       h2 {
-        font-size: 2.5rem;
+        font-size: 2.40rem;
       }
 
       div>p {
-        font-size: 1.57rem;
+        font-size: 1.5rem;
       }
     }
 

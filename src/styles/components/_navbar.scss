@@ -132,7 +132,8 @@
 
   option {
     cursor: pointer;
-    color: black;
+    color: var(--text-primary);
+    background-color: var(--bg-select-option);
   }
 }
 
@@ -204,13 +205,13 @@
   }
 }
 
-/* Estilos para pantallas más grandes (1025px o más de ancho) */
+/* Estilos para pantallas más grandes (1501px más de ancho) */
 @media screen and (min-width: 1501px) {
   .bg-navbar-one {
-    padding: 3rem;
+    padding: 2.75rem;
 
     .image {
-      width: 7rem;
+      width: 6rem;
     }
   }
 
@@ -218,40 +219,26 @@
     padding: 0.5rem 5rem;
 
     .image {
-      width: 6rem;
+      width: 5rem;
     }
   }
 
   .navbar-main {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding: 2rem 6rem 2rem 6rem;
   }
 
   .navbar .navbar-nav .nav-link {
-    color: var(--text-primary);
-    padding: 0.75rem;
-    font-size: 1.35rem;
-    font-weight: 700;
-    letter-spacing: 0;
-    transition: all 0.8s cubic-bezier(0.34, 1.45, 0.7, 1);
+    padding: 1rem;   
+    font-size: 1.25rem;
   }
 
   //  ---- Switch dark-mode/light-mode ----  //
   .theme-switch {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    margin-left: 0.5rem;
+    margin-left: 0.25rem;
 
     img {
-      width: 4rem;
-      height: 4rem;
-      border-radius: 50%;
-      padding: 0.60rem;
-      transition: fill 0.5s, background-color 0.5s, box-shadow 0.5s;
+      width: 3.5rem;
+      height: 3.5rem;
     }
 
     &:hover img {
@@ -263,18 +250,14 @@
   // selector de idioma
   .form-select {
     padding: 0.375em 2.25em 0.375em 0.75em;
-    font-size: 1.35rem;
-    background-size: 1.35rem;
+    font-size: 1.25rem;
+    background-size: 1.25rem;
     background-position: right 1rem center;
     border-radius: 0.475rem;
 
     &:hover {
       cursor: pointer;
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    }
-
-    option {
-      cursor: pointer;
     }
   }
 }

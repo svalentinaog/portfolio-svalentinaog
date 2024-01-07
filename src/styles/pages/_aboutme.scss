@@ -25,18 +25,15 @@
 
   h1 {
     font-size: 3.10rem;
-    //color: $text-primary-dark;
     margin: 0;
   }
 
   h2 {
     font-size: 1.85rem;
-    //color: $text-primary-dark;
   }
 
   div>p {
     font-size: 1.15rem;
-    // color: $text-secondary-dark;
   }
 }
 
@@ -310,31 +307,31 @@
 
     .text-content-aboutme {
       h1 {
-        font-size: 4.15rem;
+        font-size: 4rem;
       }
 
       h2 {
-        font-size: 2.5rem;
+        font-size: 2.40rem;
       }
 
       div>p {
-        font-size: 1.57rem;
+        font-size: 1.45rem;
       }
     }
 
-    .photo-aboutme {
-      img {
-        max-width: 90%;
-      }
-    }
+    // .photo-aboutme {
+    //   img {
+    //     max-width: 75%;
+    //   }
+    // }
 
     .social-media-container {
       display: flex;
       align-items: center;
-      gap: 1.5rem;
+      gap: 1.25rem;
 
       .icons {
-        padding: 1rem;
+        padding: 0.80rem;
         border-radius: 0.475rem;
         cursor: pointer;
 

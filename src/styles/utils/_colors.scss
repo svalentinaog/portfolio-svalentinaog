@@ -68,7 +68,10 @@ $color-icon-social-dark: #e6e7ed;
 
 // Icons select
 $bg-select-light: #ffffff3d;
-$bg-select-dark: #151822; 
+$bg-select-dark: #151822;
+
+$bg-select-option-light: #9575B8;
+$bg-select-option-dark: #151822; 
 
 $border-select-light: #ffffff3d;
 $border-select-dark: #495057;
@@ -96,6 +99,7 @@ $color-select-dark: #e6e7ed;
   --color-icon-social: #{$color-icon-social-light};
 
   --bg-select: #{$bg-select-light};
+  --bg-select-option: #{$bg-select-option-light};
   --border-select: #{$border-select-light};
   --color-select: #{$color-select-light};
 }
@@ -119,6 +123,7 @@ $color-select-dark: #e6e7ed;
   --color-icon-social: #{$color-icon-social-dark};
 
   --bg-select: #{$bg-select-dark};
+  --bg-select-option: #{$bg-select-option-dark};
   --border-select: #{$border-select-dark};
   --color-select: #{$color-select-dark};
 }
