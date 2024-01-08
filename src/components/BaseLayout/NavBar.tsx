@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
-import { Nav, Navbar, Offcanvas, Form } from 'react-bootstrap';
+import { Nav, Navbar, Offcanvas, Form, Tabs, Tab } from 'react-bootstrap';
 import Switch from './Switch';
 
 import { changeLanguage } from "i18next";
@@ -78,22 +78,23 @@ export default function NavBar() {
                             </Offcanvas.Header>
 
                             <Offcanvas.Body className="navbar-allitems">
+ 
                                 <Nav className="items-navbar">
-                                    <Nav.Link href="#" onClick={() => scrollToSection('section1')} className="nav-item">
-                                        {lg('nav-item1')}
-                                    </Nav.Link>
-                                    <Nav.Link href="#" onClick={() => scrollToSection('section2')} className="nav-item">
-                                        {lg('nav-item2')}
-                                    </Nav.Link>
-                                    <Nav.Link href="#" onClick={() => scrollToSection('section3')} className="nav-item">
-                                        {lg('nav-item3')}
-                                    </Nav.Link>
-                                    <Nav.Link href="#" onClick={() => scrollToSection('section4')} className="nav-item">
-                                        {lg('nav-item4')}
-                                    </Nav.Link>
-                                    <Nav.Link href="#" onClick={() => scrollToSection('section5')} className="nav-item">
-                                        {lg('nav-item5')}
-                                    </Nav.Link>
+                                        <Nav.Link href="#" onClick={() => scrollToSection('section1')} className="nav-item">
+                                            {lg('nav-item1')}
+                                        </Nav.Link>
+                                        <Nav.Link href="#" onClick={() => scrollToSection('section2')} className="nav-item">
+                                            {lg('nav-item2')}
+                                        </Nav.Link>
+                                        <Nav.Link href="#" onClick={() => scrollToSection('section3')} className="nav-item">
+                                            {lg('nav-item3')}
+                                        </Nav.Link>
+                                        <Nav.Link href="#" onClick={() => scrollToSection('section4')} className="nav-item">
+                                            {lg('nav-item4')}
+                                        </Nav.Link>
+                                        <Nav.Link href="#" onClick={() => scrollToSection('section5')} className="nav-item">
+                                            {lg('nav-item5')}
+                                        </Nav.Link>
                                 </Nav>
 
                                 <div className='nav-options'>

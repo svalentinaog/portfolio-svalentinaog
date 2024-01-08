@@ -7,10 +7,10 @@ export default function Start() {
   return (
     <div id="section1" className="container-start-home">
       <div className="text-content-start-home">
-        <h1>{lg("entrada1")} </h1>
+        <h1>{lg("start1")} </h1>
         <div>
-          <h2>{lg("entrada2")} </h2>
-          <p>{lg("entrada3")}</p>
+          <h2>{lg("start2")} </h2>
+          <p>{lg("start3")}</p>
         </div>
       </div>
 

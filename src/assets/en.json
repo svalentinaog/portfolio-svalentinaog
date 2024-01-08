@@ -8,15 +8,19 @@
     "nav-item4": "Projects",
     "nav-item5": "Contact me",
 
-    "entrada1": "Hello! I'm Valentina",
-    "entrada2": "Full Stack Web Developer",
-    "entrada3": "I welcome you to my digital space 👋",
+    "start1": "Hello! I'm Valentina",
+    "start2": "Full Stack Web Developer",
+    "start3": "I welcome you to my digital space 👋",
 
-    "curriculum": "Download CV",
-
+    
     "aboutme1": "About me",
     "aboutme2": "I am a self-taught, responsible and results-oriented professional. I have a solid academic background and practical experience, which has led me to develop innovative projects.",
     "aboutme3": "Please explore these media so you can contact me and learn more about me.",
+    
+    "curriculum": "Download CV",
+
+    "skills1": "Skills",
+    "skills2": "Software and technologies",
 
     "footer": "All rights reserved © 2023"
   }

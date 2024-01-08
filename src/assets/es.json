@@ -8,15 +8,22 @@
     "nav-item4": "Proyectos",
     "nav-item5": "Contáctame",
 
-    "entrada1": "Hola! Soy Valentina",
-    "entrada2": "Desarrolladora Web Full Stack",
-    "entrada3": "Te doy la bienvenida a mi espacio digital 👋",
+    "start1": "Hola! Soy Valentina",
+    "start2": "Desarrolladora Web Full Stack",
+    "start3": "Te doy la bienvenida a mi espacio digital 👋",
 
-    "curriculum": "Descargar CV",
     
     "aboutme1": "Sobre mí",
     "aboutme2": "Soy una profesional autodidacta, responsable y orientada a los resultados. Cuento con una sólida formación académica y experiencia práctica, lo que me ha llevado a desarrollar proyectos innovadores.",
     "aboutme3": "Por favor, explore estos medios para que pueda ponerse en contacto conmigo y saber más acerca de mí.",
+    
+    "curriculum": "Descargar CV",
+
+    "skills1": "Habilidades",
+    "skills2": "Software y tecnologías",
+
+    "frontend1": "Front-end",
+    "frontend2": "En el ámbito del Frontend, canalizo mi pasión por la creación de experiencias visuales cautivadoras. Utilizo tecnologías como HTML, CSS y JavaScript para dar vida a interfaces intuitivas y atractivas. ",
 
     "footer": "Todos los derechos reservados © 2023"
   }
