@@ -12,11 +12,12 @@
   gap: 1rem;
 
   h1 {
-    font-size: 3.5rem;
+    font-size: 3.10rem;
   }
 
-  h2 {
-    font-size: 2rem;
+  p {
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
   }
 
   .all-skills {
@@ -96,28 +97,37 @@
         }
       }
     }
-  
   }
 }
 
 
 @media screen and (max-width: 767px) {
-  .all-skills {
-    grid-template-columns: repeat(3, 1fr);
+  .container-skills {
+    h1 {
+      font-size: 2rem;
+    }
 
-    .content-skill {
-      padding: 0.25rem;
+    p {
+      font-size: 0.85rem;
+    }
 
-      span {
-        word-wrap: break-word; /* Permite que las palabras se dividan si no caben en una línea */
-        overflow-wrap: break-word; /* Propiedad alternativa para mayor compatibilidad */
-        overflow: hidden; /* Oculta el contenido que se desborda del contenedor */
-        max-width: 100%;
-        font-size: 0.5rem !important;
-      }
-
-      .icon-skill {
-        height: auto !important;
+    .all-skills {
+      grid-template-columns: repeat(3, 1fr);
+  
+      .content-skill {
+        padding: 0.25rem;
+  
+        span {
+          word-wrap: break-word; /* Permite que las palabras se dividan si no caben en una línea */
+          overflow-wrap: break-word; /* Propiedad alternativa para mayor compatibilidad */
+          overflow: hidden; /* Oculta el contenido que se desborda del contenedor */
+          max-width: 100%;
+          font-size: 0.5rem !important;
+        }
+  
+        .icon-skill {
+          height: auto !important;
+        }
       }
     }
   }
