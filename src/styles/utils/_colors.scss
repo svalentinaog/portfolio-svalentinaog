@@ -13,7 +13,7 @@ $dark: #04040e;
 // ---- Colores a nivel global
 
 // $bg-theme-light: #ffffff; 
-$bg-theme-light: linear-gradient(to right bottom, #0E2667, #E26FE3);
+$bg-theme-light: #513A8A; // linear-gradient(to right bottom, #0E2667, #E26FE3);
 $bg-theme-dark: #10141E;
 
 // $text-primary-light: #424767;
@@ -66,6 +66,10 @@ $bg-icon-social-dark: #151822;
 $color-icon-social-light: #e6e7ed;
 $color-icon-social-dark: #e6e7ed;
 
+// SKILLS
+$bg-icon-skill-light: #e6e7ed10;
+$bg-icon-skill-dark: #151822;
+
 // Icons select
 $bg-select-light: #ffffff3d;
 $bg-select-dark: #151822;
@@ -98,6 +102,8 @@ $color-select-dark: #e6e7ed;
   --bg-icon-social: #{$bg-icon-social-light};
   --color-icon-social: #{$color-icon-social-light};
 
+  --bg-icon-skill: #{$bg-icon-skill-light};
+
   --bg-select: #{$bg-select-light};
   --bg-select-option: #{$bg-select-option-light};
   --border-select: #{$border-select-light};
@@ -121,6 +127,8 @@ $color-select-dark: #e6e7ed;
 
   --bg-icon-social: #{$bg-icon-social-dark};
   --color-icon-social: #{$color-icon-social-dark};
+
+  --bg-icon-skill: #{$bg-icon-skill-dark};
 
   --bg-select: #{$bg-select-dark};
   --bg-select-option: #{$bg-select-option-dark};
