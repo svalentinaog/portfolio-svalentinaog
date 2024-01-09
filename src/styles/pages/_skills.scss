@@ -111,12 +111,8 @@
       font-size: 0.85rem;
     }
 
-    .all-skills {
-      grid-template-columns: repeat(3, 1fr);
-  
-      .content-skill {
-        padding: 0.25rem;
-  
+    .all-skills {  
+      .content-skill {  
         span {
           word-wrap: break-word; /* Permite que las palabras se dividan si no caben en una línea */
           overflow-wrap: break-word; /* Propiedad alternativa para mayor compatibilidad */
