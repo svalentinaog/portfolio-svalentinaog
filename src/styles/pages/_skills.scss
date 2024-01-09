@@ -106,6 +106,8 @@
     grid-template-columns: repeat(3, 1fr);
 
     .content-skill {
+      padding: 0.25rem;
+
       span {
         max-width: 100%;
         font-size: 0.5rem !important;
