@@ -72,7 +72,7 @@
           img {
             opacity: 0.3;
             filter: blur(2px);
-            transition: opacity 0.2s ease, filter 0.2s ease;
+            transition: opacity 0.2s ease, filter 0.1s ease;
           }
         }
       }
@@ -93,10 +93,21 @@
         }
       }
     }
+  
   }
 }
 
 
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+  .all-skills {
+    grid-template-columns: repeat(3, 1fr);
+
+    .content-skill {
+      span {
+        font-size: 0.25rem;
+      }
+    }
+  }
+}
 
 @media screen and (min-width: 1501px) {}
