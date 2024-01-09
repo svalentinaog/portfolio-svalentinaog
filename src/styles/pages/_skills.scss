@@ -109,6 +109,9 @@
       padding: 0.25rem;
 
       span {
+        word-wrap: break-word; /* Permite que las palabras se dividan si no caben en una línea */
+        overflow-wrap: break-word; /* Propiedad alternativa para mayor compatibilidad */
+        overflow: hidden; /* Oculta el contenido que se desborda del contenedor */
         max-width: 100%;
         font-size: 0.5rem !important;
       }
