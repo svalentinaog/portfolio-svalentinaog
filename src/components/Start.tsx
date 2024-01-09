@@ -5,7 +5,7 @@ export default function Start() {
   const [lg] = useTranslation();
 
   return (
-    <div id="section1" className="container-start-home">
+    <div id="section1" className="container-start-home paddings">
       <div className="text-content-start-home">
         <h1>{lg("start1")} </h1>
         <div>

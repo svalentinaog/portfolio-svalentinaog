@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactMe: React.FC = () => {
     return (
-        <div id='section5' className='container-contactme'>CONTACT ME</div>
+        <div id='section5' className='container-contactme paddings'>CONTACT ME</div>
       );
 }
 

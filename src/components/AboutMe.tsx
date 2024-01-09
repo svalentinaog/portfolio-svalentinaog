@@ -23,7 +23,7 @@ export default function AboutMe() {
     };
 
     return (
-        <div  id='section2' className="container-aboutme">
+        <div  id='section2' className="container-aboutme paddings">
             <div className="photo-aboutme">
                 <img className='custom-photo' src="images/photo.jpg" alt="about" />
             </div>

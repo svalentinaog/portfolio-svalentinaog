@@ -3,8 +3,8 @@ import BaseLayout from '../components/BaseLayout/BaseLayout'
 import Start from '../components/Start'
 import AboutMe from '../components/AboutMe'
 import Skills from '../components/Skills'
-// import Projects from '../components/Projects'
-// import ContactMe from '../components/ContactMe'
+import Projects from '../components/Projects'
+import ContactMe from '../components/ContactMe'
 
 export default function Home() {
   return (
@@ -13,8 +13,8 @@ export default function Home() {
       <div className='landing-page'>
         <AboutMe />
         <Skills />
-        {/* <Projects />
-        <ContactMe /> */}
+        <Projects />
+        <ContactMe />
       </div>
     </BaseLayout>
   )
