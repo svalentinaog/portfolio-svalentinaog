@@ -20,6 +20,11 @@
     margin-bottom: 2rem;
   }
 
+  h1,
+  p {
+    text-align: center;
+  }
+
   .all-skills {
     width: 100%;
     display: grid;
@@ -103,8 +108,7 @@
 
 @media screen and (max-width: 767px) {
   .container-skills {
-    text-align: left;
-    
+
     h1 {
       font-size: 2rem;
     }
@@ -113,16 +117,19 @@
       font-size: 0.85rem;
     }
 
-    .all-skills {  
-      .content-skill {  
+    .all-skills {
+      .content-skill {
         span {
-          word-wrap: break-word; /* Permite que las palabras se dividan si no caben en una línea */
-          overflow-wrap: break-word; /* Propiedad alternativa para mayor compatibilidad */
-          overflow: hidden; /* Oculta el contenido que se desborda del contenedor */
+          word-wrap: break-word;
+          /* Permite que las palabras se dividan si no caben en una línea */
+          overflow-wrap: break-word;
+          /* Propiedad alternativa para mayor compatibilidad */
+          overflow: hidden;
+          /* Oculta el contenido que se desborda del contenedor */
           max-width: 100%;
           font-size: 0.5rem !important;
         }
-  
+
         .icon-skill {
           height: auto !important;
         }
