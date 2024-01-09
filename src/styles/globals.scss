@@ -22,8 +22,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // padding: 7rem 7rem 10rem 7rem;
-  // padding: 0rem 7rem 10rem 7rem;
   gap: 7rem;
 }
 
@@ -34,8 +32,8 @@ body {
 
 @media screen and (max-width: 767px) {
   .landing-page {
-    // padding: 0rem 2rem 7rem 2rem;
-    gap: 0 // 3rem;
+    margin: 7rem 0 7rem 0;
+    gap: 0
   }
 
   .paddings {
@@ -45,11 +43,6 @@ body {
 }
 
 @media screen and (min-width: 1501px) {
-  // .landing-page {
-  //    padding: 9rem 9rem 12rem 9rem;
-  //    padding: 0 9rem 12rem 9rem;
-  // }
-
   .paddings {
     padding: 9rem;
   }

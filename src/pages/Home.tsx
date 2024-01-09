@@ -9,8 +9,8 @@ import ContactMe from '../components/ContactMe'
 export default function Home() {
   return (
     <BaseLayout>
-        <Start />
       <div className='landing-page'>
+        <Start />
         <AboutMe />
         <Skills />
         <Projects />
