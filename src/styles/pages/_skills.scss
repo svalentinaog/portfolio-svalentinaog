@@ -52,7 +52,6 @@
         display: none;
         font-size: 1rem;
         font-weight: 500;
-        // margin-left: 0.5rem;
         transition: opacity 0.5s ease, transform 0.5s ease;
 
         position: absolute;
@@ -131,7 +130,7 @@
           overflow: hidden;
           /* Oculta el contenido que se desborda del contenedor */
           max-width: 100%;
-          font-size: 0.5rem !important;
+          font-size: 0.55rem !important;
         }
 
         .icon-skill {

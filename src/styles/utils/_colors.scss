@@ -59,8 +59,8 @@ $bg-footer-light: #6237A0;
 $bg-footer-dark: #04040e; 
 
 // Section About
-$bg-aboutme-light: #e6e7ed10;
-$bg-aboutme-dark: #151822;
+$bg-sections-light: #e6e7ed10;
+$bg-sections-dark: #151822;
 
 // Icons socials
 $bg-icon-social-light: #00000010;
@@ -103,7 +103,7 @@ $color-select-dark: #e6e7ed;
   --bg-button-scroll-top: #{$bg-button-scroll-top-light};
   --bg-button-scroll-top-hover: #{$bg-button-scroll-top-light-hover};
 
-  --bg-aboutme: #{$bg-aboutme-light};
+  --bg-sections: #{$bg-sections-light};
 
   --bg-icon-social: #{$bg-icon-social-light};
   --color-icon-social: #{$color-icon-social-light};
@@ -131,7 +131,7 @@ $color-select-dark: #e6e7ed;
   --bg-button-scroll-top: #{$bg-button-scroll-top-dark};
   --bg-button-scroll-top-hover: #{$bg-button-scroll-top-dark-hover};
 
-  --bg-aboutme: #{$bg-aboutme-dark};
+  --bg-sections: #{$bg-sections-dark};
 
   --bg-icon-social: #{$bg-icon-social-dark};
   --color-icon-social: #{$color-icon-social-dark};
