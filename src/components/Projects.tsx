@@ -6,14 +6,14 @@ export default function Projects() {
 
   const projectsData = [
     {
-      image: 'aquarium.jpg',
+      image: 'eventox.png',
       name: 'EventoX',
       description: "Lorem ipsum...",
       technologies: "Next.js, Redux Toolkit, SCSS, Bootstrap, TypeScript, NestJS, Express.js, PostgreSQL, MySQL, Microservicios, Firebase, Mercado Pago."
     },
 
     {
-      image: 'aquarium.jpg',
+      image: 'spootchat.png',
       name: 'Spoot Chat',
       description: "Lorem ipsum...",
       technologies: "React, Vite.js, Redux, CSS3, Tailwind CSS, Node.js, Express.js, MongoDB, PostgreSQL, Sequelize, Redis, Arquitectura MVC, Firebase, Mercado Pago."
