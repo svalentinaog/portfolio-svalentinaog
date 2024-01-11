@@ -8,14 +8,14 @@ export default function Projects() {
     {
       image: 'eventox.png',
       name: 'EventoX',
-      description: "Lorem ipsum...",
+      description: "Plataforma Integral de Eventos.",
       technologies: "Next.js, Redux Toolkit, SCSS, Bootstrap, TypeScript, NestJS, Express.js, PostgreSQL, MySQL, Microservicios, Firebase, Mercado Pago."
     },
 
     {
       image: 'spootchat.png',
-      name: 'Spoot Chat',
-      description: "Lorem ipsum...",
+      name: 'SpootChat',
+      description: "Donde la Música y la Comunidad se Encuentran.",
       technologies: "React, Vite.js, Redux, CSS3, Tailwind CSS, Node.js, Express.js, MongoDB, PostgreSQL, Sequelize, Redis, Arquitectura MVC, Firebase, Mercado Pago."
     },
   ];
@@ -33,14 +33,12 @@ export default function Projects() {
             </div>
             <h3>
               {project.name}
+              <small> - {project.description}</small>
             </h3>
             <p>
-              {project.description}
-            </p>
-            <span>
               {project.technologies}
-            </span>
-            <button>{lg("projects2")}</button>
+            </p>
+            <button><p>{lg("projects2")}</p></button>
           </div>
         ))}
       </div>
