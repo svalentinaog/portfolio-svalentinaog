@@ -47,19 +47,47 @@
       h3>small {
         font-size: 1rem;
         opacity: 0.6;
-        font-style: italic;
       }
 
       p {
-        font-size: 0.95rem;
+        font-size: 0.77rem;
+        opacity: 0.8;
+      }
+
+      a {
+        text-decoration: none;
       }
 
       button {
-        width: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 0.5rem;
+        width: 7rem;
         border: none;
         border-radius: 0.375rem;
         padding: 0.5rem 1rem;
-        background-color: var(--bg-icon-social);
+        border: 1px solid var(--border-select);
+        background-color: transparent;
+        font-size: 1rem;
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+
+        svg {
+          width: 0.5rem;
+          fill: white;
+          transition: transform 0.3s ease;
+        }
+
+        &:hover {
+          opacity: 1;
+          background-color: var(--bg-icon-social);
+
+          svg {
+            transform: translateX(3px);
+            /* Desliza el svg 5px hacia la derecha en hover */
+          }
+        }
       }
     }
   }
@@ -84,6 +112,16 @@
 
       p {
         font-size: 0.85rem !important;
+      }
+
+      .content-project {
+        button {
+          transition: opacity 0.1s ease;
+
+          svg {
+            transition: transform 0.1s ease;
+          }
+        }
       }
     }
   }

@@ -8,15 +8,17 @@ export default function Projects() {
     {
       image: 'eventox.png',
       name: 'EventoX',
-      description: "Plataforma Integral de Eventos.",
-      technologies: "Next.js, Redux Toolkit, SCSS, Bootstrap, TypeScript, NestJS, Express.js, PostgreSQL, MySQL, Microservicios, Firebase, Mercado Pago."
+      description: lg("eventox"),
+      technologies: "#Next.js, #Redux Toolkit, #SCSS, #Bootstrap, #TypeScript, #NestJS, #Express.js, #PostgreSQL, #MySQL, Microservicios, #Firebase, #Mercado Pago.",
+      visit: "https://eventox-client-peach.vercel.app/"
     },
 
     {
       image: 'spootchat.png',
       name: 'SpootChat',
-      description: "Donde la Música y la Comunidad se Encuentran.",
-      technologies: "React, Vite.js, Redux, CSS3, Tailwind CSS, Node.js, Express.js, MongoDB, PostgreSQL, Sequelize, Redis, Arquitectura MVC, Firebase, Mercado Pago."
+      description: lg("spootchat"),
+      technologies: "#React, #Vite.js, #Redux, #CSS3, #Tailwind CSS, #Node.js, #Express.js, #MongoDB, #PostgreSQL, #Sequelize, #Redis, #Arquitectura MVC, #Firebase, #Mercado Pago.",
+      visit: "https://spoot-front.vercel.app/"
     },
   ];
 
@@ -38,7 +40,13 @@ export default function Projects() {
             <p>
               {project.technologies}
             </p>
-            <button><p>{lg("projects2")}</p></button>
+            <a href={project.visit} target="_blank">
+              <button>
+                {lg("to-visit")}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" /></svg>
+              </button>
+            </a>
           </div>
         ))}
       </div>
