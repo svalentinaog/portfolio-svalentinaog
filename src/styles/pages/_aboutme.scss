@@ -147,10 +147,6 @@
     }
   }
 
-  // span {
-  //   // color: white;
-  // }
-
   @keyframes downloadAnimation {
     0% {
       transform: translateY(0);
@@ -166,7 +162,7 @@
   }
 
   .curriculum {
-    p {
+    h6 {
       font-size: 1rem;
       // color: white;
       font-weight: 400;

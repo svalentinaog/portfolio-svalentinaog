@@ -64,8 +64,8 @@
 
       &:hover,
       &:active {
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-        filter: brightness(1.2);
+        box-shadow: var(--box-shadow);
+        filter: var(--filter-skill);
 
         span {
           font-weight: 600;

@@ -16,38 +16,8 @@
   transition: 0.3s ease;
   background-color: transparent !important;
   padding: 2rem;
-
-
-  .nav-item a {
-    text-decoration: none !important;
-    color: var(--text-primary) !important;
-  }
 }
 
-.bg-navbar-one.scrolling {
-  border-bottom: 0;
-  padding: 0.5rem 5rem;
-  background: var(--bg-navbar) !important;
-  box-shadow: 0 0.275rem 1.25rem rgba(11, 15, 25, 0.05),
-    0 0.25rem 0.5625rem rgba(11, 15, 25, 0.03) !important;
-
-  // logo medusa
-  .image {
-    width: 4rem;
-    height: auto;
-    padding: 0px;
-    margin: 0 auto;
-  }
-
-  .nav-item a {
-    text-decoration: none !important;
-    color: white !important;
-  }
-
-  .form-select {
-    color: white !important;
-  }
-}
 
 .navbar-main {
   padding-top: 1rem;
@@ -72,12 +42,6 @@
   }
 }
 
-// TABS
-
-.navbar-brand {
-  margin: 0;
-}
-
 .image-container {
   display: flex;
   align-items: center;
@@ -90,30 +54,60 @@
   }
 }
 
+// LOGO NUEVO 
+// .image-container {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 5rem;
+//   height: 5rem;
+
+//   .logo-navbar {
+//     background-image: var(--logo-navbar);
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     width: 100%;
+//     height: 100%;
+//   }
+// }
+
 // items (links) de la barra de navegación
 .items-navbar {
   margin-right: 0.5rem;
-  // text-transform: uppercase;
 }
 
 //  ---- Switch dark-mode/light-mode ----  //
 .theme-switch {
+  width: 3rem;
+  height: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 
-  img {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
+  .icon-switch {
+    fill: #E26FE3;
     padding: 0.50rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
     transition: fill 0.5s, background-color 0.5s, box-shadow 0.5s;
   }
 
-  &:hover img {
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  .sun:hover .icon-switch {
+    fill: yellow;
+    /* Cambia el color del icono al hacer hover sobre el sol */
+  }
+
+  .moon:hover .icon-switch {
+    fill: blue;
+    /* Cambia el color del icono al hacer hover sobre la luna */
+  }
+
+  &:hover .icon-switch {
+    background-color: var(--bg-switch);
+    box-shadow: 0 0 10px var(--bg-switch);
   }
 }
 
@@ -123,10 +117,6 @@
   background-color: var(--bg-select);
   cursor: pointer;
   border: 1px solid var(--border-select);
-  background-image: url('/images/down.png');
-  background-repeat: no-repeat;
-  background-position: right 0.75rem center;
-  background-size: 1rem;
 
   &:hover {
     cursor: pointer;
@@ -143,10 +133,6 @@
 .navbar-expand-sm .offcanvas .offcanvas-body {
   align-items: center;
   justify-content: flex-end;
-
-  // a {
-  //   color: var(--text-primary); 
-  // }
 }
 
 .offcanvas-header,
@@ -164,6 +150,34 @@
   align-items: center;
 }
 
+.bg-navbar-one.scrolling {
+  border-bottom: 0;
+  padding: 0.5rem 5rem;
+  background: var(--bg-navbar) !important;
+  box-shadow: var(--box-shadow-navbar);
+  backdrop-filter: blur(1px);
+
+  // logo medusa
+  .image {
+    width: 4rem;
+    height: auto;
+    padding: 0px;
+    margin: 0 auto;
+  }
+
+  // logo nuevo
+  .image-container {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .nav-item a {
+    text-decoration: none !important;
+    color: white !important;
+  }
+}
+
+
 @media screen and (max-width: 767px) {
   .bg-navbar-one {
     padding: 1rem;
@@ -174,6 +188,12 @@
 
     .image {
       width: 3rem;
+    }
+
+    // logo nuevo
+    .image-container {
+      width: 3rem;
+      height: 3rem;
     }
   }
 
@@ -228,6 +248,12 @@
     .image {
       width: 5rem;
     }
+
+    // logo nuevo
+    .image-container {
+      width: 5rem;
+      height: 5rem;
+    }
   }
 
   .navbar-main {
@@ -235,7 +261,7 @@
   }
 
   .navbar .navbar-nav .nav-link {
-    padding: 1rem;   
+    padding: 1rem;
     font-size: 1.25rem;
   }
 

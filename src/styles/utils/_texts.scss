@@ -1,15 +1,23 @@
 @import './_colors';
 
-h1, h2, h3, h4, h5, h6, strong, label {
+h1 {
+    color: var(--titles);
+}
+
+h2, h3, h4, h5, h6, strong, label {
     font-weight: 500;
     color: var(--text-primary);
  }
 
-p, span, input, ul, li, a, b {
+p {
     color: var(--text-secondary);
     font-weight: 500;
 }
 
+span, input, ul, li, a, b {
+    color: var(--text-primary);
+    font-weight: 500;
+}
 
 
 

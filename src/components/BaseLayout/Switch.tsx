@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 
 function Switch() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -35,12 +37,14 @@ function Switch() {
   return (
     <div className='theme-switch' onClick={toggleThemeAndImage}>
       {isSun ? (
-        <img src="/images/sun.png" alt="Sun" />
+        <FontAwesomeIcon className='icon-switch sun' icon={faSun} />
       ) : (
-        <img src="/images/moon.png" alt="Moon" />
+        <FontAwesomeIcon className='icon-switch moon' icon={faMoon} />
       )}
     </div>
   );
 }
 
 export default Switch;
+
+

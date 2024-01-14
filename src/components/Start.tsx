@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from "react-i18next";
 
 export default function Start() {
@@ -16,7 +16,9 @@ export default function Start() {
 
       <div className="photo-start-home">
         <img className='custom-photo' src="images/developer.png" alt="about" />
+        {/* <div className="custom-photo"></div> */}
       </div>
     </div>
   );
 }
+
