@@ -5,11 +5,14 @@ import App from "./App.tsx";
 // import "./index.css";
 import './styles/globals.scss';
 import "./i18n";
+import { ThemeProvider } from "./components/context/ThemeContext.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
+    <ThemeProvider>
       <App />
+    </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

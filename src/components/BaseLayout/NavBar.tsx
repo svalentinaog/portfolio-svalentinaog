@@ -6,9 +6,12 @@ import Switch from './Switch';
 import { changeLanguage } from "i18next";
 import { useTranslation } from "react-i18next";
 
+import { useTheme } from '../context/ThemeContext';
 
 export default function NavBar() {
     const [scrolling, setScrolling] = useState<boolean>(false);
+
+    const { darkMode } = useTheme();
 
     const handleScroll = () => {
         const scrollY = window.scrollY;
@@ -46,16 +49,16 @@ export default function NavBar() {
                     className={`${scrolling ? 'scrolling ' : ''} bg-navbar-one`}
                 >
                     <Container fluid>
-
                         <Navbar.Brand href="/">
+
                             <div className="image-container">
-                                <img
-                                    src="/images/mdza.png"
-                                    alt="isotipo"
-                                    className="image"
-                                />
-                                {/* <div className='logo-navbar'></div> */}
+                                {darkMode === 0 ? (
+                                    <img src="/images/beeu,u.png" alt="isotipo" className="image" />
+                                ) : (
+                                    <img src="/images/mdza.png" alt="isotipo" className="image" />
+                                )}
                             </div>
+
                         </Navbar.Brand>
 
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />

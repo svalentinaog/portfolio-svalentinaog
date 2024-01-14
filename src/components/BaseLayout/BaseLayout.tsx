@@ -3,9 +3,12 @@ import { useState, useEffect } from 'react';
 import NavBar from './NavBar';
 import Footer from './Footer';
 import Bubbles from '../Bubbles';
+import { useTheme } from '../context/ThemeContext';
 
 export default function BaseLayout({ children }: { children: React.ReactNode }) {
   const [showButton, setShowButton] = useState(false);
+
+  const { darkMode } = useTheme();
 
   const handleScroll = () => {
     if (typeof window !== 'undefined' && window.scrollY > 100) {
@@ -37,7 +40,11 @@ export default function BaseLayout({ children }: { children: React.ReactNode }) 
           className={`button-scroll-to-top ${showButton ? 'visible' : ''}`}
           onClick={scrollToTop}
         >
-          <img src="images/angry.png" alt="scroll-to-top" />
+          {darkMode === 0 ? (
+            <img src="images/abeeja.png" alt="scroll-to-top" />
+          ) : (
+            <img src="images/angry.png" alt="scroll-to-top" />
+          )}
         </button>
       )}
 

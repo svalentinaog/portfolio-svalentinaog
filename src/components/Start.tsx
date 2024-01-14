@@ -1,11 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useTranslation } from "react-i18next";
+import { useTheme } from './context/ThemeContext';
 
 export default function Start() {
   const [lg] = useTranslation();
 
+  const { darkMode } = useTheme();
+
   return (
-    <div id="section1" className="container-start-home paddings">
+    <div id="section1" className={`container-start-home paddings ${darkMode === 1 ? 'dark' : 'light'}`}>
       <div className="text-content-start-home">
         <h1>{lg("start1")} </h1>
         <div>
@@ -15,8 +18,11 @@ export default function Start() {
       </div>
 
       <div className="photo-start-home">
-        <img className='custom-photo' src="images/developer.png" alt="about" />
-        {/* <div className="custom-photo"></div> */}
+        {darkMode === 0 ? (
+          <img className='custom-photo' src="images/img-light.png" alt="about" />
+          ) : (
+          <img className='custom-photo' src="images/developer.png" alt="about" />
+        )}
       </div>
     </div>
   );
