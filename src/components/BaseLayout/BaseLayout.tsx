@@ -48,7 +48,9 @@ export default function BaseLayout({ children }: { children: React.ReactNode }) 
         </button>
       )}
 
-      <Bubbles amount={7} />
+      {/* <Bubbles amount={7} /> */}
+
+      {darkMode === 1 && <Bubbles amount={7} />} {/* Renderizar burbujas solo si el tema es oscuro */}
 
       <Footer />
     </div>

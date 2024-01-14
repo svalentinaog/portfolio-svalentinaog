@@ -86,23 +86,25 @@
   align-items: center;
   cursor: pointer;
 
+  img {
+    padding: 0.35rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    transition: fill 0.5s, background-color 0.5s, box-shadow 0.5s;
+
+    &:hover{
+      background-color: var(--bg-switch);
+      box-shadow: 0 0 10px var(--bg-switch);
+    }
+  }
+
   .icon-switch {
-    fill: #E26FE3;
     padding: 0.50rem;
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50%;
     transition: fill 0.5s, background-color 0.5s, box-shadow 0.5s;
-  }
-
-  .sun:hover .icon-switch {
-    fill: yellow;
-    /* Cambia el color del icono al hacer hover sobre el sol */
-  }
-
-  .moon:hover .icon-switch {
-    fill: blue;
-    /* Cambia el color del icono al hacer hover sobre la luna */
   }
 
   &:hover .icon-switch {
@@ -138,9 +140,11 @@
 .offcanvas-header,
 .offcanvas-body {
   a {
-    color: white;
+    color: var(--text-primary);
     text-decoration: none !important;
   }
+
+  color: var(--color-icon-switch);
 }
 
 .nav-options {

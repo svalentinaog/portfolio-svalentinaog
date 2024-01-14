@@ -18,10 +18,11 @@ function Switch() {
 
   return (
     <div className='theme-switch' onClick={toggleTheme}>
-      {darkMode === 0 ? (
-        <FontAwesomeIcon className='icon-switch moon' icon={faMoon} />
+      {darkMode === 1 ? (
+        // <FontAwesomeIcon className='icon-switch moon' icon={faSun} />
+        <img src="/images/sun.png" alt="Sun" />
         ) : (
-        <FontAwesomeIcon className='icon-switch sun' icon={faSun} />
+        <FontAwesomeIcon className='icon-switch moon' icon={faMoon} />
       )}
     </div>
   );

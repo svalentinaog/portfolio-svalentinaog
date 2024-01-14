@@ -58,6 +58,9 @@ $shadow-switch-dark: rgba(
   0.25
 ); 
 
+$color-icon-switch-light: blue;
+$color-icon-switch-dark: #EDF0F7;
+
 $border-switch-light: #116dfa; 
 $border-switch-dark: #090913; 
 
@@ -139,6 +142,8 @@ $color-select-dark: #e6e7ed;
   --image-start: #{$image-start-light};
   --bg-translucent: #{$bg-translucent-light};
 
+  --color-icon-switch: #{$color-icon-switch-light};
+
   --bg-icon-social: #{$bg-icon-social-light};
   --color-icon-social: #{$color-icon-social-light};
 
@@ -177,6 +182,8 @@ $color-select-dark: #e6e7ed;
   --bg-image-start: #{$bg-image-start-dark};
   --image-start: #{$image-start-dark};
   --bg-translucent: #{$bg-translucent-dark};
+
+  --color-icon-switch: #{$color-icon-switch-dark};
 
   --bg-icon-social: #{$bg-icon-social-dark};
   --color-icon-social: #{$color-icon-social-dark};

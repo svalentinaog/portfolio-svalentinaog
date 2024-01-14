@@ -72,11 +72,11 @@ export default function NavBar() {
                             <Offcanvas.Header closeButton>
                                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
                                     <div className="image-container">
-                                        <img
-                                            src="/images/mdza.png"
-                                            alt="isotipo"
-                                            className="image"
-                                        />
+                                        {darkMode === 0 ? (
+                                            <img src="/images/beeu,u.png" alt="isotipo" className="image" />
+                                        ) : (
+                                            <img src="/images/mdza.png" alt="isotipo" className="image" />
+                                        )}
                                     </div>
                                 </Offcanvas.Title>
                             </Offcanvas.Header>
