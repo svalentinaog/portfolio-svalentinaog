@@ -6,9 +6,10 @@ import Bubbles from '../Bubbles';
 import { useTheme } from '../context/ThemeContext';
 
 export default function BaseLayout({ children }: { children: React.ReactNode }) {
-  const [showButton, setShowButton] = useState(false);
 
   const { darkMode } = useTheme();
+
+  const [showButton, setShowButton] = useState(false);
 
   const handleScroll = () => {
     if (typeof window !== 'undefined' && window.scrollY > 100) {
@@ -41,17 +42,13 @@ export default function BaseLayout({ children }: { children: React.ReactNode }) 
           onClick={scrollToTop}
         >
           {darkMode === 0 ? (
-            <img src="images/abeeja.png" alt="scroll-to-top" />
+            <img src="images/bee/bee-scrolling.png" alt="scroll-to-top" />
           ) : (
-            <img src="images/angry.png" alt="scroll-to-top" />
+            <img src="images/jellyfish/angry-jellyfish-scrolling.png" alt="scroll-to-top" />
           )}
         </button>
       )}
-
-      {/* <Bubbles amount={7} /> */}
-
       {darkMode === 1 && <Bubbles amount={7} />} {/* Renderizar burbujas solo si el tema es oscuro */}
-
       <Footer />
     </div>
   );

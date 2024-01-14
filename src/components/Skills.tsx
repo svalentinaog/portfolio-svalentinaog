@@ -18,7 +18,7 @@ export default function SKills() {
     { name: 'Material UI', image: 'materialui.png' },
     { name: 'Font Awesome', image: 'font-awesome.png' },
     { name: 'Node.js', image: 'nodejs.png' },
-    { name: 'Express.js', image: 'express-js.png' },
+    { name: 'Express.js', image: 'expressjs.png' },
     { name: 'SQL', image: 'sql.png' },
     { name: 'PostgreSQL', image: 'postgresql.png' },
     { name: 'Sequelize', image: 'sequelize.png' },
@@ -40,7 +40,7 @@ export default function SKills() {
         {skillsData.map((skill, index) => (
           <div key={index} className='content-skill'>
             <div className='icon-skill'>
-              <img className='' src={`images/${skill.image}`} alt="about" />
+              <img src={`images/skills/${skill.image}`} alt="about" />
             </div>
             <span>
               {skill.name}

@@ -20,7 +20,7 @@ function Switch() {
     <div className='theme-switch' onClick={toggleTheme}>
       {darkMode === 1 ? (
         // <FontAwesomeIcon className='icon-switch moon' icon={faSun} />
-        <img src="/images/sun.png" alt="Sun" />
+        <img src="/images/theme/sun.png" alt="Sun" />
         ) : (
         <FontAwesomeIcon className='icon-switch moon' icon={faMoon} />
       )}

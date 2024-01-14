@@ -9,9 +9,9 @@ export default function Footer() {
   return (
     <footer className={`footer ${darkMode === 1 ? 'dark' : 'light'}`}>
       {darkMode === 0 ? (
-        <img src="/images/panal.png" alt="isotipo" />
+        <img src="/images/bee/honeycomb-footer.png" alt="isotipo" />
       ) : (
-        <img src="/images/medusa2.png" alt="isotipo" />
+        <img src="/images/jellyfish/jellyfish-footer.png" alt="isotipo" />
       )}
       <p>{lg('footer')}</p>
     </footer>

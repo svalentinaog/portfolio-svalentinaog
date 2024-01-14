@@ -19,7 +19,7 @@ export default function Start() {
 
       <div className="photo-start-home">
         {darkMode === 0 ? (
-          <img className='custom-photo' src="images/img-light.png" alt="about" />
+          <img className='custom-photo' src="images/image-start-light.png" alt="about" />
           ) : (
           <img className='custom-photo' src="images/developer.png" alt="about" />
         )}

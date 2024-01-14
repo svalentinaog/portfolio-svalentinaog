@@ -24,14 +24,12 @@ export default function Projects() {
 
   return (
     <div id='section4' className='container-projects paddings'>
-
       <h1>{lg("projects1")}</h1>
-
       <div className='all-projects'>
         {projectsData.map((project, index) => (
           <div key={index} className='content-project'>
             <div className='image-project'>
-              <img className='' src={`images/${project.image}`} alt="about" />
+              <img className='' src={`images/projects/${project.image}`} alt="about" />
             </div>
             <h3>
               {project.name}
@@ -50,7 +48,6 @@ export default function Projects() {
           </div>
         ))}
       </div>
-
     </div>
   );
 }

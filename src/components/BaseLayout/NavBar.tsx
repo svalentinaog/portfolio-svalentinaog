@@ -53,9 +53,9 @@ export default function NavBar() {
 
                             <div className="image-container">
                                 {darkMode === 0 ? (
-                                    <img src="/images/beeu,u.png" alt="isotipo" className="image" />
+                                    <img src="/images/bee/bee-logo.png" alt="isotipo" className="image" />
                                 ) : (
-                                    <img src="/images/mdza.png" alt="isotipo" className="image" />
+                                    <img src="/images/jellyfish/jellyfish-logo.png" alt="isotipo" className="image" />
                                 )}
                             </div>
 
