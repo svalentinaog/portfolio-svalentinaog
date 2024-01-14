@@ -21,7 +21,7 @@ function Switch() {
       {darkMode === 1 ? (
         // <FontAwesomeIcon className='icon-switch moon' icon={faSun} />
         <img src="/images/theme/sun.png" alt="Sun" />
-        ) : (
+      ) : (
         <FontAwesomeIcon className='icon-switch moon' icon={faMoon} />
       )}
     </div>
