@@ -38,7 +38,7 @@
   transition: all 0.8s cubic-bezier(0.34, 1.45, 0.7, 1);
 
   &:hover {
-    color: #E26FE3;
+    color: var(--item-active-nav);
   }
 }
 
@@ -93,7 +93,7 @@
     border-radius: 50%;
     transition: fill 0.5s, background-color 0.5s, box-shadow 0.5s;
 
-    &:hover{
+    &:hover {
       background-color: var(--bg-switch);
       box-shadow: 0 0 10px var(--bg-switch);
     }
@@ -119,6 +119,8 @@
   background-color: var(--bg-select);
   cursor: pointer;
   border: 1px solid var(--border-select);
+  background-image: none;
+  padding: .375rem .75rem .375rem .75rem;
 
   &:hover {
     cursor: pointer;

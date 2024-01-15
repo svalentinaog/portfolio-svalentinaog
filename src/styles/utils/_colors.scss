@@ -16,7 +16,7 @@ $dark: #04040e;
 $bg-theme-light: #ffffff; // #513A8A; // linear-gradient(to right bottom, #0E2667, #E26FE3);
 $bg-theme-dark: #10141E;
 
-$titles-light: #ffd700; //ECA12D
+$titles-light: #FEBD34; //ECA12D
 $titles-dark: #edf0f7;
 
 $text-primary-light: #22222E;// #212A34;
@@ -28,6 +28,9 @@ $text-secondary-dark: #DEE2E6;
 // Barra de Navegación (NavBar)
 $bg-navbar-light: #ffffffbb; // linear-gradient(to right, #383A7E, #9156B2);
 $bg-navbar-dark: #090D16;// #04040e;
+
+$item-active-nav-light: #FBA630;
+$item-active-nav-dark: #E26FE3;
 
 $box-shadow-navbar-light: 0 0.275rem 1.25rem rgba(11, 15, 25, 0.05),
 0 0.25rem 0.5625rem rgba(11, 15, 25, 0.03) !important;
@@ -64,12 +67,6 @@ $color-icon-switch-dark: #EDF0F7;
 $border-switch-light: #116dfa; 
 $border-switch-dark: #090913; 
 
-// IMAGENES EN LA APLICACIÓN DE ACUERDO EL TEMA
-$image-start-light: url('/images/img-light.png');
-$image-start-dark: url('/images/img-dark.png');
-$logo-navbar-dark: url("/images/mdza.png");
-$logo-navbar-light: url("/images/beeu,u.png");
-
 // ---- Botón "Ir arriba"
 $bg-button-scroll-top-light: #0000003b; 
 $bg-button-scroll-top-light-hover: #090D16;  
@@ -85,7 +82,7 @@ $bg-footer-dark: #04040e;
 $bg-image-start-light: url('/images/wallpapers/hive-bee.jpg');
 $bg-image-start-dark: none; 
 $bg-translucent-light: #F0F1F3;
-$bg-translucent-dark: #151822; //#0b0f19;
+$bg-translucent-dark: #10141E; //#0b0f19;
 
 // Section About
 $bg-sections-light: #F0F1F3; // #15182210; // #e6e7ed10;
@@ -107,7 +104,7 @@ $bg-icon-skill-dark: #151822;
 $bg-select-light: #F0F1F3;
 $bg-select-dark: #151822;
 
-$bg-select-option-light: #9575B8;
+$bg-select-option-light: #F0F1F3;
 $bg-select-option-dark: #151822; 
 
 $border-select-light: #0000003d;
@@ -131,7 +128,9 @@ $color-select-dark: #e6e7ed;
   --border-switch: #{$border-switch-light};
   --shadow-switch: #{$shadow-switch-light};
   --bg-navbar: #{$bg-navbar-light};
-  --logo-navbar: #{$logo-navbar-light};
+
+  --item-active-nav: #{$item-active-nav-light};
+
   --box-shadow-navbar: #{$box-shadow-navbar-light};
   --bg-footer: #{$bg-footer-light};
   --bg-button-scroll-top: #{$bg-button-scroll-top-light};
@@ -139,7 +138,6 @@ $color-select-dark: #e6e7ed;
 
   --bg-sections: #{$bg-sections-light};
   --bg-image-start: #{$bg-image-start-light};
-  --image-start: #{$image-start-light};
   --bg-translucent: #{$bg-translucent-light};
 
   --color-icon-switch: #{$color-icon-switch-light};
@@ -172,7 +170,9 @@ $color-select-dark: #e6e7ed;
   --border-switch: #{$border-switch-dark};
   --shadow-switch: #{$shadow-switch-dark};
   --bg-navbar: #{$bg-navbar-dark};
-  --logo-navbar: #{$logo-navbar-dark};
+
+  --item-active-nav: #{$item-active-nav-dark};
+
   --box-shadow-navbar: #{$box-shadow-navbar-dark};
   --bg-footer: #{$bg-footer-dark};
   --bg-button-scroll-top: #{$bg-button-scroll-top-dark};
@@ -180,7 +180,6 @@ $color-select-dark: #e6e7ed;
 
   --bg-sections: #{$bg-sections-dark};
   --bg-image-start: #{$bg-image-start-dark};
-  --image-start: #{$image-start-dark};
   --bg-translucent: #{$bg-translucent-dark};
 
   --color-icon-switch: #{$color-icon-switch-dark};

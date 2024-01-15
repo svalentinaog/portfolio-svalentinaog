@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Container from 'react-bootstrap/Container';
-import { Nav, Navbar, Offcanvas, Form, Tabs, Tab } from 'react-bootstrap';
 import Switch from './Switch';
-
+import Container from 'react-bootstrap/Container';
+import { Nav, Navbar, Offcanvas, Form, Tab } from 'react-bootstrap';
 import { changeLanguage } from "i18next";
 import { useTranslation } from "react-i18next";
-
 import { useTheme } from '../context/ThemeContext';
 
 export default function NavBar() {
@@ -104,8 +102,8 @@ export default function NavBar() {
                                 <div className='nav-options'>
                                     <div>
                                         <Form.Select aria-label="Default select example" onChange={handleChangeLanguage} defaultValue="es">
-                                            <option value="es">ES</option>
-                                            <option value="en">EN</option>
+                                            <option value="es">🇪🇸 ES</option>
+                                            <option value="en">🇺🇸 EN</option>
                                         </Form.Select>
                                     </div>
 
