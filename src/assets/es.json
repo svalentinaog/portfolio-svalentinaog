@@ -34,6 +34,13 @@
 
     "contact1": "Contáctame",
     "contact2": "Para cualquier consulta o colaboración, envíame un mensaje a través de este formulario o conéctate conmigo a través de estos medios:",
+    
+    "contact3": "Nombre y apellido",
+    "contact4": "Correo electrónico",
+    "contact5": "Mensaje",
+    "contact6": "Ingrese aquí su mensaje...",
+    "contact7": "Enviar",
+
     "footer": "Todos los derechos reservados © 2023"
   }
 }

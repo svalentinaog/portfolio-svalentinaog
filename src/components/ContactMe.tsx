@@ -49,7 +49,7 @@ const ContactMe: React.FC = () => {
         <form
           className="form-wrapper custom-form-wrapper-contact"
         >
-          <label htmlFor="user_name">Nombre completo</label>
+          <label htmlFor="user_name">{lg("contact3")}</label>
           <InputGroup className="form-input-group">
             <InputGroup.Text id="basic-addon1" className="form-input-icon">
               <svg
@@ -70,7 +70,7 @@ const ContactMe: React.FC = () => {
             />
           </InputGroup>
 
-          <label htmlFor="user_email">Correo electrónico</label>
+          <label htmlFor="user_email">{lg("contact4")}</label>
           <InputGroup className="form-input-group">
             <InputGroup.Text id="basic-addon1" className="form-input-icon">
               <svg
@@ -91,20 +91,20 @@ const ContactMe: React.FC = () => {
             />
           </InputGroup>
 
-          <label htmlFor="user_message">Mensaje</label>
+          <label htmlFor="user_message">{lg("contact5")}</label>
           <InputGroup className="form-input-group">
             <Form.Control
               className="form-textarea"
               as="textarea"
               name="user_message"
               rows={3}
-              placeholder="Ingrese su mensaje..."
+              placeholder={lg("contact6")}
               id="user_message"
             />
           </InputGroup>
 
           <button type="submit" className="form-submit">
-            Enviar mensaje
+          {lg("contact7")}
           </button>
         </form>
       </div>

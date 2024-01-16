@@ -31,8 +31,12 @@
 
     "contact1": "Contact me",
     "contact2": "For any inquiries or collaboration, send me a message through this form or connect with me through these means:",
-    "contact3": "I welcome you to my digital space 👋",
 
+    "contact3": "First and last name",
+    "contact4": "Email address",
+    "contact5": "Mensaje",
+    "contact6": "Enter your message here...",
+    "contact7": "Send",
   
     "footer": "All rights reserved © 2023"
   }
