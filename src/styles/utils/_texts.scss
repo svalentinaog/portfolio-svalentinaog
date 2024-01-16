@@ -10,7 +10,7 @@ h2, h3, h4, h5, h6, strong, label {
     color: var(--text-primary);
  }
 
-p {
+p, input, textarea {
     color: var(--text-secondary);
     font-weight: 500;
 }

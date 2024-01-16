@@ -64,7 +64,7 @@ $shadow-switch-dark: rgba(
 $color-icon-switch-light: blue;
 $color-icon-switch-dark: #EDF0F7;
 
-$border-switch-light: #116dfa; 
+$border-switch-light: #3E4EB3; //#116dfa; 
 $border-switch-dark: #090913; 
 
 // ---- Botón "Ir arriba"
@@ -113,6 +113,32 @@ $border-select-dark: #495057;
 $color-select-light: #e6e7ed;
 $color-select-dark: #e6e7ed;
 
+
+//
+
+// ---- FORMULARIOS
+
+$bg-form-submit-light: #151822;
+$bg-form-submit-light-hover: #04040e; //#FBA630;
+$bg-form-submit-dark: #04040e;
+$bg-form-submit-dark-hover: #983eb3;
+
+$text-form-submit-light: #000;
+$text-form-submit-dark: $text-primary-dark;
+
+$text-placeholder-form-input-light: #0000003d;
+$text-placeholder-form-input-dark: #495057;
+
+$border-form-input-light: rgba(0, 0, 0, 0.123);
+$border-form-input-dark: rgba(255, 255, 255, 0.05);
+$border-form-input-light-focus: #00000065;
+$border-form-input-dark-focus: rgba(255, 255, 255, 0.13);
+$border-form-submit-light: #151822;
+$border-form-submit-light-hover: #04040e;
+$border-form-submit-dark: #090D16;
+$border-form-submit-dark-hover: #04040e;
+
+
 // Tema claro 🌝
 :root,
 [data-bs-theme='light'] {
@@ -154,6 +180,26 @@ $color-select-dark: #e6e7ed;
   --color-select: #{$color-select-light};
 
   --box-shadow: #{$box-shadow-light};
+
+  // form
+
+  --text-placeholder-form-input: #{$text-placeholder-form-input-light};
+  
+  --border-form-input: #{$border-form-input-light};
+  
+  --border-form-input-focus: #{$border-form-input-light-focus};
+  
+  --border-form-submit: #{$border-form-submit-light};
+  
+  --border-form-submit-hover: #{$border-form-submit-light-hover};
+
+  --bg-form-submit: #{$bg-form-submit-light};
+
+  --bg-form-submit-hover: #{$bg-form-submit-light-hover};
+
+  --text-form-submit: #{$text-form-submit-light};
+
+ // end form //
 }
 
 // Tema oscuro 🌚
@@ -196,4 +242,24 @@ $color-select-dark: #e6e7ed;
   --color-select: #{$color-select-dark};
 
   --box-shadow: #{$box-shadow-dark};
+
+  // form
+
+  --text-placeholder-form-input: #{$text-placeholder-form-input-dark};
+
+  --border-form-input: #{$border-form-input-dark};
+
+  --border-form-input-focus: #{$border-form-input-dark-focus};
+
+  --bg-form-submit: #{$bg-form-submit-dark};
+
+  --bg-form-submit-hover: #{$bg-form-submit-dark-hover};
+  
+  --border-form-submit: #{$border-form-submit-dark};
+
+  --border-form-submit-hover: #{$border-form-submit-dark-hover};
+
+  --text-form-submit: #{$text-form-submit-dark};
+
+// end form
 }
