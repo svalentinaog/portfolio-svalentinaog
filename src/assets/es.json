@@ -41,6 +41,15 @@
     "contact6": "Ingrese aquí su mensaje...",
     "contact7": "Enviar",
 
+    "loading": "Enviando mensaje...",
+    "succesfully": "Tu mensaje se ha enviado exitosamente.",
+
+    "validationName1": "Tu nombre es requerido",
+    "validationName2": "El nombre que ingresó contiene caracteres inválidos",
+    "validationEmail1": "Tu email es requerido",
+    "validationEmail2": "La dirección de correo electrónico no es válida",
+    "validationMessage": "El mensaje debe tener entre 15 y 500 caracteres",
+
     "footer": "Todos los derechos reservados © 2023"
   }
 }

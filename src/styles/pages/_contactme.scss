@@ -37,6 +37,7 @@
     font-size: 1.15rem;
   }
 }
+
 // social
 
 .social-media-container {
@@ -131,6 +132,15 @@
   justify-content: flex-end;
 }
 
+.error-message {
+  font-size: 0.95rem;
+  color: #CC392D;
+}
+
+.succesfully {
+  color: #48a847;
+}
+
 .custom-form-wrapper-contact {
   background-color: transparent;
   max-width: 90%;
@@ -169,6 +179,7 @@
 
   &:hover,
   &:focus {
+    opacity: 0.8;
     border: 1px solid var(--border-form-input-focus);
   }
 }
@@ -212,11 +223,15 @@
   color: var(--text-placeholder-form-input);
 }
 
+.form-input::placeholder:focus {
+  background-color: #0000001a !important;
+}
+
 .form-input:focus {
   outline: 0;
   border: none;
-  background-color: transparent;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.01) !important;
+  background-color: transparent !important;
 }
 
 // Box mensaje

@@ -38,6 +38,15 @@
     "contact6": "Enter your message here...",
     "contact7": "Send",
   
+    "loading": "Sending message...",
+    "succesfully": "Your message has been sent successfully.",
+
+    "validationName1": "Your name is required",
+    "validationName2": "The name you entered contains invalid characters",
+    "validationEmail1": "Your email is required",
+    "validationEmail2": "The email address is not valid",
+    "validationMessage": "The message must be between 15 and 500 characters",
+
     "footer": "All rights reserved © 2023"
   }
 }
