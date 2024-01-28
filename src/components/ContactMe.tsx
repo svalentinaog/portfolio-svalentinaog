@@ -60,6 +60,7 @@ const ContactMe: React.FC = () => {
         headers: {
           'Content-Type': 'application/json',
         },
+        timeout: 10000,
       });
 
       if (response.status === 201) {
@@ -127,7 +128,11 @@ const ContactMe: React.FC = () => {
                 aria-label="nombre-completo"
                 aria-describedby="basic-addon1"
                 id="user_name"
-                onChange={() => setErrors((prevErrors) => ({ ...prevErrors, user_name: '' }))}
+                onChange={(e) => {
+                  e.preventDefault();
+                  setErrors((prevErrors) => ({ ...prevErrors, user_name: '' }));
+                }}
+                // onChange={() => setErrors((prevErrors) => ({ ...prevErrors, user_name: '' }))}
               />
             </InputGroup>
             {errors.user_name && <span className="error-message">{errors.user_name}</span>}
@@ -146,7 +151,11 @@ const ContactMe: React.FC = () => {
                 aria-label="sashablouse@gmail.com"
                 aria-describedby="basic-addon1"
                 id="user_email"
-                onChange={() => setErrors((prevErrors) => ({ ...prevErrors, user_email: '' }))}
+                onChange={(e) => {
+                  e.preventDefault();
+                  setErrors((prevErrors) => ({ ...prevErrors, user_email: '' }));
+                }}
+                // onChange={() => setErrors((prevErrors) => ({ ...prevErrors, user_email: '' }))}
               />
             </InputGroup>
             {errors.user_email && <span className="error-message">{errors.user_email}</span>}
@@ -162,7 +171,11 @@ const ContactMe: React.FC = () => {
                 rows={3}
                 placeholder={lg("contact6")}
                 id="user_message"
-                onChange={() => setErrors((prevErrors) => ({ ...prevErrors, user_message: '' }))}
+                onChange={(e) => {
+                  e.preventDefault();
+                  setErrors((prevErrors) => ({ ...prevErrors, user_message: '' }));
+                }}
+                // onChange={() => setErrors((prevErrors) => ({ ...prevErrors, user_message: '' }))}
               />
             </InputGroup>
             {errors.user_message && <span className="error-message">{errors.user_message}</span>}
