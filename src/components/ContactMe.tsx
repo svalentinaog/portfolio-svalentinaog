@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import axios from 'axios';
 
+// import { validateForm } from './utils/validations'; 
+
 const ContactMe: React.FC = () => {
   const [lg] = useTranslation();
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -116,11 +118,11 @@ const ContactMe: React.FC = () => {
             />
           </InputGroup>
 
-          {loading && <p>Enviando mensaje...</p>}
+          {loading && <p>{lg("loading")}</p>}
 
           {formSubmitted && (
-            <p>
-              Su mensaje fue enviado con éxito.
+            <p className='succesfully'>
+                {lg("succesfully")}
             </p>
           )}
 
