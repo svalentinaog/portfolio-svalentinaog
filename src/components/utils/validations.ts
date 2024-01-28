@@ -16,15 +16,15 @@ export const validateForm = (data: FormData, translations: ValidationTranslation
     const { user_name, user_email, user_message } = data;
     const errors: Record<string, string> = {};
 
-    if (!user_name.trim()) {
+    if (!user_name || typeof user_name !== 'string' || !user_name.trim()) {
         errors.user_name = translations.validationName1; // "Tu nombre es requerido"
     }
 
-    if (/[^a-zA-Z\s]/.test(user_name)) {
+    if (!user_name || typeof user_name !== 'string' || /[^a-zA-Z\s]/.test(user_name)) {
         errors.user_name = translations.validationName2; // "El nombre que ingresó contiene caracteres inválidos";
-    }
+    }    
 
-    if (!user_email.trim()) {
+    if (!user_email || typeof user_email !== 'string' || !user_email.trim()) {
         errors.user_email = translations.validationEmail1; // "Tu e-mail es requerido";
     } else {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/;
@@ -34,7 +34,7 @@ export const validateForm = (data: FormData, translations: ValidationTranslation
         }
     }    
 
-    if (user_message.trim().length < 15 || user_message.trim().length > 500) {
+    if (!user_message || typeof user_message !== 'string' || user_message.trim().length < 15 || user_message.trim().length > 500) {
         errors.user_message = translations.validationMessage; // "El mensaje debe tener entre 15 y 500 caracteres";
     }
 
