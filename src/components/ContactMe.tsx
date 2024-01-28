@@ -23,11 +23,14 @@ const ContactMe: React.FC = () => {
     e.preventDefault();
     setLoading(true);
 
-    const formData: FormData = {
-      user_name: e.currentTarget.user_name.value,
-      user_email: e.currentTarget.user_email.value,
-      user_message: e.currentTarget.user_message.value,
-    };
+    // const formData: FormData = {
+    //   user_name: e.currentTarget.user_name.value,
+    //   user_email: e.currentTarget.user_email.value,
+    //   user_message: e.currentTarget.user_message.value,
+    // };
+
+    const { user_name, user_email, user_message } = e.currentTarget;
+    const formData: FormData = { user_name, user_email, user_message };
 
     // Se obtienen las traducciones
     const validationTranslations = {
@@ -52,7 +55,12 @@ const ContactMe: React.FC = () => {
     // Continúa con el envío del formulario si no hay errores de validación
 
     try {
-      const response = await axios.post('https://emails-portafolio.onrender.com/contact', formData);
+      // const response = await axios.post('https://emails-portafolio.onrender.com/contact', formData);
+      const response = await axios.post('https://emails-portafolio.onrender.com/contact', formData, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
 
       if (response.status === 201) {
         console.log("Mensaje enviado correctamente.");
