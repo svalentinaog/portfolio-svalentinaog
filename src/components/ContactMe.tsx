@@ -59,14 +59,15 @@ const ContactMe: React.FC = () => {
         setFormSubmitted(true);
         setTimeout((): void => {
           setFormSubmitted(false);
-        }, 3000);
+        }, 5000);
       } else {
         console.error("No se pudo enviar el mensaje.");
+        setLoading(false);
       }
     } catch (error: any) {
       console.error("Error al enviar el mensaje:", error.message);
+      setLoading(false);
     }
-    setLoading(false);
   };
 
   return (
@@ -107,60 +108,62 @@ const ContactMe: React.FC = () => {
         >
           <label htmlFor="user_name">{lg("contact3")}</label>
           <div>
-          <InputGroup className="form-input-group">
-            <InputGroup.Text id="basic-addon1" className="form-input-icon">
-              <FontAwesomeIcon icon={faUser} />
-            </InputGroup.Text>
-            <Form.Control
-              className="form-input"
-              name="user_name"
-              placeholder="Sasha Blouse"
-              aria-label="nombre-completo"
-              aria-describedby="basic-addon1"
-              id="user_name"
-              onChange={() => setErrors((prevErrors) => ({ ...prevErrors, user_name: '' }))}
-            />
-          </InputGroup>
-          {errors.user_name && <span className="error-message">{errors.user_name}</span>}
+            <InputGroup className="form-input-group">
+              <InputGroup.Text id="basic-addon1" className="form-input-icon">
+                <FontAwesomeIcon icon={faUser} />
+              </InputGroup.Text>
+              <Form.Control
+                className="form-input"
+                name="user_name"
+                placeholder="Sasha Blouse"
+                aria-label="nombre-completo"
+                aria-describedby="basic-addon1"
+                id="user_name"
+                onChange={() => setErrors((prevErrors) => ({ ...prevErrors, user_name: '' }))}
+              />
+            </InputGroup>
+            {errors.user_name && <span className="error-message">{errors.user_name}</span>}
           </div>
 
           <label htmlFor="user_email">{lg("contact4")}</label>
           <div>
-          <InputGroup className="form-input-group">
-            <InputGroup.Text id="basic-addon1" className="form-input-icon">
-              <FontAwesomeIcon icon={faEnvelope} />
-            </InputGroup.Text>
-            <Form.Control
-              className="form-input"
-              placeholder="sashablouse@gmail.com"
-              name="user_email"
-              aria-label="sashablouse@gmail.com"
-              aria-describedby="basic-addon1"
-              id="user_email"
-              onChange={() => setErrors((prevErrors) => ({ ...prevErrors, user_email: '' }))}
-            />
-          </InputGroup>
-          {errors.user_email && <span className="error-message">{errors.user_email}</span>}
+            <InputGroup className="form-input-group">
+              <InputGroup.Text id="basic-addon1" className="form-input-icon">
+                <FontAwesomeIcon icon={faEnvelope} />
+              </InputGroup.Text>
+              <Form.Control
+                className="form-input"
+                placeholder="sashablouse@gmail.com"
+                name="user_email"
+                aria-label="sashablouse@gmail.com"
+                aria-describedby="basic-addon1"
+                id="user_email"
+                onChange={() => setErrors((prevErrors) => ({ ...prevErrors, user_email: '' }))}
+              />
+            </InputGroup>
+            {errors.user_email && <span className="error-message">{errors.user_email}</span>}
           </div>
 
           <label htmlFor="user_message">{lg("contact5")}</label>
           <div>
-          <InputGroup className="form-input-group">
-            <Form.Control
-              className="form-textarea"
-              as="textarea"
-              name="user_message"
-              rows={3}
-              placeholder={lg("contact6")}
-              id="user_message"
-              onChange={() => setErrors((prevErrors) => ({ ...prevErrors, user_message: '' }))}
-            />
-          </InputGroup>
-          {errors.user_message && <span className="error-message">{errors.user_message}</span>}
+            <InputGroup className="form-input-group">
+              <Form.Control
+                className="form-textarea"
+                as="textarea"
+                name="user_message"
+                rows={3}
+                placeholder={lg("contact6")}
+                id="user_message"
+                onChange={() => setErrors((prevErrors) => ({ ...prevErrors, user_message: '' }))}
+              />
+            </InputGroup>
+            {errors.user_message && <span className="error-message">{errors.user_message}</span>}
           </div>
 
+          {/* Enviando mensaje... */}
           {loading && <p>{lg("loading")}</p>}
 
+          {/* Su mensaje se envio correctamente */}
           {formSubmitted && (
             <p className='succesfully'>
               {lg("succesfully")}
