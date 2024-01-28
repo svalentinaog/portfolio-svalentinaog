@@ -3,71 +3,39 @@ import { Form, InputGroup } from 'react-bootstrap';
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { validateForm } from './utils/validations';
 import axios from 'axios';
-
-interface FormData {
-  user_name: string;
-  user_email: string;
-  user_message: string;
-}
 
 const ContactMe: React.FC = () => {
   const [lg] = useTranslation();
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const [errors, setErrors] = useState<Record<string, string>>({});
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>): Promise<void> => {
-    e.preventDefault();
+  const handleSubmit = async (e: any) => {
     setLoading(true);
+    e.preventDefault();
 
-    const formData: FormData = {
-      user_name: e.currentTarget.user_name.value,
-      user_email: e.currentTarget.user_email.value,
-      user_message: e.currentTarget.user_message.value,
+    const data = {
+      email: e.target?.user_email.value,
+      subject: e.target?.user_name.value,
+      data: e.target?.user_message.value,
     };
-
-    // Se obtienen las traducciones
-    const validationTranslations = {
-      validationName1: lg("validationName1"),
-      validationName2: lg("validationName2"),
-      validationEmail1: lg("validationEmail1"),
-      validationEmail2: lg("validationEmail2"),
-      validationMessage: lg("validationMessage"),
-    };
-
-    // Se realizan las validaciones
-    const validationError = validateForm(formData, validationTranslations);
-
-    if (Object.keys(validationError).length > 0) {
-      setErrors(validationError);
-      setLoading(false);
-      return;
-    }
-
-    setErrors({}); // Limpia los errores
-
-    // Continúa con el envío del formulario si no hay errores de validación
 
     try {
-      const response = await axios.post('https://emails-portafolio.onrender.com/contact', formData);
+      const response = await axios.post('https://emails-portafolio.onrender.com/contact', data);
 
       if (response.status === 201) {
-        console.log("Mensaje enviado correctamente.");
+        console.log("Mensaje enviado.");
         setFormSubmitted(true);
         setTimeout((): void => {
           setFormSubmitted(false);
-        }, 5000);
+        }, 3000);
       } else {
         console.error("No se pudo enviar el mensaje.");
-        setLoading(false);
       }
     } catch (error: any) {
       console.error("Error al enviar el mensaje:", error.message);
-      setLoading(false);
     }
+    setLoading(false);
   };
 
   return (
@@ -107,87 +75,58 @@ const ContactMe: React.FC = () => {
           onSubmit={handleSubmit}
         >
           <label htmlFor="user_name">{lg("contact3")}</label>
-          <div>
-            <InputGroup className="form-input-group">
-              <InputGroup.Text id="basic-addon1" className="form-input-icon">
-                <FontAwesomeIcon icon={faUser} />
-              </InputGroup.Text>
-              <Form.Control
-                className="form-input"
-                name="user_name"
-                placeholder="Sasha Blouse"
-                aria-label="nombre-completo"
-                aria-describedby="basic-addon1"
-                id="user_name"
-                onChange={(e) => {
-                  e.preventDefault();
-                  setErrors((prevErrors) => ({ ...prevErrors, user_name: '' }));
-                }}
-              // onChange={() => setErrors((prevErrors) => ({ ...prevErrors, user_name: '' }))}
-              />
-            </InputGroup>
-            {errors.user_name && <span className="error-message">{errors.user_name}</span>}
-          </div>
+          <InputGroup className="form-input-group">
+            <InputGroup.Text id="basic-addon1" className="form-input-icon">
+              <FontAwesomeIcon icon={faUser} />
+            </InputGroup.Text>
+            <Form.Control
+              className="form-input"
+              name="user_name"
+              placeholder="Sasha Blouse"
+              aria-label="nombre-completo"
+              aria-describedby="basic-addon1"
+              id="user_name"
+            />
+          </InputGroup>
 
           <label htmlFor="user_email">{lg("contact4")}</label>
-          <div>
-            <InputGroup className="form-input-group">
-              <InputGroup.Text id="basic-addon1" className="form-input-icon">
-                <FontAwesomeIcon icon={faEnvelope} />
-              </InputGroup.Text>
-              <Form.Control
-                className="form-input"
-                placeholder="sashablouse@gmail.com"
-                name="user_email"
-                aria-label="sashablouse@gmail.com"
-                aria-describedby="basic-addon1"
-                id="user_email"
-                onChange={(e) => {
-                  e.preventDefault();
-                  setErrors((prevErrors) => ({ ...prevErrors, user_email: '' }));
-                }}
-              // onChange={() => setErrors((prevErrors) => ({ ...prevErrors, user_email: '' }))}
-              />
-            </InputGroup>
-            {errors.user_email && <span className="error-message">{errors.user_email}</span>}
-          </div>
+          <InputGroup className="form-input-group">
+            <InputGroup.Text id="basic-addon1" className="form-input-icon">
+              <FontAwesomeIcon icon={faEnvelope} />
+            </InputGroup.Text>
+            <Form.Control
+              className="form-input"
+              placeholder="sashablouse@gmail.com"
+              name="user_email"
+              aria-label="sashablouse@gmail.com"
+              aria-describedby="basic-addon1"
+              id="user_email"
+            />
+          </InputGroup>
 
           <label htmlFor="user_message">{lg("contact5")}</label>
-          <div>
-            <InputGroup className="form-input-group">
-              <Form.Control
-                className="form-textarea"
-                as="textarea"
-                name="user_message"
-                rows={3}
-                placeholder={lg("contact6")}
-                id="user_message"
-                onChange={(e) => {
-                  e.preventDefault();
-                  setErrors((prevErrors) => ({ ...prevErrors, user_message: '' }));
-                }}
-              // onChange={() => setErrors((prevErrors) => ({ ...prevErrors, user_message: '' }))}
-              />
-            </InputGroup>
-            {errors.user_message && <span className="error-message">{errors.user_message}</span>}
-          </div>
+          <InputGroup className="form-input-group">
+            <Form.Control
+              className="form-textarea"
+              as="textarea"
+              name="user_message"
+              rows={3}
+              placeholder={lg("contact6")}
+              id="user_message"
+            />
+          </InputGroup>
 
-          {/* Enviando mensaje... */}
-          {loading && <p>{lg("loading")}</p>}
+          {loading && <p>Enviando mensaje...</p>}
 
-          {/* Su mensaje se envio correctamente */}
           {formSubmitted && (
-            <p className='succesfully'>
-              {lg("succesfully")}
+            <p>
+              Su mensaje fue enviado con éxito.
             </p>
           )}
 
           <button type="submit" className="form-submit">
             {lg("contact7")}
           </button>
-
-          {errors.general && <span className="error-message">{errors.general}</span>}
-
         </form>
       </div>
     </div>
@@ -195,3 +134,4 @@ const ContactMe: React.FC = () => {
 }
 
 export default ContactMe;
+
