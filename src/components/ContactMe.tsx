@@ -23,14 +23,11 @@ const ContactMe: React.FC = () => {
     e.preventDefault();
     setLoading(true);
 
-    // const formData: FormData = {
-    //   user_name: e.currentTarget.user_name.value,
-    //   user_email: e.currentTarget.user_email.value,
-    //   user_message: e.currentTarget.user_message.value,
-    // };
-
-    const { user_name, user_email, user_message } = e.currentTarget;
-    const formData: FormData = { user_name, user_email, user_message };
+    const formData: FormData = {
+      user_name: e.currentTarget.user_name.value,
+      user_email: e.currentTarget.user_email.value,
+      user_message: e.currentTarget.user_message.value,
+    };
 
     // Se obtienen las traducciones
     const validationTranslations = {
@@ -55,13 +52,7 @@ const ContactMe: React.FC = () => {
     // Continúa con el envío del formulario si no hay errores de validación
 
     try {
-      // const response = await axios.post('https://emails-portafolio.onrender.com/contact', formData);
-      const response = await axios.post('https://emails-portafolio.onrender.com/contact', formData, {
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        timeout: 10000,
-      });
+      const response = await axios.post('https://emails-portafolio.onrender.com/contact', formData);
 
       if (response.status === 201) {
         console.log("Mensaje enviado correctamente.");
@@ -132,7 +123,7 @@ const ContactMe: React.FC = () => {
                   e.preventDefault();
                   setErrors((prevErrors) => ({ ...prevErrors, user_name: '' }));
                 }}
-                // onChange={() => setErrors((prevErrors) => ({ ...prevErrors, user_name: '' }))}
+              // onChange={() => setErrors((prevErrors) => ({ ...prevErrors, user_name: '' }))}
               />
             </InputGroup>
             {errors.user_name && <span className="error-message">{errors.user_name}</span>}
@@ -155,7 +146,7 @@ const ContactMe: React.FC = () => {
                   e.preventDefault();
                   setErrors((prevErrors) => ({ ...prevErrors, user_email: '' }));
                 }}
-                // onChange={() => setErrors((prevErrors) => ({ ...prevErrors, user_email: '' }))}
+              // onChange={() => setErrors((prevErrors) => ({ ...prevErrors, user_email: '' }))}
               />
             </InputGroup>
             {errors.user_email && <span className="error-message">{errors.user_email}</span>}
@@ -175,7 +166,7 @@ const ContactMe: React.FC = () => {
                   e.preventDefault();
                   setErrors((prevErrors) => ({ ...prevErrors, user_message: '' }));
                 }}
-                // onChange={() => setErrors((prevErrors) => ({ ...prevErrors, user_message: '' }))}
+              // onChange={() => setErrors((prevErrors) => ({ ...prevErrors, user_message: '' }))}
               />
             </InputGroup>
             {errors.user_message && <span className="error-message">{errors.user_message}</span>}
@@ -204,4 +195,3 @@ const ContactMe: React.FC = () => {
 }
 
 export default ContactMe;
-
