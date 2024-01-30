@@ -108,7 +108,6 @@ const ContactMe: React.FC = () => {
         }
       } catch (error: any) {
         console.error("Error al enviar el mensaje:", error.message);
-        console.log(response.data);
       }
       setLoading(false);
     }
