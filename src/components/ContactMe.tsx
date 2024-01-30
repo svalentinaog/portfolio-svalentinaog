@@ -5,66 +5,25 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import axios from 'axios';
 
-import { validateForm } from './utils/validations'; 
+// import { validateForm } from './utils/validations'; 
 
 const ContactMe: React.FC = () => {
   const [lg] = useTranslation();
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  // const handleSubmit = async (e: any) => {
-  //   setLoading(true);
-  //   e.preventDefault();
-
-  //   const data = {
-  //     email: e.target?.user_email.value,
-  //     subject: e.target?.user_name.value,
-  //     data: e.target?.user_message.value,
-  //   };
-
-  //   try {
-  //     const response = await axios.post('https://emails-portafolio.onrender.com/contact', data);
-
-  //     if (response.status === 201) {
-  //       console.log("Mensaje enviado.");
-  //       setFormSubmitted(true);
-  //       setTimeout((): void => {
-  //         setFormSubmitted(false);
-  //       }, 3000);
-  //     } else {
-  //       console.error("No se pudo enviar el mensaje.");
-  //     }
-  //   } catch (error: any) {
-  //     console.error("Error al enviar el mensaje:", error.message);
-  //   }
-  //   setLoading(false);
-  // };
-
-  const [errors, setErrors] = useState<Record<string, string>>({});
-
   const handleSubmit = async (e: any) => {
     setLoading(true);
     e.preventDefault();
 
-    const formData = {
-      user_name: e.target?.user_name.value,
-      user_email: e.target?.user_email.value,
-      user_message: e.target?.user_message.value,
+    const data = {
+      email: e.target?.user_email.value,
+      subject: e.target?.user_name.value,
+      data: e.target?.user_message.value,
     };
 
-    // Validar el formulario
-    const formErrors = validateForm(formData);
-    setErrors(formErrors);
-
-    if (Object.keys(formErrors).length > 0) {
-      // Si hay errores, no enviar el formulario
-      setLoading(false);
-      return;
-    }
-
-    // Si no hay errores, continuar con el envío del formulario
     try {
-      const response = await axios.post('https://emails-portafolio.onrender.com/contact', formData);
+      const response = await axios.post('https://emails-portafolio.onrender.com/contact', data);
 
       if (response.status === 201) {
         console.log("Mensaje enviado.");
@@ -80,7 +39,7 @@ const ContactMe: React.FC = () => {
     }
     setLoading(false);
   };
-  
+
   return (
     <div id='section5' className='container-contactme paddings'>
       <div className="text-content-contactme">
@@ -131,7 +90,6 @@ const ContactMe: React.FC = () => {
               id="user_name"
             />
           </InputGroup>
-          {errors.user_name && <p className="error-message">{errors.user_name}</p>}
 
           <label htmlFor="user_email">{lg("contact4")}</label>
           <InputGroup className="form-input-group">
@@ -147,7 +105,6 @@ const ContactMe: React.FC = () => {
               id="user_email"
             />
           </InputGroup>
-          {errors.user_email && <p className="error-message">{errors.user_email}</p>}
 
           <label htmlFor="user_message">{lg("contact5")}</label>
           <InputGroup className="form-input-group">
@@ -160,7 +117,6 @@ const ContactMe: React.FC = () => {
               id="user_message"
             />
           </InputGroup>
-          {errors.user_message && <p className="error-message">{errors.user_message}</p>}
 
           {loading && <p>{lg("loading")}</p>}
 
