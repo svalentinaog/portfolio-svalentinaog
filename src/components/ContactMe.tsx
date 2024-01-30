@@ -12,32 +12,109 @@ const ContactMe: React.FC = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
+  const [errors, setErrors] = useState<{ [key: string]: string }>({});
+
+  const validateFormField = (fieldName: string, value: string) => {
+    const newErrors = { ...errors };
+
+    if (!value.trim()) {
+      newErrors[fieldName] = `El ${fieldName.replace('_', ' ')} es obligatorio`;
+    } else if (fieldName === 'user_name' && /[^a-zA-Z\s]/.test(value)) {
+      newErrors[fieldName] = 'Debe ingresar un nombre válido';
+    } else if (fieldName === 'user_email') {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(value.trim())) {
+        newErrors[fieldName] = 'Debe ingresar un email válido';
+      } else {
+        delete newErrors[fieldName];
+      }
+    } else {
+      delete newErrors[fieldName];
+    }
+
+    setErrors(newErrors);
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    validateFormField(name, value);
+  };
+  
+  const validateForm = (formData: { user_name: string; user_email: string; user_message: string }) => {
+    let isValid = true;
+    const newErrors: { [key: string]: string } = {};
+
+    // Validación para el campo de nombre
+    if (!formData.user_name.trim()) {
+      newErrors.user_name = 'Tu nombre es obligatorio';
+      isValid = false;
+    } else if (/[^a-zA-Z\s]/.test(formData.user_name)) {
+      newErrors.user_name = "Debe ingresar un nombre válido";
+      isValid = false;
+    }
+
+    // Validación para el campo de email
+    if (!formData.user_email.trim()) {
+      newErrors.user_email = 'Tu email es obligatorio';
+      isValid = false;
+    } else {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(formData.user_email.trim())) {
+        newErrors.user_email = 'Debe ingresar un email válido';
+        isValid = false;
+      }
+    }
+
+    // Validación para el campo de mensaje
+    if (!formData.user_message.trim()) {
+      newErrors.user_message = 'Debe proporcionar un mensaje';
+      isValid = false;
+    }
+
+    setErrors(newErrors);
+    return isValid;
+  };
+
   const handleSubmit = async (e: any) => {
     setLoading(true);
     e.preventDefault();
 
-    const data = {
-      email: e.target?.user_email.value,
-      subject: e.target?.user_name.value,
-      data: e.target?.user_message.value,
+    // const data = {
+    //   email: e.target?.user_email.value,
+    //   subject: e.target?.user_name.value,
+    //   data: e.target?.user_message.value,
+    // };
+
+    const formData = {
+      user_name: e.currentTarget.user_name.value,
+      user_email: e.currentTarget.user_email.value,
+      user_message: e.currentTarget.user_message.value,
     };
 
-    try {
-      const response = await axios.post('https://emails-portafolio.onrender.com/contact', data);
+    if (validateForm(formData)) {
+      // Continuar con el envío del formulario si la validación es exitosa
 
-      if (response.status === 201) {
-        console.log("Mensaje enviado.");
-        setFormSubmitted(true);
-        setTimeout((): void => {
-          setFormSubmitted(false);
-        }, 3000);
-      } else {
-        console.error("No se pudo enviar el mensaje.");
+      try {
+        const response = await axios.post('https://emails-portafolio.onrender.com/contact', formData);
+
+        if (response.status === 201) {
+          console.log("Mensaje enviado.");
+          setFormSubmitted(true);
+          setTimeout((): void => {
+            setFormSubmitted(false);
+          }, 3000);
+        } else {
+          console.error("No se pudo enviar el mensaje.");
+        }
+      } catch (error: any) {
+        console.error("Error al enviar el mensaje:", error.message);
       }
-    } catch (error: any) {
-      console.error("Error al enviar el mensaje:", error.message);
+      setLoading(false);
     }
-    setLoading(false);
+    else {
+      // Detener el envío del formulario si hay errores de validación
+      setLoading(false);
+    }
   };
 
   return (
@@ -77,52 +154,64 @@ const ContactMe: React.FC = () => {
           onSubmit={handleSubmit}
         >
           <label htmlFor="user_name">{lg("contact3")}</label>
-          <InputGroup className="form-input-group">
-            <InputGroup.Text id="basic-addon1" className="form-input-icon">
-              <FontAwesomeIcon icon={faUser} />
-            </InputGroup.Text>
-            <Form.Control
-              className="form-input"
-              name="user_name"
-              placeholder="Sasha Blouse"
-              aria-label="nombre-completo"
-              aria-describedby="basic-addon1"
-              id="user_name"
-            />
-          </InputGroup>
+          <div>
+            <InputGroup className="form-input-group">
+              <InputGroup.Text id="basic-addon1" className="form-input-icon">
+                <FontAwesomeIcon icon={faUser} />
+              </InputGroup.Text>
+              <Form.Control
+                className="form-input"
+                name="user_name"
+                placeholder="Sasha Blouse"
+                aria-label="nombre-completo"
+                aria-describedby="basic-addon1"
+                id="user_name"
+                onChange={handleChange}
+              />
+            </InputGroup>
+            {errors.user_name && <p className="error-message">{errors.user_name}</p>}
+          </div>
 
           <label htmlFor="user_email">{lg("contact4")}</label>
-          <InputGroup className="form-input-group">
-            <InputGroup.Text id="basic-addon1" className="form-input-icon">
-              <FontAwesomeIcon icon={faEnvelope} />
-            </InputGroup.Text>
-            <Form.Control
-              className="form-input"
-              placeholder="sashablouse@gmail.com"
-              name="user_email"
-              aria-label="sashablouse@gmail.com"
-              aria-describedby="basic-addon1"
-              id="user_email"
-            />
-          </InputGroup>
+          <div>
+            <InputGroup className="form-input-group">
+              <InputGroup.Text id="basic-addon1" className="form-input-icon">
+                <FontAwesomeIcon icon={faEnvelope} />
+              </InputGroup.Text>
+              <Form.Control
+                className="form-input"
+                placeholder="sashablouse@gmail.com"
+                name="user_email"
+                aria-label="sashablouse@gmail.com"
+                aria-describedby="basic-addon1"
+                id="user_email"
+                onChange={handleChange}
+              />
+            </InputGroup>
+            {errors.user_email && <p className="error-message">{errors.user_email}</p>}
+          </div>
 
           <label htmlFor="user_message">{lg("contact5")}</label>
-          <InputGroup className="form-input-group">
-            <Form.Control
-              className="form-textarea"
-              as="textarea"
-              name="user_message"
-              rows={3}
-              placeholder={lg("contact6")}
-              id="user_message"
-            />
-          </InputGroup>
+          <div>
+            <InputGroup className="form-input-group">
+              <Form.Control
+                className="form-textarea"
+                as="textarea"
+                name="user_message"
+                rows={3}
+                placeholder={lg("contact6")}
+                id="user_message"
+                onChange={handleChange}
+              />
+            </InputGroup>
+            {errors.user_message && <p className="error-message">{errors.user_message}</p>}
+          </div>
 
           {loading && <p>{lg("loading")}</p>}
 
           {formSubmitted && (
             <p className='succesfully'>
-                {lg("succesfully")}
+              {lg("succesfully")}
             </p>
           )}
 
