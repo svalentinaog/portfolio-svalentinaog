@@ -86,9 +86,9 @@ const ContactMe: React.FC = () => {
     // };
 
     const formData = {
-      user_name: e.currentTarget.user_name.value,
-      user_email: e.currentTarget.user_email.value,
-      user_message: e.currentTarget.user_message.value,
+      user_name: e.target?.user_name.value,
+      user_email: e.target?.user_email.value,
+      user_message: e.target?.user_message.value,
     };
 
     if (validateForm(formData)) {
@@ -108,6 +108,7 @@ const ContactMe: React.FC = () => {
         }
       } catch (error: any) {
         console.error("Error al enviar el mensaje:", error.message);
+        console.log(response.data);
       }
       setLoading(false);
     }
