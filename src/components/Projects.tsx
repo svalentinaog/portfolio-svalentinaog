@@ -9,7 +9,7 @@ export default function Projects() {
       image: 'adoptpet.jpg',
       name: 'Adopt Pet',
       description: lg("adoptpet"),
-      technologies: "#HTML, #Webpapck, #Babel, #SASS, #JavaScript, #JSON-Server",
+      technologies: "#HTML, #SASS, #JavaScript, #JSON Server, #Webpapck, #Babel",
       visit: "https://adoptpet-app.vercel.app"
     },
     {
