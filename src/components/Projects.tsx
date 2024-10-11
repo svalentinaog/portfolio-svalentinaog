@@ -9,7 +9,7 @@ export default function Projects() {
       image: 'adoptpet.jpg',
       name: 'Adopt Pet',
       description: lg("adoptpet"),
-      technologies: "#Next.js, #Redux Toolkit, #SCSS, #Bootstrap, #TypeScript, #NestJS, #Express.js, #PostgreSQL, #MySQL, Microservicios, #Firebase, #Mercado Pago.",
+      technologies: "#HTML, #Webpapck, #Babel, #SASS, #JavaScript, #JSON-Server",
       visit: "https://adoptpet-app.vercel.app"
     },
     {
