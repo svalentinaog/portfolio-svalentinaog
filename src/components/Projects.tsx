@@ -6,19 +6,46 @@ export default function Projects() {
 
   const projectsData = [
     {
-      image: 'eventox.png',
+      image: 'adoptpet.jpg',
+      name: 'Adopt Pet',
+      description: lg("adoptpet"),
+      technologies: "#Next.js, #Redux Toolkit, #SCSS, #Bootstrap, #TypeScript, #NestJS, #Express.js, #PostgreSQL, #MySQL, Microservicios, #Firebase, #Mercado Pago.",
+      visit: "https://adoptpet-app.vercel.app"
+    },
+    {
+      image: 'frenitek.jpg',
+      name: 'Frenitek S.A.S',
+      description: lg("frenitek"),
+      technologies: "#Angular, #TypeScript, #CSS, #Tailwind CSS",
+      visit: "https://frenitek.com/"
+    },
+    {
+      image: 'eventox.jpg',
       name: 'EventoX',
       description: lg("eventox"),
-      technologies: "#Next.js, #Redux Toolkit, #SCSS, #Bootstrap, #TypeScript, #NestJS, #Express.js, #PostgreSQL, #MySQL, Microservicios, #Firebase, #Mercado Pago.",
+      technologies: "#Next.js, #Redux Toolkit, #SASS, #Bootstrap, #TypeScript, #NestJS, #Express.js, #PostgreSQL, #MySQL, Microservicios, #Firebase, #Mercado Pago.",
       visit: "https://eventox-client-peach.vercel.app/"
     },
-
     {
-      image: 'spootchat.png',
+      image: 'spootchat.jpg',
       name: 'SpootChat',
       description: lg("spootchat"),
-      technologies: "#React, #Vite.js, #Redux, #CSS3, #Tailwind CSS, #Node.js, #Express.js, #MongoDB, #PostgreSQL, #Sequelize, #Redis, #Arquitectura MVC, #Firebase, #Mercado Pago.",
+      technologies: "#React, #Vite.js, #Redux, #CSS, #Tailwind CSS, #Node.js, #Express.js, #MongoDB, #PostgreSQL, #Sequelize, #Redis, #Arquitectura MVC, #Firebase, #Mercado Pago.",
       visit: "https://spoot-front.vercel.app/"
+    },
+    {
+      image: 'countries.jpg',
+      name: 'Countries',
+      description: lg("countries"),
+      technologies: "#React, #Vite.js, #Redux Toolkit, #CSS, #Node.js, #Express.js, #Sequelize, #PostgreSQL",
+      visit: "https://github.com/svalentinaog/Countries"
+    },
+    {
+      image: 'postpandemic.jpg',
+      name: 'Post Pandemic',
+      description: lg("postpandemic"),
+      technologies: "#HTML, #CSS, #JavaScript, #Bootstrap, #Animate.css",
+      visit: "https://post-pandemic.vercel.app/ "
     },
   ];
 
@@ -29,7 +56,7 @@ export default function Projects() {
         {projectsData.map((project, index) => (
           <div key={index} className='content-project'>
             <div className='image-project'>
-              <img className='' src={`images/projects/${project.image}`} alt="about" />
+              <img className='' src={`images/projects/${project.image}`} alt="Project" />
             </div>
             <h3>
               {project.name}

@@ -12,6 +12,10 @@
 @import './pages/_projects';
 @import './pages/_contactme';
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   background: var(--bg-theme);
@@ -27,7 +31,7 @@ body {
 
 .paddings {
   padding: 7rem;
-  height: 100vh;
+  // height: 100vh;
 }
 
 @media screen and (max-width: 767px) {

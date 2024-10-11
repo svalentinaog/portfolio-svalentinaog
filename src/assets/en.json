@@ -6,7 +6,7 @@
     "nav-item2": "About me",
     "nav-item3": "Skills",
     "nav-item4": "Projects",
-    "nav-item5": "Contact me",
+    "nav-item5": "Contact",
 
     "start1": "Hello! I'm Valentina",
     "start2": "Full Stack Web Developer",
@@ -26,11 +26,15 @@
     "projects2": "Go to repository",
     "to-visit": "To Visit",
 
-    "eventox": "Comprehensive Events Platform",
-    "spootchat": "Music Player",
-
-    "contact1": "Contact me",
-    "contact2": "For any inquiries or collaboration, send me a message through this form or connect with me through these means:",
+    "adoptpet": "Web application - Pet adoption",
+    "frenitek": "Landing page - Frenitek S.A.S",
+    "eventox": "Web application - Event management",
+    "spootchat": "Web application - Music player",
+    "countries": "Web application - Country explorer",
+    "postpandemic": "Informative website",
+    
+    "contact1": "Contact Information",
+    "contact2": "If you have any inquiries or are interested in collaborating, feel free to reach out to me through the following channels:",
 
     "contact3": "First and last name",
     "contact4": "Email address",

@@ -120,7 +120,7 @@
   cursor: pointer;
   border: 1px solid var(--border-select);
   background-image: none;
-  padding: .375rem .75rem .375rem .75rem;
+  padding: 0.25em 1em !important;
 
   &:hover {
     cursor: pointer;

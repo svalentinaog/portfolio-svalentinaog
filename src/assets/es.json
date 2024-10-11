@@ -6,7 +6,7 @@
     "nav-item2": "Sobre mí",
     "nav-item3": "Habilidades",
     "nav-item4": "Proyectos",
-    "nav-item5": "Contáctame",
+    "nav-item5": "Contacto",
 
     "start1": "Hola! Soy Valentina",
     "start2": "Desarrolladora Web Full Stack",
@@ -26,15 +26,19 @@
     "projects2": "Ir al repositorio",
     "to-visit": "Visitar",
     
-    "eventox": "Plataforma Integral de Eventos",
-    "spootchat": "Reproductor de Música",
+    "adoptpet": "Aplicación web - Adopción de mascotas",
+    "frenitek": "Landing page - Frenitek S.A.S",
+    "eventox": "Aplicación web - Gestión de eventos",
+    "spootchat": "Aplicación web - Reproductor de música",
+    "countries": "Aplicación web - Explorador de países",
+    "postpandemic": "Sitio web informativo",
 
     "frontend1": "Front-end",
     "frontend2": "En el ámbito del Frontend, canalizo mi pasión por la creación de experiencias visuales cautivadoras. Utilizo tecnologías como HTML, CSS y JavaScript para dar vida a interfaces intuitivas y atractivas. ",
 
-    "contact1": "Contáctame",
-    "contact2": "Para cualquier consulta o colaboración, envíame un mensaje a través de este formulario o conéctate conmigo a través de estos medios:",
-    
+    "contact1": "Información de Contacto",
+    "contact2": "Si tienes alguna consulta o estás interesado en colaborar, no dudes en contactarme a través de los siguientes medios:",
+        
     "contact3": "Nombre y apellido",
     "contact4": "Correo electrónico",
     "contact5": "Mensaje",

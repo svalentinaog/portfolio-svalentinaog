@@ -17,12 +17,12 @@
 
 .text-content-contactme {
   width: 100%;
-  max-width: calc(50% - 2rem);
+  // max-width: calc(50% - 2rem);
   display: flex;
-  align-items: left;
+  align-items: center;
   flex-direction: column;
   text-align: left;
-  gap: 1rem;
+  gap: 1.5rem;
 
   h1 {
     font-size: 3.10rem;
@@ -43,7 +43,7 @@
 .social-media-container {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 
   .icons {
     padding: 0.70rem;
@@ -58,7 +58,8 @@
 
   .icon-github,
   .icon-linkedin,
-  .icon-email {
+  .icon-email,
+  .icon-whatsapp {
     transition: fill 0.5s, background-color 0.5s, box-shadow 0.5s;
   }
 
@@ -115,6 +116,26 @@
     &:active {
       background-color: #CC392D;
       box-shadow: 0 0 10px rgba(204, 57, 45, 0.7);
+
+      svg {
+        fill: white;
+      }
+    }
+  }
+
+  .icon-whatsapp {
+    background-color: var(--bg-icon-social);
+
+    svg {
+      fill: var(--color-icon-social);
+      margin: 0;
+      padding: 0;
+    }
+
+    &:hover,
+    &:active {
+      background-color: #25D366;
+      box-shadow: 0 0 10px rgba(37, 211, 102, 0.7);
 
       svg {
         fill: white;
