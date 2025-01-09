@@ -156,6 +156,11 @@
   align-items: center;
 }
 
+.options {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
 .bg-navbar-one.scrolling {
   border-bottom: 0;
   padding: 0.5rem 5rem;

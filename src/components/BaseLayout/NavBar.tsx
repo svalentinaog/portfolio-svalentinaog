@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Switch from './Switch';
 import Container from 'react-bootstrap/Container';
-import { Nav, Navbar, Offcanvas, Form } from 'react-bootstrap';
+import { Nav, Navbar, Offcanvas, Button } from 'react-bootstrap';
 import { changeLanguage } from "i18next";
 import { useTranslation } from "react-i18next";
 import { useTheme } from '../context/ThemeContext';
@@ -24,10 +24,12 @@ export default function NavBar() {
     }, []);
 
     const [lg] = useTranslation();
+    const [language, setLanguage] = useState<string>('es');
 
-    const handleChangeLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        const selectedLanguage = e.target.value;
-        changeLanguage(selectedLanguage);
+    const handleToggleLanguage = () => {
+        const newLanguage = language === 'es' ? 'en' : 'es';
+        setLanguage(newLanguage);
+        changeLanguage(newLanguage);
     };
 
     // Funcion para desplazarse a la sección que queramos en nuestra landing
@@ -93,10 +95,9 @@ export default function NavBar() {
                                 </Nav>
                                 <div className='nav-options'>
                                     <div>
-                                        <Form.Select onChange={handleChangeLanguage} defaultValue="es">
-                                            <option value="es"><FontAwesomeIcon icon={faGlobe} /> ES</option>
-                                            <option value="en"><FontAwesomeIcon icon={faGlobe} /> EN</option>
-                                        </Form.Select>
+                                        <Button className='options' variant="link" onClick={handleToggleLanguage}>
+                                            <FontAwesomeIcon icon={faGlobe} /> {language === 'es' ? 'EN' : 'ES'}
+                                        </Button>
                                     </div>
                                     <Switch />
                                 </div>
