@@ -6,42 +6,63 @@ export default function Projects() {
 
   const projectsData = [
     {
-      image: 'adoptpet.jpg',
+      image: 'sianexus',
+      name: 'Sian Exus',
+      description: lg("sianexus"),
+      technologies: "#Angular, #TypeScript, #SASS, #Bootstrap",
+      visit: "https://app.sianexus.co/auth/login"
+    },
+    {
+      image: 'vetpet',
+      name: 'VetPet',
+      description: lg("vetpet"),
+      technologies: "#NextJS, #SASS, #Material UI, #TypeScript",
+      visit: "https://app-vet-pet.vercel.app/"
+    },
+    {
+      image: 'liveedu',
+      name: 'Liveedu',
+      description: lg("liveedu"),
+      technologies: "#NextJS, #SASS, #Material UI, #TypeScript",
+      visit: "https://liveedu.vercel.app/"
+    },
+    {
+      image: 'adoptpet',
       name: 'Adopt Pet',
       description: lg("adoptpet"),
       technologies: "#HTML, #SASS, #JavaScript, #JSON Server, #Webpapck, #Babel",
       visit: "https://adoptpet-app.vercel.app"
     },
     {
-      image: 'frenitek.jpg',
+      image: 'frenitek',
       name: 'Frenitek S.A.S',
       description: lg("frenitek"),
       technologies: "#Angular, #TypeScript, #CSS, #Tailwind CSS",
       visit: "https://frenitek.com/"
     },
     {
-      image: 'eventox.jpg',
+      image: 'eventox',
       name: 'EventoX',
       description: lg("eventox"),
       technologies: "#Next.js, #Redux Toolkit, #SASS, #Bootstrap, #TypeScript, #NestJS, #Express.js, #PostgreSQL, #MySQL, Microservicios, #Firebase, #Mercado Pago.",
       visit: "https://eventox-client-peach.vercel.app/"
     },
     {
-      image: 'spootchat.jpg',
+      image: 'spootchat',
       name: 'SpootChat',
       description: lg("spootchat"),
       technologies: "#React, #Vite.js, #Redux, #CSS, #Tailwind CSS, #Node.js, #Express.js, #MongoDB, #PostgreSQL, #Sequelize, #Redis, #Arquitectura MVC, #Firebase, #Mercado Pago.",
       visit: "https://spoot-front.vercel.app/"
     },
     {
-      image: 'countries.jpg',
+      image: 'countries',
       name: 'Countries',
       description: lg("countries"),
       technologies: "#React, #Vite.js, #Redux Toolkit, #CSS, #Node.js, #Express.js, #Sequelize, #PostgreSQL",
       repository: "https://github.com/svalentinaog/Countries"
     },
     {
-      image: 'postpandemic.jpg',
+      image: 'postpandemic',
       name: 'Post Pandemic',
       description: lg("postpandemic"),
       technologies: "#HTML, #CSS, #JavaScript, #Bootstrap, #Animate.css",
@@ -57,7 +78,7 @@ export default function Projects() {
           <div key={index} className='content-project'>
             <div className='info-project'>
                 <div className='image-project'>
-                  <img className='' src={`images/projects/${project.image}`} alt="Project" />
+                  <img className='' src={`images/projects/${project.image}.jpg`} alt="Project" />
                 </div>
                 <h3>
                   {project.name}
