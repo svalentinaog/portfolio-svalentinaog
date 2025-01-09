@@ -230,6 +230,42 @@
   // }
 }
 
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  /* Aspect ratio 16:9 */
+  perspective: 1000px;
+  /* Para efecto 3D */
+}
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease-in-out;
+}
+
+.image-primary {
+  transform: rotateY(0);
+}
+
+.image-secondary {
+  transform: rotateY(180deg);
+}
+
+.image-container:hover .image-primary {
+  transform: rotateY(-180deg);
+}
+
+.image-container:hover .image-secondary {
+  transform: rotateY(0);
+}
+
 @media screen and (max-width: 767px) {
   .container-aboutme {
     // height: 100% !important;

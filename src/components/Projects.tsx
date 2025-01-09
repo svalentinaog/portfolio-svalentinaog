@@ -6,67 +6,84 @@ export default function Projects() {
 
   const projectsData = [
     {
+      image: 'vetpet',
+      name: 'VetPet',
+      description: lg("vetpet"),
+      technologies: "#NextJS, #Redux Toolkit, #TypeScript, #Firebase, #Cloudinary, #SASS, #Material UI",
+      visit: "https://app-vet-pet.vercel.app/",
+      secondaryImage: "vetpet"
+    },
+    {
       image: 'sianexus',
       name: 'Sian Exus',
       description: lg("sianexus"),
       technologies: "#Angular, #TypeScript, #SASS, #Bootstrap",
-      visit: "https://app.sianexus.co/auth/login"
-    },
-    {
-      image: 'vetpet',
-      name: 'VetPet',
-      description: lg("vetpet"),
-      technologies: "#NextJS, #TypeScript, #Firebase, #Cloudinary, #SASS, #Material UI",
-      visit: "https://app-vet-pet.vercel.app/"
-    },
-    {
-      image: 'liveedu',
-      name: 'Liveedu',
-      description: lg("liveedu"),
-      technologies: "#NextJS, #TypeScript, #SASS, #Material UI",
-      visit: "https://liveedu.vercel.app/"
-    },
-    {
-      image: 'adoptpet',
-      name: 'Adopt Pet',
-      description: lg("adoptpet"),
-      technologies: "#HTML, #SASS, #JavaScript, #JSON Server, #Webpapck, #Babel",
-      visit: "https://adoptpet-app.vercel.app"
+      visit: "https://app.sianexus.co/auth/login",
+     secondaryImage: "sianexus"
     },
     {
       image: 'frenitek',
       name: 'Frenitek S.A.S',
       description: lg("frenitek"),
       technologies: "#Angular, #TypeScript, #CSS, #Tailwind CSS",
-      visit: "https://frenitek.com/"
+      visit: "https://frenitek.com/",
+     secondaryImage: "frenitek"
+    },
+    {
+      image: 'liveedu',
+      name: 'Liveedu',
+      description: lg("liveedu"),
+      technologies: "#NextJS, #Redux Toolkit, #TypeScript, #SASS, #Material UI",
+      visit: "https://liveedu.vercel.app/",
+     secondaryImage: "liveedu"
+    },
+    {
+      image: 'adoptpet',
+      name: 'Adopt Pet',
+      description: lg("adoptpet"),
+      technologies: "#HTML, #SASS, #JavaScript, #JSON Server, #Webpapck, #Babel",
+      visit: "https://adoptpet-app.vercel.app",
+     secondaryImage: "adoptpet"
     },
     {
       image: 'eventox',
       name: 'EventoX',
       description: lg("eventox"),
       technologies: "#Next.js, #Redux Toolkit, #SASS, #Bootstrap, #TypeScript, #NestJS, #Express.js, #PostgreSQL, #MySQL, Microservicios, #Firebase, #Mercado Pago.",
-      visit: "https://eventox-client-peach.vercel.app/"
+      visit: "https://eventox-client-peach.vercel.app/",
+     secondaryImage: "eventox"
     },
     {
       image: 'spootchat',
       name: 'SpootChat',
       description: lg("spootchat"),
       technologies: "#React, #Vite.js, #Redux, #CSS, #Tailwind CSS, #Node.js, #Express.js, #MongoDB, #PostgreSQL, #Sequelize, #Redis, #Arquitectura MVC, #Firebase, #Mercado Pago.",
-      visit: "https://spoot-front.vercel.app/"
+      visit: "https://spoot-front.vercel.app/",
+     secondaryImage: "spootchat"
     },
     {
       image: 'countries',
       name: 'Countries',
       description: lg("countries"),
       technologies: "#React, #Vite.js, #Redux Toolkit, #CSS, #Node.js, #Express.js, #Sequelize, #PostgreSQL",
-      repository: "https://github.com/svalentinaog/Countries"
+      repository: "https://github.com/svalentinaog/Countries",
+     secondaryImage: "countries"
+    },
+    {
+      image: 'inbuild',
+      name: 'Inbuild',
+      description: lg("inbuild"),
+      technologies: "#HTML, #CSS, #JavaScript",
+      visit: "https://inbuild.vercel.app/",
+     secondaryImage: "inbuild"
     },
     {
       image: 'postpandemic',
       name: 'Post Pandemic',
       description: lg("postpandemic"),
       technologies: "#HTML, #CSS, #JavaScript, #Bootstrap, #Animate.css",
-      visit: "https://post-pandemic.vercel.app/ "
+      visit: "https://post-pandemic.vercel.app/ ",
+     secondaryImage: "postpandemic"
     },
   ];
 
@@ -78,7 +95,10 @@ export default function Projects() {
           <div key={index} className='content-project'>
             <div className='info-project'>
                 <div className='image-project'>
-                  <img className='' src={`images/projects/${project.image}.jpg`} alt="Project" />
+                  <div className='image-container'>
+                    <img className='image-primary' src={`images/projects/${project.image}.jpg`} alt={`${project.name} primary`} />
+                    <img className='image-secondary' src={`images/projects/mockups/${project.secondaryImage}.jpg`} alt={`${project.name} mockup`} />
+                  </div>
                 </div>
                 <h3>
                   {project.name}
