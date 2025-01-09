@@ -9,7 +9,7 @@ export default function AboutMe() {
     const curriculumContainer = React.useRef<HTMLDivElement | null>(null);
 
     const handleDownload = () => {
-        const pdfUrl = 'curriculum/Curriculum Vitae - Valentina Ortiz.pdf';
+        const pdfUrl = 'curriculum/Valentina_Ortiz_CV.pdf';
         const fileName = 'curriculum.pdf';
 
         saveAs(pdfUrl, fileName);

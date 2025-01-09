@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: var(--bg-sections);
-  
+
   gap: 2rem;
 }
 
@@ -36,6 +36,10 @@
   div>p {
     font-size: 1.15rem;
     width: 90%;
+  }
+
+  p {
+    text-align: justify;
   }
 }
 
