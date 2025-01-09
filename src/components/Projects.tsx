@@ -16,14 +16,14 @@ export default function Projects() {
       image: 'vetpet',
       name: 'VetPet',
       description: lg("vetpet"),
-      technologies: "#NextJS, #SASS, #Material UI, #TypeScript",
+      technologies: "#NextJS, #TypeScript, #Firebase, #Cloudinary, #SASS, #Material UI",
       visit: "https://app-vet-pet.vercel.app/"
     },
     {
       image: 'liveedu',
       name: 'Liveedu',
       description: lg("liveedu"),
-      technologies: "#NextJS, #SASS, #Material UI, #TypeScript",
+      technologies: "#NextJS, #TypeScript, #SASS, #Material UI",
       visit: "https://liveedu.vercel.app/"
     },
     {
