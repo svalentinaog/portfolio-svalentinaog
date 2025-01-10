@@ -6,28 +6,60 @@ export default function Projects() {
 
   const projectsData = [
     {
-      image: 'vetpet',
-      name: 'VetPet',
-      description: lg("vetpet"),
-      technologies: "#NextJS, #Redux Toolkit, #TypeScript, #Firebase, #Cloudinary, #SASS, #Material UI",
-      visit: "https://app-vet-pet.vercel.app/",
-      secondaryImage: "vetpet"
+      image: 'andretty',
+      name: 'Colchones Andretty',
+      description: lg("andretty"),
+      technologies: "WordPress",
+      visit: "https://colchonesandretty.com/",
+      secondaryImage: "andretty"
+    },
+    {
+      image: 'italiandiesel',
+      name: 'Italian Diesel',
+      description: lg("italiandiesel"),
+      technologies: "WordPress",
+      visit: "https://repuestositaliandiesel.com/",
+      secondaryImage: "italiandiesel"
+    },
+    {
+      image: 'pianguita',
+      name: 'Hotel Villas de Pianguita',
+      description: lg("pianguita"),
+      technologies: "WordPress",
+      visit: "https://villasdepianguita.com/",
+      secondaryImage: "pianguita"
+    },
+        {
+      image: 'sianexus-web',
+      name: 'Sian Exus (Página corporativa)',
+      description: lg("sianexus-web"),
+      technologies: "#Angular, #TypeScript, #SASS, #Bootstrap",
+      visit: "https://sianexus.com",
+     secondaryImage: "sianexus-web"
     },
     {
       image: 'sianexus',
-      name: 'Sian Exus',
+      name: 'Sian Exus (Aplicación web)',
       description: lg("sianexus"),
       technologies: "#Angular, #TypeScript, #SASS, #Bootstrap",
       visit: "https://app.sianexus.co/auth/login",
      secondaryImage: "sianexus"
     },
-    {
+      {
       image: 'frenitek',
       name: 'Frenitek S.A.S',
       description: lg("frenitek"),
       technologies: "#Angular, #TypeScript, #CSS, #Tailwind CSS",
       visit: "https://frenitek.com/",
      secondaryImage: "frenitek"
+    },
+    {
+      image: 'vetpet',
+      name: 'VetPet',
+      description: lg("vetpet"),
+      technologies: "#NextJS, #Redux Toolkit, #TypeScript, #Firebase, #Cloudinary, #SASS, #Material UI",
+      visit: "https://app-vet-pet.vercel.app/",
+      secondaryImage: "vetpet"
     },
     {
       image: 'liveedu',
