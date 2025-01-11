@@ -62,8 +62,12 @@ $shadow-switch-dark: rgba(9,
     13,
     0.25);
 
-$color-icon-switch-light: blue;
+$color-icon-switch-light: #242424;
 $color-icon-switch-dark: #EDF0F7;
+
+.icon-switch.moon {
+  border: 1px solid #dadada;
+}
 
 $border-switch-light: #3E4EB3; //#116dfa; 
 $border-switch-dark: #090913;
