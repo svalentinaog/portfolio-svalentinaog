@@ -12,7 +12,7 @@ export default function Projects() {
       image: 'andretty',
       name: 'Colchones Andretty',
       description: lg("andretty"),
-      technologies: "WordPress",
+      technologies: "#WordPress",
       visit: "https://colchonesandretty.com/",
       secondaryImage: "andretty"
     },
@@ -20,7 +20,7 @@ export default function Projects() {
       image: 'italiandiesel',
       name: 'Italian Diesel',
       description: lg("italiandiesel"),
-      technologies: "WordPress",
+      technologies: "#WordPress",
       visit: "https://repuestositaliandiesel.com/",
       secondaryImage: "italiandiesel"
     },
@@ -28,13 +28,13 @@ export default function Projects() {
       image: 'pianguita',
       name: 'Hotel Villas de Pianguita',
       description: lg("pianguita"),
-      technologies: "WordPress",
+      technologies: "#WordPress",
       visit: "https://villasdepianguita.com/",
       secondaryImage: "pianguita"
     },
     {
       image: 'sianexus-web',
-      name: 'Sian Exus (Página corporativa)',
+      name: 'Sian Exus S.A.S (Página corporativa)',
       description: lg("sianexus-web"),
       technologies: "#Angular, #TypeScript, #SASS, #Bootstrap",
       visit: "https://sianexus.com",
@@ -42,7 +42,7 @@ export default function Projects() {
     },
     {
       image: 'sianexus',
-      name: 'Sian Exus (Aplicación web)',
+      name: 'Sian Exus S.A.S (Aplicación web)',
       description: lg("sianexus"),
       technologies: "#Angular, #TypeScript, #SASS, #Bootstrap",
       visit: "https://app.sianexus.co/auth/login",
