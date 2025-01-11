@@ -19,7 +19,7 @@ $bg-theme-dark: #10141E;
 $titles-light: #FEBD34; //ECA12D
 $titles-dark: #edf0f7;
 
-$text-primary-light: #22222E;// #212A34;
+$text-primary-light: #22222E; // #212A34;
 $text-primary-dark: #edf0f7;
 
 $text-secondary-light: #3C3B4D; // #838E95;
@@ -27,16 +27,16 @@ $text-secondary-dark: #DEE2E6;
 
 // Barra de Navegación (NavBar)
 $bg-navbar-light: #ffffffbb; // linear-gradient(to right, #383A7E, #9156B2);
-$bg-navbar-dark: #090D16;// #04040e;
+$bg-navbar-dark: #090D16; // #04040e;
 
 $item-active-nav-light: #FBA630;
 $item-active-nav-dark: #E26FE3;
 
 $box-shadow-navbar-light: 0 0.275rem 1.25rem rgba(11, 15, 25, 0.05),
-0 0.25rem 0.5625rem rgba(11, 15, 25, 0.03) !important;
+  0 0.25rem 0.5625rem rgba(11, 15, 25, 0.03) !important;
 
 $box-shadow-navbar-dark: 0 0.275rem 1.25rem rgba(255, 255, 255, 0.01),
-0 0.25rem 0.5625rem rgba(255, 255, 255, 0.02) !important;
+  0 0.25rem 0.5625rem rgba(255, 255, 255, 0.02) !important;
 
 $box-shadow-light: 0 0 15px rgba(255, 255, 255, 0.1);
 $box-shadow-dark: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -45,42 +45,38 @@ $filter-skill-dark: brightness(1.2);
 $filter-skill-light: brightness(0.4);
 
 // ---- 🌝 Switch 🌚
-$bg-switch-light: rgba(0, 0, 0, 0.2); 
+$bg-switch-light: rgba(0, 0, 0, 0.2);
 $bg-switch-dark: rgba(255, 255, 255, 0.2); // #090913;
 
-$shadow-switch-light: rgba(
-  13,
-  110,
-  253,
-  0.25
-); 
-$shadow-switch-dark: rgba(
-  9,
-  9,
-  13,
-  0.25
-); 
+$shadow-switch-light: rgba(13,
+    110,
+    253,
+    0.25);
+$shadow-switch-dark: rgba(9,
+    9,
+    13,
+    0.25);
 
 $color-icon-switch-light: blue;
 $color-icon-switch-dark: #EDF0F7;
 
 $border-switch-light: #3E4EB3; //#116dfa; 
-$border-switch-dark: #090913; 
+$border-switch-dark: #090913;
 
 // ---- Botón "Ir arriba"
-$bg-button-scroll-top-light: #0000003b; 
-$bg-button-scroll-top-light-hover: #090D16;  
+$bg-button-scroll-top-light: #0000003b;
+$bg-button-scroll-top-light-hover: #090D16;
 
 $bg-button-scroll-top-dark: #151822;
-$bg-button-scroll-top-dark-hover: #3E4EB3; 
+$bg-button-scroll-top-dark-hover: #3E4EB3;
 
 // ---- Pie de página
-$bg-footer-light: #151822; 
-$bg-footer-dark: #04040e; 
+$bg-footer-light: #151822;
+$bg-footer-dark: #04040e;
 
 // FONDOS TRASLUCIDOS
 $bg-image-start-light: url('/images/wallpapers/hive-bee.jpg');
-$bg-image-start-dark: none; 
+$bg-image-start-dark: url('/images/wallpapers/tentaculos.jpg');
 $bg-translucent-light: #F0F1F3;
 $bg-translucent-dark: #10141E; //#0b0f19;
 
@@ -105,7 +101,7 @@ $bg-select-light: #F0F1F3;
 $bg-select-dark: #151822;
 
 $bg-select-option-light: #F0F1F3;
-$bg-select-option-dark: #151822; 
+$bg-select-option-dark: #151822;
 
 $border-select-light: #0000003d;
 $border-select-dark: #495057;
@@ -184,13 +180,13 @@ $border-form-submit-dark-hover: #04040e;
   // form
 
   --text-placeholder-form-input: #{$text-placeholder-form-input-light};
-  
+
   --border-form-input: #{$border-form-input-light};
-  
+
   --border-form-input-focus: #{$border-form-input-light-focus};
-  
+
   --border-form-submit: #{$border-form-submit-light};
-  
+
   --border-form-submit-hover: #{$border-form-submit-light-hover};
 
   --bg-form-submit: #{$bg-form-submit-light};
@@ -199,7 +195,7 @@ $border-form-submit-dark-hover: #04040e;
 
   --text-form-submit: #{$text-form-submit-light};
 
- // end form //
+  // end form //
 }
 
 // Tema oscuro 🌚
@@ -207,7 +203,7 @@ $border-form-submit-dark-hover: #04040e;
   --bg-theme: #{$bg-theme-dark};
   --primary: #{$primary};
   --secondary: #{$secondary};
-  
+
   --titles: #{$titles-dark};
 
   --text-primary: #{$text-primary-dark};
@@ -254,12 +250,12 @@ $border-form-submit-dark-hover: #04040e;
   --bg-form-submit: #{$bg-form-submit-dark};
 
   --bg-form-submit-hover: #{$bg-form-submit-dark-hover};
-  
+
   --border-form-submit: #{$border-form-submit-dark};
 
   --border-form-submit-hover: #{$border-form-submit-dark-hover};
 
   --text-form-submit: #{$text-form-submit-dark};
 
-// end form
+  // end form
 }

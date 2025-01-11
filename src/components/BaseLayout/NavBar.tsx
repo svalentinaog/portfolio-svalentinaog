@@ -50,7 +50,7 @@ export default function NavBar() {
                 >
                     <Container fluid>
                         <Navbar.Brand href="/">
-                            <div className="image-container">
+                            <div className="image-container-nav">
                                 {darkMode === 0 ? (
                                     <img src="/images/bee/bee-logo.png" alt="isotipo" className="image" />
                                 ) : (
@@ -66,7 +66,7 @@ export default function NavBar() {
                         >
                             <Offcanvas.Header closeButton>
                                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                                    <div className="image-container">
+                                    <div className="image-container-nav">
                                         {darkMode === 0 ? (
                                             <img src="/images/bee/bee-logo.png" alt="isotipo" className="image" />
                                         ) : (
