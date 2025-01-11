@@ -130,7 +130,7 @@ export default function Projects() {
       secondaryImage: "loginbee"
     },
     {
-      image: 'sianexus',
+      image: 'sianexusfig',
       name: 'Sian exus',
       description: lg("sianexusfig"),
       technologies: "#Figma",
