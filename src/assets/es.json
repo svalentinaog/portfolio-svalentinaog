@@ -9,13 +9,13 @@
     "nav-item5": "Contacto",
 
     "start1": "Hola! Soy Valentina",
-    "start2": "Desarrolladora Front End",
+    "start2": "Desarrolladora Frontend",
     "start3": "Te doy la bienvenida a mi espacio digital 👋",
 
     
     "aboutme1": "Sobre mí",
     
-    "aboutme2": "Soy desarrolladora full stack con más de dos años de experiencia, especializada en el desarrollo front-end. Me dedico a crear soluciones interactivas, escalables y centradas en el usuario, desarrollando interfaces intuitivas, funcionales y optimizadas para aplicaciones web adaptables a dispositivos móviles. Además, poseo habilidades en diseño multimedia, abarcando diseño web, creación de identidades visuales y contenido para redes sociales. Como profesional autodidacta, orientada al aprendizaje continuo, estoy comprometida con la adopción de nuevas tecnologías y metodologías ágiles para aportar valor a los equipos y proyectos en los que colaboro.",
+    "aboutme2": "Soy desarrolladora full-stack con más de dos años de experiencia, especializada en el desarrollo front-end. Me dedico a crear soluciones interactivas, escalables y centradas en el usuario, desarrollando interfaces intuitivas, funcionales y optimizadas para aplicaciones web adaptables a dispositivos móviles. Además, poseo habilidades en diseño multimedia, abarcando diseño web, creación de identidades visuales y contenido para redes sociales. Como profesional autodidacta, orientada al aprendizaje continuo, estoy comprometida con la adopción de nuevas tecnologías y metodologías ágiles para aportar valor a los equipos y proyectos en los que colaboro.",
 
     "aboutme3": "Por favor, explore estos medios para que pueda ponerse en contacto conmigo y saber más acerca de mí.",
     
@@ -42,6 +42,7 @@
     "spootchat": "Aplicación web para reproducción de música inspirada en Spotify.",
     "countries": "Aplicación web para explorar información de países.",
     "postpandemic": "Sitio web informativo sobre el impacto post-pandemia.",
+    "loginBee": "Interfaz de login con tema de abeja, modo diurno y nocturno.",
 
     "frontend1": "Front-end",
     "frontend2": "En el ámbito del Frontend, canalizo mi pasión por la creación de experiencias visuales cautivadoras. Utilizo tecnologías como HTML, CSS y JavaScript para dar vida a interfaces intuitivas y atractivas. ",

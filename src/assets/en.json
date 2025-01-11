@@ -9,7 +9,7 @@
     "nav-item5": "Contact",
 
     "start1": "Hello! I'm Valentina",
-    "start2": "Front End Developer",
+    "start2": "Frontend Developer",
     "start3": "I welcome you to my digital space 👋",
 
     
@@ -42,6 +42,7 @@
     "spootchat": "Web application for music streaming inspired by Spotify.",
     "countries": "Web application for exploring country information.",
     "postpandemic": "Informative website about the post-pandemic impact.",    
+    "loginBee": "Login interface with a bee theme, day and night modes.",
 
     "contact1": "Contact Information",
     "contact2": "If you have any inquiries or are interested in collaborating, feel free to reach out to me through the following channels:",

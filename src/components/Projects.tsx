@@ -117,6 +117,14 @@ export default function Projects() {
       visit: "https://post-pandemic.vercel.app/ ",
      secondaryImage: "postpandemic"
     },
+    {
+        image: 'loginbee',
+        name: 'Login Bee',
+        description: lg("loginBee"),
+        technologies: "#HTML, #CSS",
+        visit: "https://login-bee.vercel.app/",
+       secondaryImage: "loginbee"
+    }
   ];
 
   return (
