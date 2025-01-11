@@ -13,8 +13,13 @@ $dark: #04040e;
 // ---- Colores a nivel global
 
 // $bg-theme-light: #ffffff; 
-$bg-theme-light: #fefcee; // #513A8A; // linear-gradient(to right bottom, #0E2667, #E26FE3);
-$bg-theme-dark: #10141E;
+$bg-theme-light: #ffffff; // #513A8A; // linear-gradient(to right bottom, #0E2667, #E26FE3);
+$bg-theme-dark: #151822; // 10141E antes
+
+// Sections
+// $bg-sections-light: #151822; antes// #ececec; // #15182210; // #e6e7ed10;
+$bg-sections-light: linear-gradient(to bottom, #ffffff 0%, #fff6dc 50%, #ffffff 100%);
+$bg-sections-dark: #10141E; // 151822 antes
 
 $titles-light: #000000; //ECA12D
 $titles-dark: #edf0f7;
@@ -76,14 +81,14 @@ $bg-footer-dark: #04040e;
 
 // FONDOS TRASLUCIDOS
 $bg-image-start-light: url('');
+// $bg-image-start-light: url('/images/wallpapers/hive-bee.jpg');
 $bg-image-start-dark: url('/images/wallpapers/tentaculos.jpg');
 // $bg-translucent-light: #F0F1F3;
-$bg-translucent-light: radial-gradient(circle, #fff8cf 0%, #ffffff 70%);
+// $bg-translucent-light: radial-gradient(circle, #fff8cf 0%, #ffffff 70%);
+$bg-translucent-light: linear-gradient(to bottom, #ffffff 0%, #fff8cf 50%, #ffffff 100%);
+
 $bg-translucent-dark: #10141E; //#0b0f19;
 
-// Section About
-$bg-sections-light: #ffffff; // #15182210; // #e6e7ed10;
-$bg-sections-dark: #151822;
 
 // Icons socials
 $bg-icon-social-light: #00000010;
