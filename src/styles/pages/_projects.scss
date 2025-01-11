@@ -116,18 +116,13 @@
 
 }
 
-.pagination-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
 .pagination-container .pagination {
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 10px;
-  /* Espaciado entre los elementos de la paginación */
 }
 
 .pagination-container .page-link {
@@ -139,9 +134,7 @@
   border-radius: 5%;
   color: var(--text-primary);
   cursor: pointer;
-  // background-color: var(--bg-icon-social);
   transition: background-color 0.3s, color 0.3s;
-  // border: none;
 }
 
 .pagination-container .page-link:hover {
@@ -187,6 +180,10 @@
       }
 
       .content-project {
+        .image-project {
+          height: auto;
+        }
+
         button {
           transition: opacity 0.1s ease;
 

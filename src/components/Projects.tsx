@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from "react-i18next";
 import { Pagination } from 'react-bootstrap';
 
 export default function Projects() {
   const [lg] = useTranslation();
   const [currentPage, setCurrentPage] = useState(1);
-  const projectsPerPage = 3;
+  // const projectsPerPage = 3;
+  const [projectsPerPage, setProjectsPerPage] = useState(3); 
 
   const projectsData = [
     {
@@ -130,12 +131,23 @@ export default function Projects() {
     }
   ];
 
-  // Calculate the current projects to display
+  useEffect(() => {
+    const updateProjectsPerPage = () => {
+      if (window.innerWidth <= 768) {
+        setProjectsPerPage(1);
+      } else {
+        setProjectsPerPage(3); 
+      }
+    };
+    window.addEventListener('resize', updateProjectsPerPage);
+    updateProjectsPerPage();
+    return () => window.removeEventListener('resize', updateProjectsPerPage);
+  }, []);
+
   const indexOfLastProject = currentPage * projectsPerPage;
   const indexOfFirstProject = indexOfLastProject - projectsPerPage;
   const currentProjects = projectsData.slice(indexOfFirstProject, indexOfLastProject);
 
-  // Change page
   const paginate = (pageNumber: React.SetStateAction<number>) => setCurrentPage(pageNumber);
 
   const pageNumbers = [];
