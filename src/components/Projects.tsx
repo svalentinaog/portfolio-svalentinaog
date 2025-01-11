@@ -128,7 +128,23 @@ export default function Projects() {
       technologies: "#HTML, #CSS",
       visit: "https://login-bee.vercel.app/",
       secondaryImage: "loginbee"
-    }
+    },
+    {
+      image: 'sianexus',
+      name: 'Sian exus',
+      description: lg("sianexusfig"),
+      technologies: "#Figma",
+      visit: "https://www.figma.com/proto/NF3vMYoL1cYgjLdNI7RnMW/P%C3%A1gina-Web-Sian-Exus?node-id=3-2912&p=f&t=Cvg4eSH7vFLopPPM-1&scaling=min-zoom&content-scaling=fixed&page-id=3%3A2184",
+      secondaryImage: "sianexusfig"
+    },
+    {
+      image: 'busswoman',
+      name: '',
+      description: lg("busswoman"),
+      technologies: "#Figma",
+      visit: "https://www.figma.com/proto/ZkoqcDYNeFTqrhbcEc1iYx/Bussines-Woman---Landing-Page?node-id=1-35&t=UQVT1bCFmML5j0Tw-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+      secondaryImage: "busswoman"
+    },
   ];
 
   useEffect(() => {
