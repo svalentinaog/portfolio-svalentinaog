@@ -25,6 +25,7 @@
 /* Estilos para teléfonos móviles (menos de 768px de ancho) */
 @media screen and (max-width: 767px) {
   .footer {
+    flex-direction: column-reverse;
     padding: 2em;
   }
 }
@@ -33,7 +34,7 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .footer {
     padding: 2rem;
-  
+
     img {
       width: 1.5rem;
     }
@@ -42,10 +43,10 @@
 
 /* Estilos para pantallas más grandes (1501px o más de ancho) */
 @media screen and (min-width: 1501px) {
- 
+
   .footer {
     padding: 3rem;
-  
+
     p {
       font-size: 1.25rem;
     }
