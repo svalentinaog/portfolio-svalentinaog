@@ -35,7 +35,7 @@ export default function AboutMe() {
 
                 <div>
                     <p>{lg("aboutme2")}</p>
-                    {/* <p>{lg("aboutme3")}</p> */}
+                    <p>{lg("aboutme3")}</p>
                 </div>
 
                 <div className="my-info-container">
