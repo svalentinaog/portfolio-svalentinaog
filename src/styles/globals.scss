@@ -35,12 +35,11 @@ body {
 }
 
 #section5 {
-  padding-bottom: 7em;
+  margin-bottom: 7em;
 }
 
 @media screen and (max-width: 767px) {
   .landing-page {
-    // margin: 7rem 0 7rem 0;
     gap: 0
   }
 
